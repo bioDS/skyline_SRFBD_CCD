@@ -1,0 +1,282 @@
+<beast version='2.0'
+       namespace='beast.pkgmgmt
+       :beast.base.core
+       :beast.base.inference
+       :beast.base.evolution.tree.coalescent
+       :beast.base.evolution.sitemodel
+       :beast.pkgmgmt
+       :beast.base.core
+       :beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood:beast.base.evolution.alignment
+       :sr.evolution.operators
+       :sa.evolution.operators
+       :sr.evolution.tree
+       :sr.evolution.sranges
+       :sr.speciation'>
+
+    <map name="Uniform">beast.base.inference.distribution.Uniform</map>
+    <map name="Exponential">beast.base.inference.distribution.Exponential</map>
+    <map name="LogNormal">beast.base.inference.distribution.LogNormalDistributionModel</map>
+    <map name="Normal">beast.base.inference.distribution.Normal</map>
+    <map name="Beta">beast.base.inference.distribution.Beta</map>
+    <map name="Gamma">beast.base.inference.distribution.Gamma</map>
+    <map name="LaplaceDistribution">beast.base.inference.distribution.LaplaceDistribution</map>
+    <map name="prior">beast.base.inference.distribution.Prior</map>
+    <map name="InverseGamma">beast.base.inference.distribution.InverseGamma</map>
+    <map name="OneOnX">beast.base.inference.distribution.OneOnX</map>
+
+
+    <run spec="beastfx.app.seqgen.SequenceSimulator" id="seqgen" sequencelength='1000' outputFileName="simulated_dna_alignment.xml">
+
+        <!-- The true tree down which sequences are simulated. -->
+        <tree spec="beast.base.evolution.tree.TreeParser"
+              id='start_tree'
+              newick='(((t75_first:0.5194976908469463,(((((((t154_last:0.5815343585712007,(t24_first:0.4591818560621497,t124_first:0.4591818560621497):0.1223525025090511):0.007090155249553476,(t200_last:0.4399388872599795,t200_first:0):0.1486856265607747):0.4426783045503511,(t83_first:0.9908189811011918,(t206_last:0.8024057212129394,t206_first:0):0.1884132598882524):0.04048383726991345):0.05482849546677748,((t159_last:0.2937631974317316,t196_first:0.2937631974317316):0.3706287709675543,t159_first:0):0.4217393454385968):0.5019466618319925,t154_first:0):0.5008825895650837,(((((t122_first:0.9034796576266499,t134_first:0.9034796576266499):0.3249175706627452,t12_last:0):0.6319766296088531,((((t157_first:0.2576046215017098,t175_first:0.2576046215017098):0.9920361470924965,((t47_last:0.4904698880136231,(t16_first:0.4215495926683626,t17_first:0.4215495926683626):0.06892029534526056):0.7269460041406801,t47_first:0):0.03222487643990313):0.4653783650704921,t125_last:0):0.1404178307963329,t125_first:0):0.004936893437216927):0.09355608079520117,(((((t49_last:0.1707210269889909,t128_first:0.1707210269889909):0.8818882668655759,(((t176_first:0.2312754773895507,(t236_first:0.2018756809064843,(t237_first:0.1628047242296731,t185_first:0.1628047242296731):0.03907095667681126):0.02939979648306634):0.6070039814983836,(t217_last:0.4566463918751502,t217_first:0):0.3816330670127842):0.1711860127355729,t25_first:0):0.04314382223105961):0.01924980976206303,((((t78_last:0.2951565162134875,t201_first:0.2951565162134875):0.4725944963715789,(((t96_last:0.1864365386643825,t191_first:0.1864365386643825):0.07526732660568536,t60_first:0.2617038652700678):0.1360487845712159,t96_first:0):0.3699983627437826):0.03765919786037308,((t199_first:0.09213014244189166,t173_first:0.09213014244189166):0.09557726603603056,t189_first:0.1877074084779222):0.6177028019675173):0.2212939183832934,t78_first:0):0.04515497478789698):0.1934914248312625,(t164_last:0.3250121898017822,t164_first:0):0.9403383386461102):0.6416107651308436,t49_first:0):0.04696864511471355):0.07111774602655152,t12_first:0):0.06391288051495803):0.8426343927167335,(t110_last:0.2795856495820255,t110_first:0):0.24324109548939):0.4657115869415996):0.3553148160418098,((((((((((((t100_last:0.4650464044686409,(t4_last:0.1152680114597326,t4_first:0):0.3497783930089083):0.329970390574942,(t19_first:0.196344230922211,t72_first:0.196344230922211):0.5986725641213719):0.01031536968087643,t26_first:0.8053321647244593):0.0591380882897603,t235_first:0.8644702530142196):0.6342401047271999,(((t188_last:0.04452722865691028,t127_first:0.9086520217603584):0.1306323881160507,((((t131_last:0.05956252470425971,t156_first:0.05956252470425971):0.5550362300891458,t131_first:0):0.3153837978673408,(t43_first:0.3940014904294076,(t103_first:0.4753704400460426,t211_first:0.4753704400460426):0.2377875716550797):0.2168245409596241):0.05399550596355462,((t241_first:0.6815653183415358,t149_first:0.6815653183415358):0.005334552168991813,(t222_first:0.6258387725715857,(t54_first:0.3929267069223523,(t76_first:0.3008907672304719,t39_first:0.3008907672304719):0.0920359396918804):0.2329120656492334):0.06106109793894188):0.2970781881137734):0.05530635125210814):0.4561498843615863,t188_first:0):0.003276063503424131):0.003397519061159038,(t121_first:0.7458358652770194,((((t9_first:0.06206990717894456,t183_first:0.06206990717894456):0.2690706640090865,t190_first:0.3311405711880311):0.001809093546549345,t37_first:0.3329496647345804):0.2327282873745893,(t216_first:0.164776789216587,t161_first:0.164776789216587):0.4009011628925827):0.1801579131678497):0.7562720115255592):0.0157368060369909,(t242_last:1.228456527936381,t242_first:0):0.289388154903188):0.1083098402704477,t100_first:0):0.1115201215936188,((t42_last:1.047288590125076,t28_first:0.1374057696808948):0.4578038394832693,t42_first:0):0.2325822150952903):0.0708293995907594,((((t63_last:0.4111316413754049,(((t129_first:0.07433436531432003,t123_first:0.07433436531432003):0.007727798739960434,(t160_first:0.04284832639236225,t58_first:0.04284832639236225):0.03921383766191822):0.1637702027541668,t86_first:0.2458323668084472):0.1652992745669577):0.8971489027948809,t63_first:0):0.2647095759567721,t71_last:0):0.09844746101005808,t71_first:0):0.1370664631572793):0.1575283313471081,t109_first:0.4456525698925293):1.423772288731661,t108_first:0):0.362816696561937):0.09716142392320207,((((t5_last:0.3154729654056809,(t152_last:0.3428966172345711,t152_first:0):0.3020556326624613):0.4125939621525383,t5_first:0):0.4247605815181142,(((((t87_last:1.383735388563162,((t167_first:0.03189159821915366,t113_last:0):0.3840595903025594,t113_first:0):0.1475272500159819):0.03710132502101127,(((((t126_first:0.9166662321914076,t221_first:0.9166662321914076):0.000742840667776079,((t202_last:0.1549869035276963,t169_first:0.1549869035276963):0.3908238526023264,t202_first:0):0.371598316729161):0.6520994717758439,t234_last:0):0.03569143707863986,t234_first:0):0.4399391304615676,(((((t223_last:0.3474766228068147,t223_first:0):0.8594450009800967,t79_last:0):0.07932714390510398,((t53_first:0.5939175985884888,(t181_first:0.1680895084982832,t224_first:0.1680895084982832):0.4258280900902056):0.3276874601483994,(((t8_first:0.290716922433353,t165_first:0.290716922433353):0.2952127438174701,(t90_first:0.3505297843547326,t214_first:0.3505297843547326):0.2353998818960905):0.01743278214362753,((((t179_last:0.01501415542740168,t179_first:0):0.2060006561610737,(t168_first:0.1173986710780692,t48_first:0.1173986710780692):0.1036161405104061):0.02084804174246813,t6_first:0.2418628533309435):0.1555380351876874,t68_first:0.3974008885186309):0.2059615598758198):0.3182426103424376):0.3646437089551271):0.3756467799835979,((((t208_last:0.9483116436307171,t107_first:0.9483116436307171):0.2946891262749647,((t177_last:1.100656087334583,(t170_last:1.012686962455219,t170_first:0):0.08796912487936437):0.01141488600881391,t177_first:0):0.1309297965622849):0.235338513764819,t208_first:0):0.1344628326104644,(((t203_last:0.006432517627007472,(t82_last:1.16105157672768,t82_first:0):0.04440895092063557):0.2618704404123653,(((t1_last:0.06957715889723162,t40_first:0.2707936688017964):0.7478764911302132,(t213_first:0.804677235177595,t67_first:0.804677235177595):0.2139929247544146):0.219727810357315,t1_first:0):0.2289329977713563):0.03817126833105355,t203_first:0):0.1072998798892306):0.04909343139464806):0.2328496699606144,t79_first:0):0.1503938945390075):0.4759782488078421):0.04956904769326775,((((t88_last:0.1689056659653043,t233_first:0.1473406384734317):0.01656275272133323,(((t73_last:0.1865172393072148,(t180_last:0.1116845423753815,t180_first:0):0.07483269693183323):0.1004810728688565,t36_first:0.2869983121760713):0.847133257292725,t73_first:0):0.4865723867931531):0.05004524090916673,(t23_last:1.436390470936322,t23_first:0):0.2343587262347939):0.8859024712964922,t88_first:0):0.01403474020873663):0.2266359840684782,t87_first:0):0.2116051165176634,(((t239_last:1.086440857553941,((((t50_first:0.1599170156789271,t142_first:0.1599170156789271):0.8877806515863838,t57_last:0):0.6512435955542539,(((((t162_last:0.09192922128027137,t207_first:0.0540073818639725):0.1303805109195144,t147_first:0.2223097321997858):0.05562985542698984,(t148_first:0.07090081710592555,t143_first:0.07090081710592555):0.2070387705208501):0.05627033957353644,(t20_first:0.01230088089568682,t144_first:0.01230088089568682):0.3219090463046252):0.8381391654982613,t162_first:0):0.5265921701209915):0.5184950539215971,t57_first:0):0.1541101889604986):0.4356165322678522,(((((((t220_first:1.295355683464827,t3_last:0):0.2036913500656046,t3_first:0):0.1296805396056939,(((((t10_first:0.6087663118558688,t81_first:0.6087663118558688):0.5032366433772424,t133_last:0):0.200169554880409,((t135_last:0.3231111089815473,((t95_first:0.04218847952301541,t171_first:0.04218847952301541):0.05694231442749675,t91_first:0.09913079395051216):0.2239803150310351):0.8255815384827807,t135_first:0):0.1634798626491922):0.05588338417267535,t133_first:0):0.2421707200582335,t209_first:0.09585495061572002):0.01850095879169666):0.7623642677909148,((t132_first:0.0194047048794932,((t228_last:0.03927986481464063,t228_first:0):0.1034163299732234,(((t166_last:0.7113686615281183,((t192_last:0.3488344999346906,t158_first:0.3488344999346906):0.2305832385277606,t192_first:0):0.131950923065667):0.350095238847993,t166_first:0):0.4686759785671741,((((t89_first:0.5655548357534792,t230_first:0):0.4684808062935619,t55_first:1.034035642047041):0.3965169289876518,(((t30_first:0.9622960598029695,(t66_first:0.5533923464119255,(t99_first:0.1470766839631867,((t172_last:0.1150182799118578,t84_first:0.1150182799118578):0.02602095430455192,t172_first:0):0.006037449746777057):0.4063156624487387):0.408903713391044):0.1154406129440231,(((t141_first:0.0536748552287194,t150_first:0.0536748552287194):0.6753877594816853,t130_first:0.00669231988751251):0.01247522454436112,t70_first:0.7415378392547658):0.3361988334922268):0.3251550082563788,t65_first:0):0.02766089003132155):0.08546095246578389,(((t85_last:0.07190018181538482,t105_first:0.194688058801352):1.054097794372945,((t140_first:0.5502954811784986,t182_first:0.5502954811784986):0.1908909713582516,t111_first:0.7411864525367502):0.507599400637547):0.1266113618525053,t85_first:0):0.1406163084736742):0.0141263554428086):0.5612347012078884):0.2032424341368941):0.007673139251012762,((t243_last:1.534978274954483,t243_first:0):0.202248913734568,(((t205_first:1.351353422735555,t45_first:0):0.1691344925770273,t178_last:0):0.2143184294200176,t178_first:0):0.002420843956450591):0.5650629648500298):0.08880168738795979):0.2236547599860219,(((t101_last:0.002170162282053134,t193_first:1.213912897775406):0.830420678353031,((((((t62_first:0.3244278729363628,t151_first:0.3244278729363628):1.369323662907695,t33_last:0):0.1455653869913975,(t31_last:1.163262579945514,t31_first:0):0.6760543428899415):0.01094968569957011,(t22_first:0.4735818869500101,t117_first:0.4735818869500101):1.376684721585015):0.01021186374004879,((t98_last:0.3796941250286752,t93_first:0.3796941250286752):1.296152874394823,t98_first:0):0.1846314728515761):0.1416657511692256,t33_first:0):0.04218935268413748):0.4701969584151717,t101_first:0):0.1002160663694536):0.1052209976073675,t186_first:0):0.06189633923739946,t64_first:0.2482144395236303):0.02529910021168291):0.02878341669704243,t239_first:0):0.1729810545959318):0.2129289062463118):0.08704462600472107,t226_first:0):0.5408817433447844):0.1502172151416956;'
+              IsLabelledNewick="true"
+              adjustTipHeights='false'/>
+
+        <data spec='Alignment' id="input_alignment" dataType="nucleotide">
+            <sequence spec='Sequence' taxon='t75_first' value='?'/>
+			<sequence spec='Sequence' taxon='t154_first' value='?'/>
+			<sequence spec='Sequence' taxon='t154_last' value='?'/>
+			<sequence spec='Sequence' taxon='t24_first' value='?'/>
+			<sequence spec='Sequence' taxon='t124_first' value='?'/>
+			<sequence spec='Sequence' taxon='t200_first' value='?'/>
+			<sequence spec='Sequence' taxon='t200_last' value='?'/>
+			<sequence spec='Sequence' taxon='t83_first' value='?'/>
+			<sequence spec='Sequence' taxon='t206_first' value='?'/>
+			<sequence spec='Sequence' taxon='t206_last' value='?'/>
+			<sequence spec='Sequence' taxon='t159_first' value='?'/>
+			<sequence spec='Sequence' taxon='t159_last' value='?'/>
+			<sequence spec='Sequence' taxon='t196_first' value='?'/>
+			<sequence spec='Sequence' taxon='t122_first' value='?'/>
+			<sequence spec='Sequence' taxon='t134_first' value='?'/>
+			<sequence spec='Sequence' taxon='t12_first' value='?'/>
+			<sequence spec='Sequence' taxon='t12_last' value='?'/>
+			<sequence spec='Sequence' taxon='t157_first' value='?'/>
+			<sequence spec='Sequence' taxon='t175_first' value='?'/>
+			<sequence spec='Sequence' taxon='t47_first' value='?'/>
+			<sequence spec='Sequence' taxon='t47_last' value='?'/>
+			<sequence spec='Sequence' taxon='t16_first' value='?'/>
+			<sequence spec='Sequence' taxon='t17_first' value='?'/>
+			<sequence spec='Sequence' taxon='t125_first' value='?'/>
+			<sequence spec='Sequence' taxon='t125_last' value='?'/>
+			<sequence spec='Sequence' taxon='t49_first' value='?'/>
+			<sequence spec='Sequence' taxon='t49_last' value='?'/>
+			<sequence spec='Sequence' taxon='t128_first' value='?'/>
+			<sequence spec='Sequence' taxon='t176_first' value='?'/>
+			<sequence spec='Sequence' taxon='t236_first' value='?'/>
+			<sequence spec='Sequence' taxon='t237_first' value='?'/>
+			<sequence spec='Sequence' taxon='t185_first' value='?'/>
+			<sequence spec='Sequence' taxon='t217_first' value='?'/>
+			<sequence spec='Sequence' taxon='t217_last' value='?'/>
+			<sequence spec='Sequence' taxon='t25_first' value='?'/>
+			<sequence spec='Sequence' taxon='t78_first' value='?'/>
+			<sequence spec='Sequence' taxon='t78_last' value='?'/>
+			<sequence spec='Sequence' taxon='t201_first' value='?'/>
+			<sequence spec='Sequence' taxon='t96_first' value='?'/>
+			<sequence spec='Sequence' taxon='t96_last' value='?'/>
+			<sequence spec='Sequence' taxon='t191_first' value='?'/>
+			<sequence spec='Sequence' taxon='t60_first' value='?'/>
+			<sequence spec='Sequence' taxon='t199_first' value='?'/>
+			<sequence spec='Sequence' taxon='t173_first' value='?'/>
+			<sequence spec='Sequence' taxon='t189_first' value='?'/>
+			<sequence spec='Sequence' taxon='t164_first' value='?'/>
+			<sequence spec='Sequence' taxon='t164_last' value='?'/>
+			<sequence spec='Sequence' taxon='t110_first' value='?'/>
+			<sequence spec='Sequence' taxon='t110_last' value='?'/>
+			<sequence spec='Sequence' taxon='t100_first' value='?'/>
+			<sequence spec='Sequence' taxon='t100_last' value='?'/>
+			<sequence spec='Sequence' taxon='t4_first' value='?'/>
+			<sequence spec='Sequence' taxon='t4_last' value='?'/>
+			<sequence spec='Sequence' taxon='t19_first' value='?'/>
+			<sequence spec='Sequence' taxon='t72_first' value='?'/>
+			<sequence spec='Sequence' taxon='t26_first' value='?'/>
+			<sequence spec='Sequence' taxon='t235_first' value='?'/>
+			<sequence spec='Sequence' taxon='t188_first' value='?'/>
+			<sequence spec='Sequence' taxon='t188_last' value='?'/>
+			<sequence spec='Sequence' taxon='t127_first' value='?'/>
+			<sequence spec='Sequence' taxon='t131_first' value='?'/>
+			<sequence spec='Sequence' taxon='t131_last' value='?'/>
+			<sequence spec='Sequence' taxon='t156_first' value='?'/>
+			<sequence spec='Sequence' taxon='t43_first' value='?'/>
+			<sequence spec='Sequence' taxon='t103_first' value='?'/>
+			<sequence spec='Sequence' taxon='t211_first' value='?'/>
+			<sequence spec='Sequence' taxon='t241_first' value='?'/>
+			<sequence spec='Sequence' taxon='t149_first' value='?'/>
+			<sequence spec='Sequence' taxon='t222_first' value='?'/>
+			<sequence spec='Sequence' taxon='t54_first' value='?'/>
+			<sequence spec='Sequence' taxon='t76_first' value='?'/>
+			<sequence spec='Sequence' taxon='t39_first' value='?'/>
+			<sequence spec='Sequence' taxon='t121_first' value='?'/>
+			<sequence spec='Sequence' taxon='t9_first' value='?'/>
+			<sequence spec='Sequence' taxon='t183_first' value='?'/>
+			<sequence spec='Sequence' taxon='t190_first' value='?'/>
+			<sequence spec='Sequence' taxon='t37_first' value='?'/>
+			<sequence spec='Sequence' taxon='t216_first' value='?'/>
+			<sequence spec='Sequence' taxon='t161_first' value='?'/>
+			<sequence spec='Sequence' taxon='t242_first' value='?'/>
+			<sequence spec='Sequence' taxon='t242_last' value='?'/>
+			<sequence spec='Sequence' taxon='t42_first' value='?'/>
+			<sequence spec='Sequence' taxon='t42_last' value='?'/>
+			<sequence spec='Sequence' taxon='t28_first' value='?'/>
+			<sequence spec='Sequence' taxon='t63_first' value='?'/>
+			<sequence spec='Sequence' taxon='t63_last' value='?'/>
+			<sequence spec='Sequence' taxon='t129_first' value='?'/>
+			<sequence spec='Sequence' taxon='t123_first' value='?'/>
+			<sequence spec='Sequence' taxon='t160_first' value='?'/>
+			<sequence spec='Sequence' taxon='t58_first' value='?'/>
+			<sequence spec='Sequence' taxon='t86_first' value='?'/>
+			<sequence spec='Sequence' taxon='t71_first' value='?'/>
+			<sequence spec='Sequence' taxon='t71_last' value='?'/>
+			<sequence spec='Sequence' taxon='t109_first' value='?'/>
+			<sequence spec='Sequence' taxon='t108_first' value='?'/>
+			<sequence spec='Sequence' taxon='t5_first' value='?'/>
+			<sequence spec='Sequence' taxon='t5_last' value='?'/>
+			<sequence spec='Sequence' taxon='t152_first' value='?'/>
+			<sequence spec='Sequence' taxon='t152_last' value='?'/>
+			<sequence spec='Sequence' taxon='t87_first' value='?'/>
+			<sequence spec='Sequence' taxon='t87_last' value='?'/>
+			<sequence spec='Sequence' taxon='t167_first' value='?'/>
+			<sequence spec='Sequence' taxon='t113_first' value='?'/>
+			<sequence spec='Sequence' taxon='t113_last' value='?'/>
+			<sequence spec='Sequence' taxon='t126_first' value='?'/>
+			<sequence spec='Sequence' taxon='t221_first' value='?'/>
+			<sequence spec='Sequence' taxon='t202_first' value='?'/>
+			<sequence spec='Sequence' taxon='t202_last' value='?'/>
+			<sequence spec='Sequence' taxon='t169_first' value='?'/>
+			<sequence spec='Sequence' taxon='t234_first' value='?'/>
+			<sequence spec='Sequence' taxon='t234_last' value='?'/>
+			<sequence spec='Sequence' taxon='t223_first' value='?'/>
+			<sequence spec='Sequence' taxon='t223_last' value='?'/>
+			<sequence spec='Sequence' taxon='t79_first' value='?'/>
+			<sequence spec='Sequence' taxon='t79_last' value='?'/>
+			<sequence spec='Sequence' taxon='t53_first' value='?'/>
+			<sequence spec='Sequence' taxon='t181_first' value='?'/>
+			<sequence spec='Sequence' taxon='t224_first' value='?'/>
+			<sequence spec='Sequence' taxon='t8_first' value='?'/>
+			<sequence spec='Sequence' taxon='t165_first' value='?'/>
+			<sequence spec='Sequence' taxon='t90_first' value='?'/>
+			<sequence spec='Sequence' taxon='t214_first' value='?'/>
+			<sequence spec='Sequence' taxon='t179_first' value='?'/>
+			<sequence spec='Sequence' taxon='t179_last' value='?'/>
+			<sequence spec='Sequence' taxon='t168_first' value='?'/>
+			<sequence spec='Sequence' taxon='t48_first' value='?'/>
+			<sequence spec='Sequence' taxon='t6_first' value='?'/>
+			<sequence spec='Sequence' taxon='t68_first' value='?'/>
+			<sequence spec='Sequence' taxon='t208_first' value='?'/>
+			<sequence spec='Sequence' taxon='t208_last' value='?'/>
+			<sequence spec='Sequence' taxon='t107_first' value='?'/>
+			<sequence spec='Sequence' taxon='t177_first' value='?'/>
+			<sequence spec='Sequence' taxon='t177_last' value='?'/>
+			<sequence spec='Sequence' taxon='t170_first' value='?'/>
+			<sequence spec='Sequence' taxon='t170_last' value='?'/>
+			<sequence spec='Sequence' taxon='t203_first' value='?'/>
+			<sequence spec='Sequence' taxon='t203_last' value='?'/>
+			<sequence spec='Sequence' taxon='t82_first' value='?'/>
+			<sequence spec='Sequence' taxon='t82_last' value='?'/>
+			<sequence spec='Sequence' taxon='t1_first' value='?'/>
+			<sequence spec='Sequence' taxon='t1_last' value='?'/>
+			<sequence spec='Sequence' taxon='t40_first' value='?'/>
+			<sequence spec='Sequence' taxon='t213_first' value='?'/>
+			<sequence spec='Sequence' taxon='t67_first' value='?'/>
+			<sequence spec='Sequence' taxon='t88_first' value='?'/>
+			<sequence spec='Sequence' taxon='t88_last' value='?'/>
+			<sequence spec='Sequence' taxon='t233_first' value='?'/>
+			<sequence spec='Sequence' taxon='t73_first' value='?'/>
+			<sequence spec='Sequence' taxon='t73_last' value='?'/>
+			<sequence spec='Sequence' taxon='t180_first' value='?'/>
+			<sequence spec='Sequence' taxon='t180_last' value='?'/>
+			<sequence spec='Sequence' taxon='t36_first' value='?'/>
+			<sequence spec='Sequence' taxon='t23_first' value='?'/>
+			<sequence spec='Sequence' taxon='t23_last' value='?'/>
+			<sequence spec='Sequence' taxon='t239_first' value='?'/>
+			<sequence spec='Sequence' taxon='t239_last' value='?'/>
+			<sequence spec='Sequence' taxon='t50_first' value='?'/>
+			<sequence spec='Sequence' taxon='t142_first' value='?'/>
+			<sequence spec='Sequence' taxon='t57_first' value='?'/>
+			<sequence spec='Sequence' taxon='t57_last' value='?'/>
+			<sequence spec='Sequence' taxon='t162_first' value='?'/>
+			<sequence spec='Sequence' taxon='t162_last' value='?'/>
+			<sequence spec='Sequence' taxon='t207_first' value='?'/>
+			<sequence spec='Sequence' taxon='t147_first' value='?'/>
+			<sequence spec='Sequence' taxon='t148_first' value='?'/>
+			<sequence spec='Sequence' taxon='t143_first' value='?'/>
+			<sequence spec='Sequence' taxon='t20_first' value='?'/>
+			<sequence spec='Sequence' taxon='t144_first' value='?'/>
+			<sequence spec='Sequence' taxon='t220_first' value='?'/>
+			<sequence spec='Sequence' taxon='t3_first' value='?'/>
+			<sequence spec='Sequence' taxon='t3_last' value='?'/>
+			<sequence spec='Sequence' taxon='t10_first' value='?'/>
+			<sequence spec='Sequence' taxon='t81_first' value='?'/>
+			<sequence spec='Sequence' taxon='t133_first' value='?'/>
+			<sequence spec='Sequence' taxon='t133_last' value='?'/>
+			<sequence spec='Sequence' taxon='t135_first' value='?'/>
+			<sequence spec='Sequence' taxon='t135_last' value='?'/>
+			<sequence spec='Sequence' taxon='t95_first' value='?'/>
+			<sequence spec='Sequence' taxon='t171_first' value='?'/>
+			<sequence spec='Sequence' taxon='t91_first' value='?'/>
+			<sequence spec='Sequence' taxon='t209_first' value='?'/>
+			<sequence spec='Sequence' taxon='t132_first' value='?'/>
+			<sequence spec='Sequence' taxon='t228_first' value='?'/>
+			<sequence spec='Sequence' taxon='t228_last' value='?'/>
+			<sequence spec='Sequence' taxon='t166_first' value='?'/>
+			<sequence spec='Sequence' taxon='t166_last' value='?'/>
+			<sequence spec='Sequence' taxon='t192_first' value='?'/>
+			<sequence spec='Sequence' taxon='t192_last' value='?'/>
+			<sequence spec='Sequence' taxon='t158_first' value='?'/>
+			<sequence spec='Sequence' taxon='t89_first' value='?'/>
+			<sequence spec='Sequence' taxon='t230_first' value='?'/>
+			<sequence spec='Sequence' taxon='t55_first' value='?'/>
+			<sequence spec='Sequence' taxon='t30_first' value='?'/>
+			<sequence spec='Sequence' taxon='t66_first' value='?'/>
+			<sequence spec='Sequence' taxon='t99_first' value='?'/>
+			<sequence spec='Sequence' taxon='t172_first' value='?'/>
+			<sequence spec='Sequence' taxon='t172_last' value='?'/>
+			<sequence spec='Sequence' taxon='t84_first' value='?'/>
+			<sequence spec='Sequence' taxon='t141_first' value='?'/>
+			<sequence spec='Sequence' taxon='t150_first' value='?'/>
+			<sequence spec='Sequence' taxon='t130_first' value='?'/>
+			<sequence spec='Sequence' taxon='t70_first' value='?'/>
+			<sequence spec='Sequence' taxon='t65_first' value='?'/>
+			<sequence spec='Sequence' taxon='t85_first' value='?'/>
+			<sequence spec='Sequence' taxon='t85_last' value='?'/>
+			<sequence spec='Sequence' taxon='t105_first' value='?'/>
+			<sequence spec='Sequence' taxon='t140_first' value='?'/>
+			<sequence spec='Sequence' taxon='t182_first' value='?'/>
+			<sequence spec='Sequence' taxon='t111_first' value='?'/>
+			<sequence spec='Sequence' taxon='t243_first' value='?'/>
+			<sequence spec='Sequence' taxon='t243_last' value='?'/>
+			<sequence spec='Sequence' taxon='t205_first' value='?'/>
+			<sequence spec='Sequence' taxon='t45_first' value='?'/>
+			<sequence spec='Sequence' taxon='t178_first' value='?'/>
+			<sequence spec='Sequence' taxon='t178_last' value='?'/>
+			<sequence spec='Sequence' taxon='t101_first' value='?'/>
+			<sequence spec='Sequence' taxon='t101_last' value='?'/>
+			<sequence spec='Sequence' taxon='t193_first' value='?'/>
+			<sequence spec='Sequence' taxon='t62_first' value='?'/>
+			<sequence spec='Sequence' taxon='t151_first' value='?'/>
+			<sequence spec='Sequence' taxon='t33_first' value='?'/>
+			<sequence spec='Sequence' taxon='t33_last' value='?'/>
+			<sequence spec='Sequence' taxon='t31_first' value='?'/>
+			<sequence spec='Sequence' taxon='t31_last' value='?'/>
+			<sequence spec='Sequence' taxon='t22_first' value='?'/>
+			<sequence spec='Sequence' taxon='t117_first' value='?'/>
+			<sequence spec='Sequence' taxon='t98_first' value='?'/>
+			<sequence spec='Sequence' taxon='t98_last' value='?'/>
+			<sequence spec='Sequence' taxon='t93_first' value='?'/>
+			<sequence spec='Sequence' taxon='t186_first' value='?'/>
+			<sequence spec='Sequence' taxon='t64_first' value='?'/>
+			<sequence spec='Sequence' taxon='t226_first' value='?'/>
+        </data>
+
+        <siteModel spec='SiteModel' id="siteModel_dna" gammaCategoryCount='1'>
+            <substModel spec='JukesCantor' id='JC69'/>
+        </siteModel>
+
+        <branchRateModel id="StrictClock_dna" spec="beast.base.evolution.branchratemodel.StrictClockModel">
+            <parameter dimension="1" estimate="false" id="clockRate_dna" minordimension="1" name="clock.rate" value="0.01"/>
+        </branchRateModel>
+    </run>
+
+
+</beast>
