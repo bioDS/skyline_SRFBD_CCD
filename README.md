@@ -1,12 +1,5 @@
-Use `build_TreeSim.sh` to use `TreeSim_2.4.tar.gz` to access the **sim.rateshift.age** function for simulating trees. 
+Use `Rscript find_ccd_trees_simulations.R four_interval_simulation` to find MCC and CCD MAP trees for simulated trees with four skyline intervals, or `Rscript find_ccd_trees_simulations.R one_interval_simulation` to do the same for simulated trees with one interval (so using constant diversification rates).
 
-The `simulate_trees.R` produces 200 trees with one skyline interval (so uses constant rates for simulations).
+We apply a 10% burn-in to simulated trees, and only create the MAP trees if the posterior ESS after burn-in is at least 625.
 
-`templates/ssRanges_inference_template_one_int.xml` provides the basic XML used to generate analysis files for each simulated tree.
-
-The rates used in each simulation is saved in `true_rates.csv`. The trees are saved in `simulated_trees/200_trees.out`.
-
-For each tree index from 0 to 199, there is a subfolder in `inf` which contains the generated XML, and resulting log and tree files.
-
-The XML files are run using `slurm-inferences.sh`. `ssr.jar` is used to access the ssRanges BEAST2 package.
-
+The `crocodilians` and `penguins` folders contain the MCC and CCD MAP trees for their respective empirical datasets.
