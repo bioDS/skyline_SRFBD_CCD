@@ -3,7 +3,7 @@
 # for sRanges runs
 #
 # Usage:
-#   Rscript find_ccd_trees_simulations.R PARENT [MODE]
+#   Rscript find_ccd_trees_simulations.R PARENT [MODE] [test]
 #
 #   PARENT: four_interval_simulation, one_interval_simulation,
 #           or a full path to either
@@ -12,14 +12,19 @@
 #                        the CCD and MCC trees where ESS > ess_cut
 #           both       - compute ESS and build the trees in one pass (default)
 #           rf         - read ess_summary.csv and compute the RF distances
-#                        between the CCD and translated MCC trees where
+#                        between the CCD, translated MCC and true trees where
 #                        ESS > ess_cut
 #           all        - ESS, trees and RF distances in one pass
+#   test:   optional debugging run on simulation test_sim only (default 1):
+#           its ESS is always computed, the ESS cut is ignored, and the
+#           summaries go to ess_summary_test.csv / rf_summary_test.csv so the
+#           full-run summaries are left untouched
 #
 # Examples:
 #   Rscript find_ccd_trees_simulations.R four_interval_simulation ess
 #   Rscript find_ccd_trees_simulations.R four_interval_simulation fossirange
 #   Rscript find_ccd_trees_simulations.R four_interval_simulation rf
+#   Rscript find_ccd_trees_simulations.R four_interval_simulation all test
 #
 # ESS mode, for every PARENT/inf/<i>/sRanges.42.log:
 #   - discards the first 10% of samples as burn-in
@@ -35,18 +40,25 @@
 #              (only when the MCC tree was built)
 # RF mode, for each eligible PARENT/inf/<i>/:
 #   python compute_rf.py <sim_dir> ccd_1_map_sRanges_42.tre
-#              mcc_sRanges_42_translated.tre <helper_dir>
-#   - RF (robinson_foulds_ccd), RF normalised by the total number of clades
-#     in both trees, and extended RF (kind = "sranges")
-#   - writes PARENT/inf/<i>/rf_distance.csv
+#              mcc_sRanges_42_translated.tre <helper_dir> <true_trees> <line>
+#   - three pairs: ccd_mcc (CCD vs MCC), true_ccd (true vs CCD) and
+#     true_mcc (true vs MCC)
+#   - the true tree of simulation i is line (i - true_first_sim + 1) of the
+#     true trees file (PARENT/out: one Newick string per line). The script
+#     stops if that file can't be found.
+#   - per pair: RF (robinson_foulds_ccd), RF normalised by the total number
+#     of clades in both trees, and extended RF (kind = "sranges") with
+#     clades and with splits
+#   - writes PARENT/inf/<i>/rf_distance.csv (one row per pair)
 #   - needs brokilon in the python on PATH, and renumber_trees.py and
 #     annotate_tree.py in helper_dir
 # The summary table PARENT/inf/ess_summary.csv
 # (sim, posterior_ess, status, ccd_status, mcc_status, translate_status,
-#  rf, rf_norm, ext_rf, rf_status)
+#  rf_status, then rf_<pair>, rf_norm_<pair>, ext_rf_clades_<pair>,
+#  ext_rf_splits_<pair> for each pair)
 # is written by every mode. The rf and all modes also write
-# PARENT/inf/rf_summary.csv (sim, posterior_ess, rf, rf_norm, ext_rf),
-# one row per simulation whose RF distances were computed.
+# PARENT/inf/rf_summary.csv (sim, posterior_ess, rf_status and the RF
+# columns), one row per simulation where at least one pair was computed.
 ######################################################
 library(coda)
 
@@ -69,6 +81,19 @@ python_bin       <- "python"   # the python on PATH (e.g. your conda env)
 rf_script   <- file.path(base_dir, "compute_rf.py")
 helper_dir  <- base_dir
 rf_out_name <- "rf_distance.csv"
+# True trees: one Newick string per line, relative to PARENT. May be the
+# file itself or a folder holding exactly one file.
+true_trees_path <- file.path("out_oriented")
+true_first_sim  <- 1   # simulation number whose true tree is on line 1
+test_sim        <- 1   # simulation processed when run with the 'test' argument
+
+# tree pairs compared by compute_rf.py, and the columns stored for each
+rf_pairs     <- c("ccd_mcc", "true_ccd", "true_mcc")
+rf_fields    <- c("rf", "rf_norm", "ext_rf_clades", "ext_rf_splits")
+rf_cols      <- as.vector(outer(rf_fields, rf_pairs, paste, sep = "_"))
+rf_num_cols  <- rf_cols[!startsWith(rf_cols, "ext_")]
+rf_chr_cols  <- rf_cols[startsWith(rf_cols, "ext_")]
+legacy_cols  <- c("rf", "rf_norm", "ext_rf")   # from the CCD-vs-MCC-only version
 
 ######################################################
 # Arguments and paths
@@ -76,11 +101,14 @@ rf_out_name <- "rf_distance.csv"
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 1)
   stop("Usage: Rscript find_ccd_trees_simulations.R PARENT [",
-       paste(modes, collapse = "|"), "]")
+       paste(modes, collapse = "|"), "] [test]")
 
 mode <- if (length(args) >= 2) tolower(args[2]) else "both"
 if (!mode %in% modes)
   stop("MODE must be one of: ", paste(modes, collapse = ", "))
+test_mode <- length(args) >= 3 && tolower(args[3]) == "test"
+if (length(args) >= 3 && !test_mode)
+  stop("Third argument must be 'test' (got '", args[3], "')")
 
 do_ess   <- mode %in% c("ess", "both", "all")
 do_trees <- mode %in% c("fossirange", "both", "all")
@@ -94,8 +122,9 @@ if (!dir.exists(parent)) parent <- paste0(base_dir, basename(parent))
 parent  <- normalizePath(parent, mustWork = TRUE)   # absolute, so setwd can't break it
 inf_dir <- file.path(parent, "inf")
 if (!dir.exists(inf_dir)) stop("No inference folder at ", inf_dir)
-summary_file <- file.path(inf_dir, "ess_summary.csv")
-rf_summary_file <- file.path(inf_dir, "rf_summary.csv")
+suffix <- if (test_mode) "_test" else ""
+summary_file    <- file.path(inf_dir, paste0("ess_summary", suffix, ".csv"))
+rf_summary_file <- file.path(inf_dir, paste0("rf_summary", suffix, ".csv"))
 
 if (do_trees || do_rf) {
   if (Sys.which(python_bin) == "")
@@ -110,6 +139,22 @@ if (do_trees) {
     stop("translate_tree.py not found at ", translate_script)
   translate_script <- normalizePath(translate_script)   # absolute, used after setwd
 }
+
+# the true trees file; stops if it can't be found
+find_true_trees <- function() {
+  p <- file.path(parent, true_trees_path)
+  if (dir.exists(p)) {
+    f <- list.files(p, full.names = TRUE)
+    f <- f[!dir.exists(f)]
+    if (length(f) == 1) return(normalizePath(f))
+    stop("Expected one true trees file in ", p, ", found ", length(f),
+         " - set true_trees_path to the file")
+  }
+  if (file.exists(p)) return(normalizePath(p))
+  stop("No true trees file at ", p)
+}
+
+true_trees_file <- NA_character_
 if (do_rf) {
   if (!file.exists(rf_script))
     stop("compute_rf.py not found at ", rf_script)
@@ -118,9 +163,11 @@ if (do_rf) {
       stop(h, " not found in ", helper_dir)
   rf_script  <- normalizePath(rf_script)
   helper_dir <- normalizePath(helper_dir)
+  true_trees_file <- find_true_trees()
 }
 
-cat(basename(parent), "- mode:", mode, "\n")
+cat(basename(parent), "- mode:", mode,
+    if (test_mode) paste0("(TEST: simulation ", test_sim, " only)"), "\n")
 
 ######################################################
 # Helpers
@@ -181,10 +228,51 @@ run_translate <- function(sim_dir)
              c(shQuote(translate_script), mcc_name, translated_name),
              "translate")
 
-# RF distances between the CCD and translated MCC trees of one folder.
-# Returns list(rf, rf_norm, ext_rf, status).
-run_rf <- function(sim_dir) {
-  res <- list(rf = NA_real_, rf_norm = NA_real_, ext_rf = "", status = "")
+# empty RF values: NA for the numeric columns, "" for the extended RF ones
+empty_rf_values <- function() {
+  v <- vector("list", length(rf_cols))
+  names(v) <- rf_cols
+  for (col in rf_num_cols) v[[col]] <- NA_real_
+  for (col in rf_chr_cols) v[[col]] <- ""
+  v
+}
+
+# add any missing RF columns (and drop those of the older version)
+init_rf_cols <- function(df) {
+  df[intersect(legacy_cols, names(df))] <- NULL
+  for (col in rf_num_cols) {
+    if (!col %in% names(df)) df[[col]] <- NA_real_
+    df[[col]] <- suppressWarnings(as.numeric(df[[col]]))
+  }
+  for (col in rf_chr_cols) {
+    if (!col %in% names(df)) df[[col]] <- ""
+    df[[col]] <- ifelse(is.na(df[[col]]), "", as.character(df[[col]]))
+  }
+  df
+}
+
+# write a summary CSV with quotes only around rf_status (and around any other
+# text column that holds a comma, quote or newline, which would otherwise
+# break the CSV). Extended RF values that are numbers are written as numbers.
+write_summary <- function(df, file) {
+  for (col in intersect(rf_chr_cols, names(df))) {
+    x   <- df[[col]]
+    num <- suppressWarnings(as.numeric(x))
+    if (all(is.na(num) == (is.na(x) | x == ""))) df[[col]] <- num
+  }
+  needs_quotes <- vapply(df, function(x) is.character(x) && any(grepl('[,"\n]', x)),
+                         logical(1))
+  q <- which(names(df) == "rf_status" | needs_quotes)
+  writeLines(paste(names(df), collapse = ","), file)   # header without quotes
+  write.table(df, file, sep = ",", row.names = FALSE, col.names = FALSE,
+              quote = if (length(q)) q else FALSE, qmethod = "double",
+              append = TRUE)
+}
+
+# RF distances between the CCD, translated MCC and true trees of one folder.
+# Returns list(values = named list over rf_cols, status).
+run_rf <- function(sim_dir, sim) {
+  res <- list(values = empty_rf_values(), status = "")
   for (f in c(out_name, translated_name))
     if (!file.exists(file.path(sim_dir, f))) {
       res$status <- paste("no", f)
@@ -195,39 +283,63 @@ run_rf <- function(sim_dir) {
     res$status <- paste0("rf failed (could not remove old ", rf_out_name, ")")
     return(res)
   }
+
+  py_args <- c(shQuote(rf_script), shQuote(sim_dir),
+               out_name, translated_name, shQuote(helper_dir))
+  true_line <- sim - true_first_sim + 1
+  if (!is.na(true_trees_file) && true_line >= 1)
+    py_args <- c(py_args, shQuote(true_trees_file), true_line)
+
   out <- tryCatch(
-    suppressWarnings(system2(python_bin,
-                             c(shQuote(rf_script), shQuote(sim_dir),
-                               out_name, translated_name, shQuote(helper_dir)),
-                             stdout = TRUE, stderr = "")),
+    suppressWarnings(system2(python_bin, py_args, stdout = TRUE, stderr = "")),
     error = function(e) { message(conditionMessage(e)); NULL })
   if (is.null(out)) { res$status <- "rf failed (could not run python)"; return(res) }
 
-  # echo the script's own output, minus the machine-readable line
-  shown <- out[!startsWith(out, "RF_RESULT\t")]
-  if (length(shown)) cat(paste0("    ", shown), sep = "\n")
+  # echo the script's own output, minus the machine-readable lines
+  is_result <- startsWith(out, "RF_RESULT\t")
+  if (any(!is_result)) cat(paste0("    ", out[!is_result]), sep = "\n")
 
   exit <- attr(out, "status")
-  line <- tail(out[startsWith(out, "RF_RESULT\t")], 1)
-  if ((!is.null(exit) && exit != 0) || length(line) == 0) {
+  if ((!is.null(exit) && exit != 0) || !any(is_result)) {
     res$status <- paste0("rf failed (exit ", if (is.null(exit)) 0 else exit, ")")
     return(res)
   }
-  fields <- strsplit(line, "\t", fixed = TRUE)[[1]]
-  res$rf      <- suppressWarnings(as.numeric(fields[2]))
-  res$rf_norm <- suppressWarnings(as.numeric(fields[3]))
-  res$ext_rf  <- paste(fields[-(1:3)], collapse = "\t")
-  res$status  <- "rf run"
+
+  # RF_RESULT <pair> <status> <rf> <rf_norm> <ext_rf_clades> <ext_rf_splits>
+  pair_status <- setNames(rep("not reported", length(rf_pairs)), rf_pairs)
+  for (line in out[is_result]) {
+    f <- strsplit(line, "\t", fixed = TRUE)[[1]]
+    if (length(f) < 7 || !f[2] %in% rf_pairs) next
+    p <- f[2]
+    pair_status[p] <- f[3]
+    if (f[3] != "ok") next
+    res$values[[paste0("rf_", p)]]            <- suppressWarnings(as.numeric(f[4]))
+    res$values[[paste0("rf_norm_", p)]]       <- suppressWarnings(as.numeric(f[5]))
+    res$values[[paste0("ext_rf_clades_", p)]] <- f[6]
+    res$values[[paste0("ext_rf_splits_", p)]] <- f[7]
+  }
+
+  n_ok   <- sum(pair_status == "ok")
+  detail <- paste(paste0(names(pair_status), ": ", pair_status), collapse = "; ")
+  res$status <- if (n_ok == length(rf_pairs)) "rf run"
+                else if (n_ok > 0) paste0("rf partial (", detail, ")")
+                else paste0("rf failed (", detail, ")")
   res
 }
 
 ######################################################
-# Get ESS: compute it (ess / both / all) or read it back (fossirange / rf)
+# Get ESS: compute it (ess / both / all, or any mode in test) or read it
+# back (fossirange / rf)
 ######################################################
-if (do_ess) {
+if (do_ess || test_mode) {
   sims <- list.dirs(inf_dir, full.names = FALSE, recursive = FALSE)
   sims <- sims[grepl("^[0-9]+$", sims)]
   sims <- sims[order(as.integer(sims))]
+  if (test_mode) {
+    sims <- sims[as.integer(sims) == test_sim]
+    if (length(sims) == 0)
+      stop("No simulation folder ", file.path(inf_dir, test_sim))
+  }
   cat(length(sims), "simulation folder(s)\n")
 
   summary_df <- do.call(rbind, lapply(sims, function(i) {
@@ -238,11 +350,9 @@ if (do_ess) {
   summary_df$ccd_status <- ""
   summary_df$mcc_status <- ""
   summary_df$translate_status <- ""
-  summary_df$rf <- NA_real_
-  summary_df$rf_norm <- NA_real_
-  summary_df$ext_rf <- ""
   summary_df$rf_status <- ""
-  write.csv(summary_df, summary_file, row.names = FALSE)
+  summary_df <- init_rf_cols(summary_df)
+  write_summary(summary_df, summary_file)
   cat("ESS summary written to", summary_file, "\n")
 } else {
   if (!file.exists(summary_file))
@@ -251,19 +361,20 @@ if (do_ess) {
   if (!all(c("sim", "posterior_ess") %in% names(summary_df)))
     stop(summary_file, " needs columns sim and posterior_ess")
   for (col in c("status", "ccd_status", "mcc_status", "translate_status",
-                "ext_rf", "rf_status")) {
+                "rf_status")) {
     if (!col %in% names(summary_df)) summary_df[[col]] <- ""
     summary_df[[col]] <- ifelse(is.na(summary_df[[col]]), "",
                                 as.character(summary_df[[col]]))
   }
-  for (col in c("rf", "rf_norm")) {
-    if (!col %in% names(summary_df)) summary_df[[col]] <- NA_real_
-    summary_df[[col]] <- suppressWarnings(as.numeric(summary_df[[col]]))
-  }
+  summary_df <- init_rf_cols(summary_df)
   cat("Read ESS for", nrow(summary_df), "simulation(s) from", summary_file, "\n")
 }
 
 todo <- which(!is.na(summary_df$posterior_ess) & summary_df$posterior_ess > ess_cut)
+if (test_mode) {
+  todo <- seq_len(nrow(summary_df))   # the test simulation, whatever its ESS
+  cat("TEST: ESS cut ignored for simulation", test_sim, "\n")
+}
 
 ######################################################
 # Build CCD (fossirange) and MCC (SRTreeAnnotator) trees where ESS > ess_cut
@@ -293,7 +404,7 @@ if (do_trees) {
                                   summary_df$translate_status[r], sep = "; ")
   }
 
-  write.csv(summary_df, summary_file, row.names = FALSE)
+  write_summary(summary_df, summary_file)
   cat("\nfossirange run in", sum(summary_df$ccd_status == "fossirange run"), "of",
       length(todo), "eligible folder(s)\n")
   cat("SRTreeAnnotator run in", sum(summary_df$mcc_status == "mcc run"), "of",
@@ -304,42 +415,44 @@ if (do_trees) {
 }
 
 ######################################################
-# RF distance between CCD and translated MCC trees where ESS > ess_cut
+# RF distances (CCD vs MCC, true vs CCD, true vs MCC) where ESS > ess_cut
 ######################################################
 if (do_rf) {
   cat("\nComputing RF distances for", length(todo), "of", nrow(summary_df),
       "simulation(s) with ESS >", ess_cut, "\n")
+  if (!is.na(true_trees_file)) cat("True trees from", true_trees_file, "\n")
 
   for (r in todo) {
     i       <- summary_df$sim[r]
     sim_dir <- file.path(inf_dir, i)
     cat("sim", i, ":\n")
 
-    res <- run_rf(sim_dir)
-    summary_df$rf[r]        <- res$rf
-    summary_df$rf_norm[r]   <- res$rf_norm
-    summary_df$ext_rf[r]    <- res$ext_rf
+    res <- run_rf(sim_dir, i)
+    for (col in rf_cols) summary_df[[col]][r] <- res$values[[col]]
     summary_df$rf_status[r] <- res$status
-    cat("  RF:", res$status,
-        if (res$status == "rf run")
-          paste0("- RF = ", res$rf, ", normalised = ", signif(res$rf_norm, 4),
-                 ", extended = ", res$ext_rf),
-        "\n")
+    cat("  RF:", res$status, "\n")
   }
 
-  write.csv(summary_df, summary_file, row.names = FALSE)
-  cat("\nRF computed in", sum(summary_df$rf_status == "rf run"), "of",
-      length(todo), "eligible folder(s)\n")
+  write_summary(summary_df, summary_file)
+  ran <- startsWith(summary_df$rf_status, "rf run") |
+         startsWith(summary_df$rf_status, "rf partial")
+  cat("\nRF computed for all pairs in", sum(summary_df$rf_status == "rf run"),
+      "and some pairs in", sum(startsWith(summary_df$rf_status, "rf partial")),
+      "of", length(todo), "eligible folder(s)\n")
   cat("Summary updated in", summary_file, "\n")
 
-  # one table of every tree pair processed successfully
-  done <- summary_df[summary_df$rf_status == "rf run",
-                     c("sim", "posterior_ess", "rf", "rf_norm", "ext_rf"),
+  # one table of every simulation with at least one pair computed
+  done <- summary_df[ran, c("sim", "posterior_ess", "rf_status", rf_cols),
                      drop = FALSE]
   done <- done[order(done$sim), , drop = FALSE]
-  write.csv(done, rf_summary_file, row.names = FALSE)
+  write_summary(done, rf_summary_file)
   cat("RF results for", nrow(done), "simulation(s) written to", rf_summary_file, "\n")
-  if (nrow(done) > 0)
-    cat("  mean RF =", signif(mean(done$rf, na.rm = TRUE), 4),
-        "; mean normalised RF =", signif(mean(done$rf_norm, na.rm = TRUE), 4), "\n")
+  for (p in rf_pairs) {
+    rf_p <- done[[paste0("rf_", p)]]
+    if (sum(!is.na(rf_p)) == 0) next
+    cat("  ", p, ": n =", sum(!is.na(rf_p)),
+        "; mean RF =", signif(mean(rf_p, na.rm = TRUE), 4),
+        "; mean normalised RF =",
+        signif(mean(done[[paste0("rf_norm_", p)]], na.rm = TRUE), 4), "\n")
+  }
 }
