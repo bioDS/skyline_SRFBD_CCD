@@ -42,7 +42,7 @@ Rscript find_ccd_trees_simulations.R one_interval_simulation rf
   - Penguins runs: `chronostratigraphic`, `constant`, `equal`.
   - Crocodilians runs: `chronostratigraphic`, `constant`.
 - `find_ccd_trees_simulations.R <simulation> both` applies a 10% burn-in to each
-  simulated posterior and, if the posterior ESS after burn-in is at least 625,
+  simulated posterior and, if the posterior ESS after burn-in is above 625,
   builds the CCD MAP tree with `fossirange`. The simulated trees and their
   posteriors are made with the setup in
   [bioDS/skyline-SRFBD-validation](https://github.com/bioDS/skyline-SRFBD-validation).
@@ -83,16 +83,66 @@ Both RF scripts compare each CCD MAP tree with its MCC tree:
 
 `calculate_RF_penguins_and_crocs.py` prints these values for all five empirical
 runs: penguins `chronostratigraphic`, `constant` and `equal`, and crocodilians
-`chronostratigraphic` and `constant`. `find_ccd_trees_simulations.R <simulation>
-rf` runs `compute_rf.py` in each simulation folder, which writes
-`rf_distance.csv` (`rf`, `rf_norm`, `ext_rf`) to that folder.
+`chronostratigraphic` and `constant`.
+
+For the simulated datasets, `find_ccd_trees_simulations.R <simulation> rf` runs
+`compute_rf.py` in each simulation folder with posterior ESS above 625. It
+compares three pairs of trees:
+
+| Pair       | Trees compared                              |
+|------------|---------------------------------------------|
+| `ccd_mcc`  | CCD MAP tree vs translated MCC tree         |
+| `true_ccd` | true (simulated) tree vs CCD MAP tree       |
+| `true_mcc` | true (simulated) tree vs translated MCC tree |
+
+The true tree of simulation *i* is line *i* of `<simulation>/out_oriented`. This
+file holds the simulated trees with orientation and `ancestral_range` metadata
+added, and is made by `simulate.R` or `annotate_true_trees.R` in
+skyline-SRFBD-validation. `compute_rf.py` saves the true tree in the simulation
+folder as `true_tree.tre`.
+
+Each simulation folder gets an `rf_distance.csv` with one row per pair
+(`pair`, `status`, `rf`, `rf_norm`, `ext_rf_clades`, `ext_rf_splits`).
+
+#### `rf_summary.csv`
+
+`<simulation>/inf/rf_summary.csv` collects the results of all simulations in
+one table. It has one row per simulation where at least one pair was
+calculated, sorted by simulation number. Its columns are:
+
+| Column                 | Description |
+|------------------------|-------------|
+| `sim`                  | Simulation number (the folder `inf/<sim>`). |
+| `posterior_ess`        | Posterior ESS after 10% burn-in. |
+| `rf_status`            | `rf run` when all three pairs were calculated. Otherwise `rf partial (...)`, with the status of each pair in brackets. |
+| `rf_<pair>`            | RF distance (`robinson_foulds_ccd`). |
+| `rf_norm_<pair>`       | RF divided by the total number of clades in both trees. |
+| `ext_rf_clades_<pair>` | Extended sampled-ancestor RF (`kind="sranges"`) using clades. |
+| `ext_rf_splits_<pair>` | Extended sampled-ancestor RF (`kind="sranges"`) using splits. |
+
+`<pair>` is `ccd_mcc`, `true_ccd` or `true_mcc`, so there are four columns per
+pair, in that order. A pair that could not be calculated has `NA` in its
+columns, and the reason appears in `rf_status`. Only `rf_status` is quoted in
+the file.
+
+The same RF columns are also added to `<simulation>/inf/ess_summary.csv`. That
+file has a row for every simulation, including those below the ESS cut, and
+also has the tree-building status columns.
+
+When the script is run with `test` (for example
+`Rscript find_ccd_trees_simulations.R four_interval_simulation rf test`), only
+simulation 1 is processed, whatever its ESS. The results go to
+`rf_summary_test.csv` and `ess_summary_test.csv`, so the full summaries are
+left unchanged.
 
 ## Folders
 
 - `penguins/`, `crocodilians/`: posterior tree files, CCD MAP trees, MCC trees,
   formatted MCC trees and renumbered trees for the empirical datasets.
-- `four_interval_simulation/`, `one_interval_simulation/`: per-simulation
-  summary trees and `rf_distance.csv` files.
+- `four_interval_simulation/`, `one_interval_simulation/`: the true trees
+  (`out_oriented`), per-simulation summary trees and `rf_distance.csv` files
+  in `inf/<sim>/`, and the `ess_summary.csv` and `rf_summary.csv` tables in
+  `inf/`.
 
 ## Requirements
 
