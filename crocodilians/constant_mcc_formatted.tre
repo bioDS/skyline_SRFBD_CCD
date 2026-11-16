@@ -1,0 +1,365 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=176;
+		Taxlabels
+			Acynodon_iberoccitanus_first
+			Acynodon_iberoccitanus_last
+			Alligator_mcgrewi_first
+			Alligator_mefferdi_first
+			Alligator_mississippiensis_first
+			Alligator_mississippiensis_last
+			Alligator_sinensis_first
+			Alligator_sinensis_last
+			Allodaposuchus_megadontos_first
+			Allodaposuchus_palustris_first
+			Argochampsa_krebsi_first
+			Argochampsa_krebsi_last
+			Asiatosuchus_depressifrons_first
+			Asiatosuchus_depressifrons_last
+			Asiatosuchus_germanicus_first
+			Asiatosuchus_germanicus_last
+			Australosuchus_clarkae_first
+			Australosuchus_clarkae_last
+			Baru_darrowi_first
+			Baru_darrowi_last
+			Baru_huberi_first
+			Baru_ultimus_first
+			Baru_wickeni_first
+			Baru_wickeni_last
+			Bernissartia_fagesii_first
+			Bernissartia_fagesii_last
+			Borealosuchus_acutidentatus_first
+			Borealosuchus_formidabilis_first
+			Borealosuchus_formidabilis_last
+			Borealosuchus_sternbergii_first
+			Borealosuchus_sternbergii_last
+			Borealosuchus_wilsoni_first
+			Boverisuchus_vorax_first
+			Boverisuchus_vorax_last
+			Brachychampsa_montana_first
+			Brachychampsa_montana_last
+			Brachyuranochampsa_eversolei_first
+			Brochuchus_pigotti_first
+			Brochuchus_pigotti_last
+			Caiman_crocodilus_first
+			Caiman_crocodilus_last
+			Caiman_latirostris_first
+			Caiman_latirostris_last
+			Caiman_wannlangstoni_first
+			Caiman_wannlangstoni_last
+			Caiman_yacare_first
+			Caiman_yacare_last
+			Crocodylus_acer_first
+			Crocodylus_acutus_first
+			Crocodylus_acutus_last
+			Crocodylus_affinis_first
+			Crocodylus_affinis_last
+			Crocodylus_anthropophagus_first
+			Crocodylus_anthropophagus_last
+			Crocodylus_checchiai_first
+			Crocodylus_checchiai_last
+			Crocodylus_falconensis_first
+			Crocodylus_intermedius_first
+			Crocodylus_johnstoni_first
+			Crocodylus_johnstoni_last
+			Crocodylus_megarhinus_first
+			Crocodylus_mindorensis_first
+			Crocodylus_moreletii_first
+			Crocodylus_moreletii_last
+			Crocodylus_niloticus_first
+			Crocodylus_niloticus_last
+			Crocodylus_novaeguineae_first
+			Crocodylus_palaeindicus_first
+			Crocodylus_palaeindicus_last
+			Crocodylus_palustris_first
+			Crocodylus_palustris_last
+			Crocodylus_porosus_first
+			Crocodylus_porosus_last
+			Crocodylus_rhombifer_first
+			Crocodylus_rhombifer_last
+			Crocodylus_siamensis_first
+			Crocodylus_siamensis_last
+			Crocodylus_suchus_first
+			Crocodylus_thorbjarnarsoni_first
+			Crocodylus_thorbjarnarsoni_last
+			Crocodylus_warrithandru_first
+			Diplocynodon_darwini_first
+			Diplocynodon_hantoniensis_first
+			Diplocynodon_ratelii_first
+			Diplocynodon_ratelii_last
+			Dollosuchoides_densmorei_first
+			Eocaiman_cavernensis_first
+			Eogavialis_africanus_first
+			Eosuchus_lerichei_first
+			Eosuchus_minor_first
+			Eosuchus_minor_last
+			Eothoracosaurus_mississippiensis_first
+			Eothoracosaurus_mississippiensis_last
+			Euthecodon_arambourgii_first
+			Euthecodon_brumpti_first
+			Euthecodon_brumpti_last
+			Gavialis_bengawanicus_first
+			Gavialis_bengawanicus_last
+			Gavialis_browni_first
+			Gavialis_gangeticus_first
+			Gavialis_gangeticus_last
+			Gavialosuchus_americanus_first
+			Gavialosuchus_americanus_last
+			Gavialosuchus_eggenbergensis_first
+			Gnatusuchus_pebasensis_first
+			Gnatusuchus_pebasensis_last
+			Goniopholis_ssp_first
+			Gryposuchus_colombianus_first
+			Gryposuchus_colombianus_last
+			Gryposuchus_pachakamue_first
+			Gryposuchus_pachakamue_last
+			Harpacochampsa_camfieldensis_first
+			Hylaeochampsa_vectiana_first
+			Ikanogavialis_gameroi_first
+			Ikanogavialis_gameroi_last
+			Kalthifrons_aurivellensis_first
+			Kambara_implexidens_first
+			Kambara_murgonensis_first
+			Kambara_taraina_first
+			Kentisuchus_spenceri_first
+			Kentisuchus_spenceri_last
+			Leidyosuchus_canadensis_first
+			Leidyosuchus_canadensis_last
+			Maroccosuchus_zennaroi_first
+			Maroccosuchus_zennaroi_last
+			Mecistops_cataphractus_first
+			Mekobaru_megiriani_first
+			Mekosuchus_inexpectatus_first
+			Mekosuchus_inexpectatus_last
+			Mekosuchus_sanderi_first
+			Mekosuchus_whitehunterensis_first
+			Melanosuchus_fischeri_first
+			Melanosuchus_niger_first
+			Navajosuchus_mooki_first
+			Navajosuchus_mooki_last
+			Osteolaemus_osborni_first
+			Osteolaemus_tetraspis_first
+			Paleosuchus_palpebrosus_first
+			Paleosuchus_trigonatus_first
+			Paludirex_gracilis_first
+			Paratomistoma_courtii_first
+			Penghusuchus_pani_first
+			Piscogavialis_jugaliperforatus_first
+			Piscogavialis_jugaliperforatus_last
+			Planocrania_datangensis_first
+			Planocrania_hengdongensis_first
+			Procaimanoidea_kayi_first
+			Procaimanoidea_kayi_last
+			Prodiplocynodon_langi_first
+			Purussaurus_neivensis_first
+			Purussaurus_neivensis_last
+			Quinkana_fortirostrum_first
+			Quinkana_meboldi_first
+			Quinkana_timara_first
+			Quinkana_timara_last
+			Rimasuchus_lloydi_first
+			Shamosuchus_djadochtaensis_first
+			Shamosuchus_djadochtaensis_last
+			Stangerochampsa_mccabei_first
+			Thoracosaurus_macrorhynchus_first
+			Thoracosaurus_macrorhynchus_last
+			Thoracosaurus_neocesariensis_first
+			Thoracosaurus_neocesariensis_last
+			Tomistoma_cairense_first
+			Tomistoma_lusitanica_first
+			Tomistoma_lusitanica_last
+			Tomistoma_schlegelii_first
+			Toyotamaphimeia_machikanensis_first
+			Trilophosuchus_rackhami_first
+			Tsoabichi_greenriverensis_first
+			Tsoabichi_greenriverensis_last
+			Voay_robustus_first
+			Voay_robustus_last
+			Volia_athollandersoni_first
+			Volia_athollandersoni_last
+			Wannaganosuchus_brachymanus_first
+			;
+End;
+Begin trees;
+	Translate
+		     1 Acynodon_iberoccitanus_first,
+		     2 Acynodon_iberoccitanus_last,
+		     3 Alligator_mcgrewi_first,
+		     4 Alligator_mefferdi_first,
+		     5 Alligator_mississippiensis_first,
+		     6 Alligator_mississippiensis_last,
+		     7 Alligator_sinensis_first,
+		     8 Alligator_sinensis_last,
+		     9 Allodaposuchus_megadontos_first,
+		    10 Allodaposuchus_palustris_first,
+		    11 Argochampsa_krebsi_first,
+		    12 Argochampsa_krebsi_last,
+		    13 Asiatosuchus_depressifrons_first,
+		    14 Asiatosuchus_depressifrons_last,
+		    15 Asiatosuchus_germanicus_first,
+		    16 Asiatosuchus_germanicus_last,
+		    17 Australosuchus_clarkae_first,
+		    18 Australosuchus_clarkae_last,
+		    19 Baru_darrowi_first,
+		    20 Baru_darrowi_last,
+		    21 Baru_huberi_first,
+		    22 Baru_ultimus_first,
+		    23 Baru_wickeni_first,
+		    24 Baru_wickeni_last,
+		    25 Bernissartia_fagesii_first,
+		    26 Bernissartia_fagesii_last,
+		    27 Borealosuchus_acutidentatus_first,
+		    28 Borealosuchus_formidabilis_first,
+		    29 Borealosuchus_formidabilis_last,
+		    30 Borealosuchus_sternbergii_first,
+		    31 Borealosuchus_sternbergii_last,
+		    32 Borealosuchus_wilsoni_first,
+		    33 Boverisuchus_vorax_first,
+		    34 Boverisuchus_vorax_last,
+		    35 Brachychampsa_montana_first,
+		    36 Brachychampsa_montana_last,
+		    37 Brachyuranochampsa_eversolei_first,
+		    38 Brochuchus_pigotti_first,
+		    39 Brochuchus_pigotti_last,
+		    40 Caiman_crocodilus_first,
+		    41 Caiman_crocodilus_last,
+		    42 Caiman_latirostris_first,
+		    43 Caiman_latirostris_last,
+		    44 Caiman_wannlangstoni_first,
+		    45 Caiman_wannlangstoni_last,
+		    46 Caiman_yacare_first,
+		    47 Caiman_yacare_last,
+		    48 Crocodylus_acer_first,
+		    49 Crocodylus_acutus_first,
+		    50 Crocodylus_acutus_last,
+		    51 Crocodylus_affinis_first,
+		    52 Crocodylus_affinis_last,
+		    53 Crocodylus_anthropophagus_first,
+		    54 Crocodylus_anthropophagus_last,
+		    55 Crocodylus_checchiai_first,
+		    56 Crocodylus_checchiai_last,
+		    57 Crocodylus_falconensis_first,
+		    58 Crocodylus_intermedius_first,
+		    59 Crocodylus_johnstoni_first,
+		    60 Crocodylus_johnstoni_last,
+		    61 Crocodylus_megarhinus_first,
+		    62 Crocodylus_mindorensis_first,
+		    63 Crocodylus_moreletii_first,
+		    64 Crocodylus_moreletii_last,
+		    65 Crocodylus_niloticus_first,
+		    66 Crocodylus_niloticus_last,
+		    67 Crocodylus_novaeguineae_first,
+		    68 Crocodylus_palaeindicus_first,
+		    69 Crocodylus_palaeindicus_last,
+		    70 Crocodylus_palustris_first,
+		    71 Crocodylus_palustris_last,
+		    72 Crocodylus_porosus_first,
+		    73 Crocodylus_porosus_last,
+		    74 Crocodylus_rhombifer_first,
+		    75 Crocodylus_rhombifer_last,
+		    76 Crocodylus_siamensis_first,
+		    77 Crocodylus_siamensis_last,
+		    78 Crocodylus_suchus_first,
+		    79 Crocodylus_thorbjarnarsoni_first,
+		    80 Crocodylus_thorbjarnarsoni_last,
+		    81 Crocodylus_warrithandru_first,
+		    82 Diplocynodon_darwini_first,
+		    83 Diplocynodon_hantoniensis_first,
+		    84 Diplocynodon_ratelii_first,
+		    85 Diplocynodon_ratelii_last,
+		    86 Dollosuchoides_densmorei_first,
+		    87 Eocaiman_cavernensis_first,
+		    88 Eogavialis_africanus_first,
+		    89 Eosuchus_lerichei_first,
+		    90 Eosuchus_minor_first,
+		    91 Eosuchus_minor_last,
+		    92 Eothoracosaurus_mississippiensis_first,
+		    93 Eothoracosaurus_mississippiensis_last,
+		    94 Euthecodon_arambourgii_first,
+		    95 Euthecodon_brumpti_first,
+		    96 Euthecodon_brumpti_last,
+		    97 Gavialis_bengawanicus_first,
+		    98 Gavialis_bengawanicus_last,
+		    99 Gavialis_browni_first,
+		   100 Gavialis_gangeticus_first,
+		   101 Gavialis_gangeticus_last,
+		   102 Gavialosuchus_americanus_first,
+		   103 Gavialosuchus_americanus_last,
+		   104 Gavialosuchus_eggenbergensis_first,
+		   105 Gnatusuchus_pebasensis_first,
+		   106 Gnatusuchus_pebasensis_last,
+		   107 Goniopholis_ssp_first,
+		   108 Gryposuchus_colombianus_first,
+		   109 Gryposuchus_colombianus_last,
+		   110 Gryposuchus_pachakamue_first,
+		   111 Gryposuchus_pachakamue_last,
+		   112 Harpacochampsa_camfieldensis_first,
+		   113 Hylaeochampsa_vectiana_first,
+		   114 Ikanogavialis_gameroi_first,
+		   115 Ikanogavialis_gameroi_last,
+		   116 Kalthifrons_aurivellensis_first,
+		   117 Kambara_implexidens_first,
+		   118 Kambara_murgonensis_first,
+		   119 Kambara_taraina_first,
+		   120 Kentisuchus_spenceri_first,
+		   121 Kentisuchus_spenceri_last,
+		   122 Leidyosuchus_canadensis_first,
+		   123 Leidyosuchus_canadensis_last,
+		   124 Maroccosuchus_zennaroi_first,
+		   125 Maroccosuchus_zennaroi_last,
+		   126 Mecistops_cataphractus_first,
+		   127 Mekobaru_megiriani_first,
+		   128 Mekosuchus_inexpectatus_first,
+		   129 Mekosuchus_inexpectatus_last,
+		   130 Mekosuchus_sanderi_first,
+		   131 Mekosuchus_whitehunterensis_first,
+		   132 Melanosuchus_fischeri_first,
+		   133 Melanosuchus_niger_first,
+		   134 Navajosuchus_mooki_first,
+		   135 Navajosuchus_mooki_last,
+		   136 Osteolaemus_osborni_first,
+		   137 Osteolaemus_tetraspis_first,
+		   138 Paleosuchus_palpebrosus_first,
+		   139 Paleosuchus_trigonatus_first,
+		   140 Paludirex_gracilis_first,
+		   141 Paratomistoma_courtii_first,
+		   142 Penghusuchus_pani_first,
+		   143 Piscogavialis_jugaliperforatus_first,
+		   144 Piscogavialis_jugaliperforatus_last,
+		   145 Planocrania_datangensis_first,
+		   146 Planocrania_hengdongensis_first,
+		   147 Procaimanoidea_kayi_first,
+		   148 Procaimanoidea_kayi_last,
+		   149 Prodiplocynodon_langi_first,
+		   150 Purussaurus_neivensis_first,
+		   151 Purussaurus_neivensis_last,
+		   152 Quinkana_fortirostrum_first,
+		   153 Quinkana_meboldi_first,
+		   154 Quinkana_timara_first,
+		   155 Quinkana_timara_last,
+		   156 Rimasuchus_lloydi_first,
+		   157 Shamosuchus_djadochtaensis_first,
+		   158 Shamosuchus_djadochtaensis_last,
+		   159 Stangerochampsa_mccabei_first,
+		   160 Thoracosaurus_macrorhynchus_first,
+		   161 Thoracosaurus_macrorhynchus_last,
+		   162 Thoracosaurus_neocesariensis_first,
+		   163 Thoracosaurus_neocesariensis_last,
+		   164 Tomistoma_cairense_first,
+		   165 Tomistoma_lusitanica_first,
+		   166 Tomistoma_lusitanica_last,
+		   167 Tomistoma_schlegelii_first,
+		   168 Toyotamaphimeia_machikanensis_first,
+		   169 Trilophosuchus_rackhami_first,
+		   170 Tsoabichi_greenriverensis_first,
+		   171 Tsoabichi_greenriverensis_last,
+		   172 Voay_robustus_first,
+		   173 Voay_robustus_last,
+		   174 Volia_athollandersoni_first,
+		   175 Volia_athollandersoni_last,
+		   176 Wannaganosuchus_brachymanus_first
+;
+
+tree MCC_tree = (((((Shamosuchus_djadochtaensis_last[&orientation=ancestor,ancestral_range=Shamosuchus_djadochtaensis_first]:2.20312,Shamosuchus_djadochtaensis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:50.3216,Bernissartia_fagesii_last[&orientation=ancestor,ancestral_range=Bernissartia_fagesii_first]:0)internal_extra_2[&orientation=ancestor,ancestral_range=Bernissartia_fagesii_first]:3.67521,Bernissartia_fagesii_first[&orientation=ancestor]:0)internal_2[&orientation=ancestor]:3.94805,((Hylaeochampsa_vectiana_first[&orientation=ancestor]:1.63896,(Acynodon_iberoccitanus_last[&orientation=descendant,ancestral_range=Acynodon_iberoccitanus_first]:0.0187244,Acynodon_iberoccitanus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:45.4378)internal_4[&orientation=ancestor]:5.0803,((((((Boverisuchus_vorax_last[&orientation=ancestor,ancestral_range=Boverisuchus_vorax_first]:4.32294,Boverisuchus_vorax_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:5.10231,Planocrania_datangensis_first[&orientation=descendant]:4.15206)internal_9[&orientation=ancestor]:6.26137,Planocrania_hengdongensis_first[&orientation=descendant]:8.88263)internal_8[&orientation=ancestor]:18.4388,(((((((Brachyuranochampsa_eversolei_first[&orientation=ancestor]:8.52044,Crocodylus_acer_first[&orientation=ancestor]:0)internal_16[&orientation=ancestor]:6.21159,((((((((Osteolaemus_osborni_first[&orientation=ancestor]:8.09743,Osteolaemus_tetraspis_first[&orientation=descendant]:8.09743)internal_24[&orientation=ancestor]:10.4786,(Voay_robustus_last[&orientation=descendant,ancestral_range=Voay_robustus_first]:0.0172668,Voay_robustus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:18.5574)internal_23[&orientation=ancestor]:6.24541,(Rimasuchus_lloydi_first[&orientation=ancestor]:3.37885,(Brochuchus_pigotti_last[&orientation=descendant,ancestral_range=Brochuchus_pigotti_first]:1.95295,Brochuchus_pigotti_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:2.81889)internal_25[&orientation=descendant]:2.18081)internal_22[&orientation=ancestor]:2.4427,(((Euthecodon_brumpti_last[&orientation=ancestor,ancestral_range=Euthecodon_brumpti_first]:6.44555,Euthecodon_brumpti_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:12.3149,Euthecodon_arambourgii_first[&orientation=descendant]:3.12882)internal_27[&orientation=ancestor]:1.43462,Mecistops_cataphractus_first[&orientation=descendant]:21.1886)internal_26[&orientation=descendant]:6.07554)internal_21[&orientation=ancestor]:5.08168,((((Crocodylus_anthropophagus_last[&orientation=ancestor,ancestral_range=Crocodylus_anthropophagus_first]:0.525656,Crocodylus_anthropophagus_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:5.08873,(Crocodylus_thorbjarnarsoni_last[&orientation=descendant,ancestral_range=Crocodylus_thorbjarnarsoni_first]:2.45235,Crocodylus_thorbjarnarsoni_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:3.27869)internal_30[&orientation=ancestor]:10.0041,(Crocodylus_warrithandru_first[&orientation=ancestor]:5.8654,(Crocodylus_palaeindicus_last[&orientation=descendant,ancestral_range=Crocodylus_palaeindicus_first]:4.45278,Crocodylus_palaeindicus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:3.02465)internal_31[&orientation=descendant]:8.10163)internal_29[&orientation=ancestor]:5.16979,(((Crocodylus_suchus_first[&orientation=ancestor]:6.25583,((Crocodylus_niloticus_last[&orientation=ancestor,ancestral_range=Crocodylus_niloticus_first]:1.86831,Crocodylus_niloticus_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:3.84963,(((Crocodylus_rhombifer_last[&orientation=ancestor,ancestral_range=Crocodylus_rhombifer_first]:0.287844,Crocodylus_rhombifer_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:3.15849,(Crocodylus_moreletii_last[&orientation=descendant,ancestral_range=Crocodylus_moreletii_first]:1.52363,Crocodylus_moreletii_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:1.92271)internal_37[&orientation=ancestor]:0.749657,(Crocodylus_intermedius_first[&orientation=ancestor]:2.02068,(Crocodylus_acutus_last[&orientation=descendant,ancestral_range=Crocodylus_acutus_first]:1.07469,Crocodylus_acutus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:0.94599)internal_38[&orientation=descendant]:2.17531)internal_36[&orientation=descendant]:1.52194)internal_35[&orientation=descendant]:0.537893)internal_34[&orientation=ancestor]:3.86858,((Crocodylus_checchiai_last[&orientation=ancestor,ancestral_range=Crocodylus_checchiai_first]:1.90201,Crocodylus_falconensis_first[&orientation=descendant]:3.30543)internal_extra_39[&orientation=descendant,ancestral_range=Crocodylus_checchiai_first]:0.783832,Crocodylus_checchiai_first[&orientation=descendant]:0)internal_39[&orientation=descendant]:2.78009)internal_33[&orientation=ancestor]:0.0157485,(((Crocodylus_mindorensis_first[&orientation=ancestor]:3.5185,Crocodylus_novaeguineae_first[&orientation=descendant]:3.5185)internal_42[&orientation=ancestor]:2.33007,(Crocodylus_johnstoni_last[&orientation=descendant,ancestral_range=Crocodylus_johnstoni_first]:1.56764,Crocodylus_johnstoni_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:4.28093)internal_41[&orientation=ancestor]:3.19372,(((Crocodylus_palustris_last[&orientation=ancestor,ancestral_range=Crocodylus_palustris_first]:0.023259,Crocodylus_palustris_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:4.28805,(Crocodylus_siamensis_last[&orientation=descendant,ancestral_range=Crocodylus_siamensis_first]:0.575257,Crocodylus_siamensis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:3.73605)internal_44[&orientation=ancestor]:4.47183,(Crocodylus_porosus_last[&orientation=descendant,ancestral_range=Crocodylus_porosus_first]:5.29322,Crocodylus_porosus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:3.48992)internal_43[&orientation=descendant]:0.259147)internal_40[&orientation=descendant]:1.09787)internal_32[&orientation=descendant]:12.4887)internal_28[&orientation=descendant]:9.71703)internal_20[&orientation=ancestor]:11.7883,Crocodylus_megarhinus_first[&orientation=descendant]:13.2504)internal_19[&orientation=ancestor]:12.5859,((Kentisuchus_spenceri_last[&orientation=ancestor,ancestral_range=Kentisuchus_spenceri_first]:0.434706,Kentisuchus_spenceri_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:1.34017,(((Paratomistoma_courtii_first[&orientation=ancestor]:7.90679,Maroccosuchus_zennaroi_last[&orientation=ancestor,ancestral_range=Maroccosuchus_zennaroi_first]:0)internal_extra_47[&orientation=ancestor,ancestral_range=Maroccosuchus_zennaroi_first]:0.453532,Maroccosuchus_zennaroi_first[&orientation=ancestor]:0)internal_47[&orientation=ancestor]:3.92849,(Dollosuchoides_densmorei_first[&orientation=ancestor]:4.20114,((((Tomistoma_schlegelii_first[&orientation=ancestor]:10.07,Tomistoma_lusitanica_last[&orientation=ancestor,ancestral_range=Tomistoma_lusitanica_first]:0)internal_extra_51[&orientation=ancestor,ancestral_range=Tomistoma_lusitanica_first]:5.30704,Tomistoma_lusitanica_first[&orientation=ancestor]:0)internal_51[&orientation=ancestor]:15.1533,(((Penghusuchus_pani_first[&orientation=ancestor]:5.18136,Toyotamaphimeia_machikanensis_first[&orientation=descendant]:14.911)internal_54[&orientation=ancestor]:9.03756,((Gavialosuchus_americanus_last[&orientation=ancestor,ancestral_range=Gavialosuchus_americanus_first]:0.290726,Gavialosuchus_americanus_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:13.5664,Gavialosuchus_eggenbergensis_first[&orientation=descendant]:4.55463)internal_55[&orientation=descendant]:0.626458)internal_53[&orientation=ancestor]:1.259,(((((((Gavialis_gangeticus_last[&orientation=ancestor,ancestral_range=Gavialis_gangeticus_first]:1.97063,Gavialis_gangeticus_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:4.41977,(Gavialis_bengawanicus_last[&orientation=descendant,ancestral_range=Gavialis_bengawanicus_first]:0.04029,Gavialis_bengawanicus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:5.63495)internal_61[&orientation=ancestor]:8.52749,Gavialis_browni_first[&orientation=descendant]:11.2677)internal_60[&orientation=ancestor]:0.741501,(Gryposuchus_colombianus_last[&orientation=descendant,ancestral_range=Gryposuchus_colombianus_first]:0.0217913,Gryposuchus_colombianus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:2.297)internal_59[&orientation=ancestor]:1.74652,(Ikanogavialis_gameroi_last[&orientation=descendant,ancestral_range=Ikanogavialis_gameroi_first]:6.11797,Ikanogavialis_gameroi_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:3.83866)internal_58[&orientation=ancestor]:3.37574,((Piscogavialis_jugaliperforatus_last[&orientation=ancestor,ancestral_range=Piscogavialis_jugaliperforatus_first]:2.84131,Piscogavialis_jugaliperforatus_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:8.74408,(Gryposuchus_pachakamue_last[&orientation=descendant,ancestral_range=Gryposuchus_pachakamue_first]:0.633858,Gryposuchus_pachakamue_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:4.75052)internal_62[&orientation=descendant]:2.86596)internal_57[&orientation=ancestor]:3.93661,Harpacochampsa_camfieldensis_first[&orientation=descendant]:8.87589)internal_56[&orientation=descendant]:0.859296)internal_52[&orientation=descendant]:4.95276)internal_50[&orientation=ancestor]:16.2057,Tomistoma_cairense_first[&orientation=descendant]:0.854509)internal_49[&orientation=descendant]:1.37389)internal_48[&orientation=descendant]:5.35973)internal_46[&orientation=descendant]:1.38168)internal_45[&orientation=descendant]:1.86868)internal_18[&orientation=ancestor]:3.97968,((Australosuchus_clarkae_last[&orientation=ancestor,ancestral_range=Australosuchus_clarkae_first]:2.50146,Australosuchus_clarkae_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:31.8473,((Kambara_implexidens_first[&orientation=ancestor]:1.12559,(((((Baru_huberi_first[&orientation=ancestor]:2.70542,Mekobaru_megiriani_first[&orientation=descendant]:14.344)internal_70[&orientation=ancestor]:1.92285,((Volia_athollandersoni_last[&orientation=ancestor,ancestral_range=Volia_athollandersoni_first]:0.0103086,Volia_athollandersoni_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:30.0681,((Trilophosuchus_rackhami_first[&orientation=ancestor]:11.5116,(((Quinkana_fortirostrum_first[&orientation=descendant]:13.9565,Quinkana_timara_last[&orientation=descendant,ancestral_range=Quinkana_timara_first]:0)internal_extra_75[&orientation=descendant,ancestral_range=Quinkana_timara_first]:0.577574,Quinkana_timara_first[&orientation=descendant]:0)internal_75[&orientation=descendant]:8.70421,Quinkana_meboldi_first[&orientation=descendant]:0)internal_74[&orientation=descendant]:2.03654)internal_73[&orientation=ancestor]:3.36154,((Mekosuchus_sanderi_first[&orientation=ancestor]:10.758,Mekosuchus_whitehunterensis_first[&orientation=ancestor]:0)internal_77[&orientation=ancestor]:3.40348,(Mekosuchus_inexpectatus_last[&orientation=descendant,ancestral_range=Mekosuchus_inexpectatus_first]:0.00190695,Mekosuchus_inexpectatus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:27.5458)internal_76[&orientation=descendant]:1.25031)internal_72[&orientation=descendant]:1.28654)internal_71[&orientation=descendant]:0.497021)internal_69[&orientation=ancestor]:5.09752,(Kalthifrons_aurivellensis_first[&orientation=ancestor]:2.03944,Paludirex_gracilis_first[&orientation=descendant]:1.85111)internal_78[&orientation=descendant]:28.6814)internal_68[&orientation=ancestor]:3.07894,((Baru_wickeni_last[&orientation=ancestor,ancestral_range=Baru_wickeni_first]:0.380608,Baru_wickeni_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:1.84791,((Baru_darrowi_last[&orientation=ancestor,ancestral_range=Baru_darrowi_first]:1.96044,Baru_darrowi_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:10.2254,Baru_ultimus_first[&orientation=descendant]:14.3229)internal_80[&orientation=descendant]:1.80617)internal_79[&orientation=descendant]:11.8355)internal_67[&orientation=ancestor]:2.87319,Kambara_taraina_first[&orientation=descendant]:3.83311)internal_66[&orientation=descendant]:14.7377)internal_65[&orientation=ancestor]:1.30436,Kambara_murgonensis_first[&orientation=descendant]:1.81443)internal_64[&orientation=descendant]:1.5842)internal_63[&orientation=descendant]:1.44042)internal_17[&orientation=descendant]:1.41178)internal_15[&orientation=ancestor]:2.40913,(Asiatosuchus_depressifrons_last[&orientation=descendant,ancestral_range=Asiatosuchus_depressifrons_first]:3.64898,Asiatosuchus_depressifrons_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:5.67558)internal_14[&orientation=ancestor]:0.743475,(Crocodylus_affinis_last[&orientation=descendant,ancestral_range=Crocodylus_affinis_first]:0.939809,Crocodylus_affinis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:9.33414)internal_13[&orientation=ancestor]:5.09614,(Asiatosuchus_germanicus_last[&orientation=descendant,ancestral_range=Asiatosuchus_germanicus_first]:5.17127,Asiatosuchus_germanicus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:23.8141)internal_12[&orientation=ancestor]:8.0055,Prodiplocynodon_langi_first[&orientation=descendant]:8.17492)internal_11[&orientation=ancestor]:5.16264,((Leidyosuchus_canadensis_last[&orientation=ancestor,ancestral_range=Leidyosuchus_canadensis_first]:5.11297,Leidyosuchus_canadensis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:1.28547,((((Navajosuchus_mooki_last[&orientation=ancestor,ancestral_range=Navajosuchus_mooki_first]:1.50046,Navajosuchus_mooki_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:2.73097,(((Tsoabichi_greenriverensis_last[&orientation=ancestor,ancestral_range=Tsoabichi_greenriverensis_first]:0.891926,Tsoabichi_greenriverensis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:4.64832,(((Gnatusuchus_pebasensis_last[&orientation=ancestor,ancestral_range=Gnatusuchus_pebasensis_first]:0.136288,Gnatusuchus_pebasensis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:27.7789,Eocaiman_cavernensis_first[&orientation=ancestor]:0)internal_88[&orientation=ancestor]:3.09874,((Paleosuchus_palpebrosus_first[&orientation=ancestor]:6.64756,Paleosuchus_trigonatus_first[&orientation=descendant]:6.64756)internal_90[&orientation=ancestor]:19.3402,((Purussaurus_neivensis_last[&orientation=ancestor,ancestral_range=Purussaurus_neivensis_first]:2.31048,Purussaurus_neivensis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:8.23815,(((((Caiman_yacare_last[&orientation=ancestor,ancestral_range=Caiman_yacare_first]:7.38033,Caiman_yacare_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:0.74424,(Caiman_crocodilus_last[&orientation=descendant,ancestral_range=Caiman_crocodilus_first]:2.64951,Caiman_crocodilus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:5.47505)internal_95[&orientation=ancestor]:1.8586,(Caiman_latirostris_last[&orientation=descendant,ancestral_range=Caiman_latirostris_first]:8.18032,Caiman_latirostris_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:1.80285)internal_94[&orientation=ancestor]:4.04431,(Melanosuchus_niger_first[&orientation=ancestor]:10.5432,Melanosuchus_fischeri_first[&orientation=descendant]:2.69422)internal_96[&orientation=descendant]:3.48429)internal_93[&orientation=ancestor]:6.28453,(Caiman_wannlangstoni_last[&orientation=descendant,ancestral_range=Caiman_wannlangstoni_first]:1.84595,Caiman_wannlangstoni_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:7.22328)internal_92[&orientation=descendant]:3.4725)internal_91[&orientation=descendant]:2.20322)internal_89[&orientation=descendant]:17.9809)internal_87[&orientation=descendant]:10.257)internal_86[&orientation=ancestor]:8.90409,((Alligator_mcgrewi_first[&orientation=ancestor]:12.5822,((Alligator_sinensis_last[&orientation=ancestor,ancestral_range=Alligator_sinensis_first]:2.81214,Alligator_sinensis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:18.6856,(Alligator_mefferdi_first[&orientation=ancestor]:1.63401,(Alligator_mississippiensis_last[&orientation=descendant,ancestral_range=Alligator_mississippiensis_first]:9.72492,Alligator_mississippiensis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:0.993863)internal_100[&orientation=descendant]:10.779)internal_99[&orientation=descendant]:10.2983)internal_98[&orientation=ancestor]:31.3099,((Procaimanoidea_kayi_last[&orientation=ancestor,ancestral_range=Procaimanoidea_kayi_first]:6.42615,Procaimanoidea_kayi_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:13.5526,Wannaganosuchus_brachymanus_first[&orientation=descendant]:5.66759)internal_101[&orientation=descendant]:0.510756)internal_97[&orientation=descendant]:0.0237085)internal_85[&orientation=descendant]:2.99483)internal_84[&orientation=ancestor]:9.81438,((Brachychampsa_montana_last[&orientation=ancestor,ancestral_range=Brachychampsa_montana_first]:5.01712,Brachychampsa_montana_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:2.0424,Stangerochampsa_mccabei_first[&orientation=descendant]:7.44672)internal_102[&orientation=descendant]:1.48308)internal_83[&orientation=ancestor]:1.07494,((Diplocynodon_hantoniensis_first[&orientation=ancestor]:18.2674,(Diplocynodon_ratelii_last[&orientation=descendant,ancestral_range=Diplocynodon_ratelii_first]:19.3127,Diplocynodon_ratelii_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:0.385868)internal_104[&orientation=descendant]:8.89841,Diplocynodon_darwini_first[&orientation=descendant]:0)internal_103[&orientation=descendant]:34.1876)internal_82[&orientation=descendant]:4.64856)internal_81[&orientation=descendant]:1.86595)internal_10[&orientation=descendant]:2.18493)internal_7[&orientation=ancestor]:1.00278,((((Borealosuchus_formidabilis_last[&orientation=ancestor,ancestral_range=Borealosuchus_formidabilis_first]:3.0551,Borealosuchus_formidabilis_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:5.09117,(Borealosuchus_wilsoni_first[&orientation=descendant]:10.8964,Borealosuchus_acutidentatus_first[&orientation=descendant]:0)internal_108[&orientation=descendant]:3.62966)internal_107[&orientation=ancestor]:4.19841,(Borealosuchus_sternbergii_last[&orientation=descendant,ancestral_range=Borealosuchus_sternbergii_first]:1.7016,Borealosuchus_sternbergii_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:3.56479)internal_106[&orientation=ancestor]:15.0986,((((Thoracosaurus_macrorhynchus_last[&orientation=ancestor,ancestral_range=Thoracosaurus_macrorhynchus_first]:5.46443,Thoracosaurus_macrorhynchus_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:4.51622,((Eogavialis_africanus_first[&orientation=ancestor]:31.291,((Eosuchus_minor_last[&orientation=ancestor,ancestral_range=Eosuchus_minor_first]:2.75018,Eosuchus_minor_first[&orientation=ancestor]:0)internal_leafrange[&orientation=ancestor]:1.47974,Eosuchus_lerichei_first[&orientation=descendant]:3.0504)internal_114[&orientation=descendant]:5.39511)internal_113[&orientation=ancestor]:5.90349,(Argochampsa_krebsi_last[&orientation=descendant,ancestral_range=Argochampsa_krebsi_first]:1.10578,Argochampsa_krebsi_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:18.6792)internal_112[&orientation=descendant]:1.53791)internal_111[&orientation=ancestor]:2.04098,(Thoracosaurus_neocesariensis_last[&orientation=descendant,ancestral_range=Thoracosaurus_neocesariensis_first]:7.81409,Thoracosaurus_neocesariensis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:0.841122)internal_110[&orientation=ancestor]:1.62285,(Eothoracosaurus_mississippiensis_last[&orientation=descendant,ancestral_range=Eothoracosaurus_mississippiensis_first]:0.0808542,Eothoracosaurus_mississippiensis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:7.92387)internal_109[&orientation=descendant]:7.17801)internal_105[&orientation=descendant]:1.40373)internal_6[&orientation=ancestor]:15.8029,(Allodaposuchus_palustris_first[&orientation=ancestor]:11.0709,Allodaposuchus_megadontos_first[&orientation=descendant]:11.6427)internal_115[&orientation=descendant]:20.3077)internal_5[&orientation=descendant]:26.2232)internal_3[&orientation=descendant]:3.94076)internal_1[&orientation=ancestor]:8.53561,Goniopholis_ssp_first[&orientation=ancestor]:0)root[&orientation=ancestor]:0;
+End;

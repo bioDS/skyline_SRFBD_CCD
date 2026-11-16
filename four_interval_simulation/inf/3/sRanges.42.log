@@ -1,0 +1,1018 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.base.inference.CompoundDistribution">
+#    <distribution id="prior" spec="beast.base.inference.CompoundDistribution">
+#        <distribution conditionOnRhoSampling="true" conditionOnSurvival="false" contemp="true" id="birthDeath" spec="ssr.speciation.SRangesBirthDeathSkylineModel">
+#            <parameter dimension="4" id="RealParameter" lower="0.0" name="intervalTimes" spec="beast.base.inference.parameter.RealParameter" upper="0.0">0.0 1.0 2.0 3.0</parameter>
+#            <parameter estimate="false" id="origin" name="origin" spec="beast.base.inference.parameter.RealParameter">4.0</parameter>
+#            <removalProbability id="Function$Constant" spec="beast.base.core.Function$Constant" value="0.0 0.0 0.0 0.0"/>
+#            <parameter id="rho" lower="0.0" name="rho" spec="beast.base.inference.parameter.RealParameter">0.720492530893534</parameter>
+#            <parameter dimension="4" id="samplingProportion" lower="0.0" name="samplingProportion" spec="beast.base.inference.parameter.RealParameter">0.297357502533123 0.366941378917545 0.555428267549724 0.228746797377244</parameter>
+#            <parameter dimension="4" id="netDiversification" lower="0.0" name="netDiversification" spec="beast.base.inference.parameter.RealParameter">0.829671096662059 0.835277713695541 0.895779776154086 0.879085752926767</parameter>
+#            <parameter dimension="4" id="turnOver" lower="0.0" name="turnOver" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.608588703628629 0.428849981212989 0.578262000903487 0.503189241373912</parameter>
+#            <tree id="tree" nodetype="sr.evolution.tree.SRNode" spec="sr.evolution.tree.SRTree">
+#                <stratigraphicRange id="r0" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t149_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t149_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r1" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t294_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t294_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r2" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t150_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t150_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r3" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t35_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t35_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r4" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t256_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t256_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r5" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t222_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t222_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r6" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t41_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t41_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r7" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t51_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t51_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r8" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t73_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t73_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r9" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t263_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t263_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r10" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t226_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t226_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r11" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t176_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t176_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r12" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t113_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t113_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r13" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t127_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t127_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r14" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t61_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t61_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r15" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t26_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t26_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r16" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t16_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t16_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r17" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t175_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t175_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r18" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t126_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t126_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r19" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t74_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t74_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r20" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t249_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t249_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r21" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t7_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t7_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r22" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t90_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t90_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r23" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t203_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t203_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r24" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t49_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t49_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r25" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t148_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t148_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r26" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t128_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t128_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r27" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t158_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t158_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r28" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t147_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t147_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r29" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t17_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t17_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r30" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t138_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t138_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r31" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t234_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t234_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r32" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t229_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t229_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r33" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t53_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t53_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r34" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t161_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t161_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r35" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t10_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t10_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r36" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t156_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t156_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r37" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t81_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t81_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r38" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t159_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t159_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r39" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t152_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t152_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r40" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t223_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t223_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r41" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t143_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t143_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r42" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t189_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t189_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r43" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t273_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t273_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r44" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t93_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t93_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r45" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t177_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t177_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r46" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t247_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t247_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r47" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t107_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t107_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r48" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t109_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t109_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r49" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t20_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t20_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r50" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t295_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t295_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r51" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t36_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t36_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r52" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t265_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t265_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r53" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t257_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t257_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r54" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t153_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t153_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r55" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t292_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t292_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r56" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t191_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t191_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r57" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t6_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t6_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r58" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t217_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t217_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r59" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t55_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t55_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r60" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t192_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t192_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r61" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t151_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t151_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r62" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t94_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t94_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r63" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t264_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t264_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r64" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t106_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t106_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r65" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t195_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t195_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r66" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t9_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t9_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r67" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t46_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t46_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r68" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t168_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t168_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r69" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t145_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t145_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r70" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t165_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t165_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r71" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t110_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t110_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r72" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t207_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t207_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r73" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t188_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t188_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r74" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t146_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t146_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r75" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t101_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t101_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r76" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t114_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t114_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r77" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t71_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t71_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r78" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t95_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t95_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r79" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t272_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t272_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r80" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t14_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t14_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r81" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t170_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t170_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r82" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t19_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t19_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r83" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t77_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t77_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r84" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t287_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t287_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r85" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t266_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t266_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r86" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t11_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t11_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r87" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t54_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t54_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r88" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t130_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t130_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r89" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t180_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t180_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r90" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t284_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t284_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r91" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t50_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t50_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r92" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t184_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t184_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r93" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t108_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t108_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r94" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t214_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t214_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r95" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t209_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t209_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r96" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t278_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t278_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r97" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t173_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t173_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r98" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t185_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t185_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r99" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t244_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t244_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r100" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t139_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t139_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r101" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t42_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t42_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r102" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t44_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t44_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r103" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t291_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t291_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r104" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t178_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t178_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r105" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t275_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t275_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r106" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t58_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t58_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r107" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t276_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t276_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r108" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t70_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t70_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r109" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t216_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t216_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r110" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t154_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t154_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r111" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t25_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t25_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r112" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t129_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t129_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r113" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t97_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t97_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r114" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t237_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t237_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r115" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t72_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t72_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r116" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t83_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t83_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r117" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t171_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t171_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r118" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t4_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t4_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r119" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t213_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t213_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r120" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t225_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t225_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r121" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t164_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t164_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r122" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t96_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t96_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r123" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t296_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t296_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r124" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t112_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t112_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r125" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t86_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t86_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r126" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t98_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t98_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r127" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t289_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t289_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r128" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t92_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t92_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r129" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t67_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t67_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r130" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t251_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t251_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r131" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t270_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t270_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r132" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t123_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t123_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r133" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t121_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t121_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r134" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t118_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t118_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r135" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t33_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t33_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r136" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t85_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t85_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r137" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t202_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t202_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r138" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t290_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t290_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r139" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t220_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t220_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r140" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t105_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t105_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r141" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t99_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t99_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r142" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t169_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t169_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r143" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t68_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t68_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r144" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t183_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t183_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r145" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t200_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t200_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r146" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t240_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t240_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r147" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t242_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t242_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r148" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t135_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t135_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r149" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t100_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t100_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r150" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t134_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t134_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r151" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t228_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t228_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r152" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t268_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t268_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r153" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t117_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t117_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r154" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t78_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t78_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r155" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t136_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t136_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r156" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t131_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t131_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r157" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t8_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t8_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r158" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t262_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t262_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r159" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t39_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t39_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r160" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t66_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t66_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r161" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t82_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t82_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r162" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t246_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t246_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r163" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t65_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t65_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r164" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t236_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t236_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r165" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t212_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t212_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r166" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t238_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t238_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r167" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t187_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t187_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r168" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t142_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t142_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r169" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t18_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t18_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r170" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t37_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t37_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r171" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t88_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t88_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r172" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t15_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t15_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r173" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t277_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t277_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r174" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t5_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t5_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r175" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t89_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t89_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r176" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t205_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t205_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r177" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t160_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence id="t160_last" spec="beast.base.evolution.alignment.Taxon"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r178" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t125_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t125_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r179" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t267_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t267_first"/>
+#                </stratigraphicRange>
+#                <stratigraphicRange id="r180" spec="sr.evolution.sranges.StratigraphicRange">
+#                    <firstOccurrence id="t285_first" spec="beast.base.evolution.alignment.Taxon"/>
+#                    <lastOccurrence idref="t285_first"/>
+#                </stratigraphicRange>
+#                <trait id="dateTrait.t:tree" spec="beast.base.evolution.tree.TraitSet" traitname="date-backward">
+#                    t149_first=3.89166106440704, t149_last=3.629362772755, t294_first=3.77973190089642, t294_last=3.51103817213735, t150_first=0.922029981268167, t35_first=3.62377089452009, t35_last=1.93796576371788, t256_first=2.46653173246105, t256_last=2.27564706604382, t222_first=2.51428466108091, t222_last=2.4560503667097, t41_first=3.44888146082033, t51_first=0, t73_first=0, t263_first=0, t226_first=0, t176_first=0, t113_first=0, t127_first=0, t61_first=0, t26_first=1.30578138470855, t26_last=1.24832298762059, t16_first=2.1229232545762, t175_first=3.62136276138702, t175_last=2.33608347456083, t126_first=2.42003371406657, t126_last=2.11610831966589, t74_first=3.28652249630756, t74_last=2.69103407046808, t249_first=2.7400268028636, t249_last=2.40178759726057, t7_first=0, t90_first=0, t203_first=0, t49_first=0, t148_first=0, t128_first=0, t158_first=0, t147_first=1.17394278134107, t147_last=0, t17_first=0, t138_first=0, t234_first=0, t229_first=1.23952025357512, t53_first=1.19127033818403, t53_last=1.08913331535456, t161_first=0, t10_first=0, t156_first=0, t81_first=0.783682167896526, t159_first=0, t152_first=0, t223_first=0, t143_first=0, t189_first=2.39625431924444, t189_last=1.1429337344598, t273_first=0, t93_first=2.05576309762342, t93_last=2.01425010341457, t177_first=2.44686814317674, t247_first=3.04464191298678, t247_last=2.81625260437172, t107_first=2.81437507934404, t107_last=1.84716558652878, t109_first=2.03031544015107, t20_first=3.35925001729423, t20_last=3.17806656758675, t295_first=3.4565255541399, t295_last=2.63788254370815, t36_first=3.22072028675314, t36_last=2.70231326823496, t265_first=2.77167234888842, t265_last=2.65251208080782, t257_first=2.61697745056198, t153_first=3.04297910312764, t153_last=2.33667656776908, t292_first=3.62007099032946, t292_last=3.39109453639031, t191_first=3.40211413674379, t191_last=2.51356111283558, t6_first=0.676144372822962, t6_last=0, t217_first=0, t55_first=0, t192_first=0, t151_first=0, t94_first=0, t264_first=0, t106_first=0, t195_first=2.58738357863715, t195_last=1.28831732086837, t9_first=0, t46_first=0, t168_first=0, t145_first=0, t165_first=0, t110_first=0, t207_first=0, t188_first=0, t146_first=0, t101_first=0, t114_first=0, t71_first=0, t95_first=0, t272_first=0, t14_first=0, t170_first=0, t19_first=0, t77_first=0, t287_first=0, t266_first=0, t11_first=0, t54_first=0, t130_first=0, t180_first=0, t284_first=0, t50_first=1.00219195337521, t184_first=0.404219077667222, t184_last=0, t108_first=0, t214_first=0, t209_first=0, t278_first=0, t173_first=1.00341969278878, t185_first=0.209854120621459, t185_last=0, t244_first=0, t139_first=0, t42_first=0, t44_first=0, t291_first=0, t178_first=0, t275_first=0, t58_first=0, t276_first=1.31863214535714, t70_first=0, t216_first=0, t154_first=0, t25_first=0.804151356139283, t129_first=0, t97_first=0, t237_first=0, t72_first=0, t83_first=0, t171_first=2.32664096228222, t171_last=1.83707424904955, t4_first=2.74986829897525, t4_last=2.38988884361253, t213_first=3.11656714140905, t213_last=1.77168446276796, t225_first=3.06152844860641, t225_last=2.60359791478122, t164_first=0.891948285745457, t164_last=0, t96_first=0, t296_first=2.91479416338428, t296_last=2.01496856238473, t112_first=2.20284011627553, t86_first=2.7823301707559, t86_last=2.49059411911455, t98_first=2.88859273246018, t98_last=2.45171859377547, t289_first=3.24402127767071, t289_last=2.40249398293355, t92_first=2.51527248899498, t92_last=2.07079604869203, t67_first=2.39030133086807, t67_last=2.12485112420388, t251_first=0, t270_first=0.893198906487563, t123_first=0, t121_first=0, t118_first=0.842131483135745, t118_last=0, t33_first=0, t85_first=1.09473648688621, t202_first=1.00473911996726, t290_first=2.07086707406837, t220_first=0, t105_first=0, t99_first=0, t169_first=0, t68_first=0, t183_first=0, t200_first=0, t240_first=0, t242_first=0, t135_first=0, t100_first=0.146055036054884, t100_last=0, t134_first=0, t228_first=0, t268_first=0, t117_first=0, t78_first=0, t136_first=1.58006849687712, t136_last=1.42154978768767, t131_first=1.9929037478651, t8_first=0, t262_first=0.320576823350012, t39_first=0, t66_first=0, t82_first=0, t246_first=0, t65_first=0, t236_first=2.30400727768705, t236_last=1.2958440942798, t212_first=3.30688802754753, t212_last=2.64814345790844, t238_first=2.55018688796938, t238_last=2.17071108124236, t187_first=2.78581553518228, t187_last=2.43273713391747, t142_first=3.01175877991149, t142_last=2.6798308405782, t18_first=2.03976751765251, t37_first=3.12978601066818, t37_last=2.15077590861234, t88_first=2.58573558169896, t15_first=2.76736705155105, t277_first=3.02322220785187, t277_last=2.87458466926955, t5_first=3.26453318357965, t89_first=3.42957983526362, t205_first=3.66990806532179, t205_last=3.47148677547914, t160_first=3.67984065059044, t160_last=3.19360698272768, t125_first=3.3931198098704, t267_first=3.27572823571421, t285_first=3.52340148786677
+#                                    <taxa id="taxonSet" spec="beast.base.evolution.alignment.TaxonSet">
+#                        <taxon idref="t149_first"/>
+#                        <taxon idref="t149_last"/>
+#                        <taxon idref="t294_first"/>
+#                        <taxon idref="t294_last"/>
+#                        <taxon idref="t150_first"/>
+#                        <taxon idref="t35_first"/>
+#                        <taxon idref="t35_last"/>
+#                        <taxon idref="t256_first"/>
+#                        <taxon idref="t256_last"/>
+#                        <taxon idref="t222_first"/>
+#                        <taxon idref="t222_last"/>
+#                        <taxon idref="t41_first"/>
+#                        <taxon idref="t51_first"/>
+#                        <taxon idref="t73_first"/>
+#                        <taxon idref="t263_first"/>
+#                        <taxon idref="t226_first"/>
+#                        <taxon idref="t176_first"/>
+#                        <taxon idref="t113_first"/>
+#                        <taxon idref="t127_first"/>
+#                        <taxon idref="t61_first"/>
+#                        <taxon idref="t26_first"/>
+#                        <taxon idref="t26_last"/>
+#                        <taxon idref="t16_first"/>
+#                        <taxon idref="t175_first"/>
+#                        <taxon idref="t175_last"/>
+#                        <taxon idref="t126_first"/>
+#                        <taxon idref="t126_last"/>
+#                        <taxon idref="t74_first"/>
+#                        <taxon idref="t74_last"/>
+#                        <taxon idref="t249_first"/>
+#                        <taxon idref="t249_last"/>
+#                        <taxon idref="t7_first"/>
+#                        <taxon idref="t90_first"/>
+#                        <taxon idref="t203_first"/>
+#                        <taxon idref="t49_first"/>
+#                        <taxon idref="t148_first"/>
+#                        <taxon idref="t128_first"/>
+#                        <taxon idref="t158_first"/>
+#                        <taxon idref="t147_first"/>
+#                        <taxon idref="t147_last"/>
+#                        <taxon idref="t17_first"/>
+#                        <taxon idref="t138_first"/>
+#                        <taxon idref="t234_first"/>
+#                        <taxon idref="t229_first"/>
+#                        <taxon idref="t53_first"/>
+#                        <taxon idref="t53_last"/>
+#                        <taxon idref="t161_first"/>
+#                        <taxon idref="t10_first"/>
+#                        <taxon idref="t156_first"/>
+#                        <taxon idref="t81_first"/>
+#                        <taxon idref="t159_first"/>
+#                        <taxon idref="t152_first"/>
+#                        <taxon idref="t223_first"/>
+#                        <taxon idref="t143_first"/>
+#                        <taxon idref="t189_first"/>
+#                        <taxon idref="t189_last"/>
+#                        <taxon idref="t273_first"/>
+#                        <taxon idref="t93_first"/>
+#                        <taxon idref="t93_last"/>
+#                        <taxon idref="t177_first"/>
+#                        <taxon idref="t247_first"/>
+#                        <taxon idref="t247_last"/>
+#                        <taxon idref="t107_first"/>
+#                        <taxon idref="t107_last"/>
+#                        <taxon idref="t109_first"/>
+#                        <taxon idref="t20_first"/>
+#                        <taxon idref="t20_last"/>
+#                        <taxon idref="t295_first"/>
+#                        <taxon idref="t295_last"/>
+#                        <taxon idref="t36_first"/>
+#                        <taxon idref="t36_last"/>
+#                        <taxon idref="t265_first"/>
+#                        <taxon idref="t265_last"/>
+#                        <taxon idref="t257_first"/>
+#                        <taxon idref="t153_first"/>
+#                        <taxon idref="t153_last"/>
+#                        <taxon idref="t292_first"/>
+#                        <taxon idref="t292_last"/>
+#                        <taxon idref="t191_first"/>
+#                        <taxon idref="t191_last"/>
+#                        <taxon idref="t6_first"/>
+#                        <taxon idref="t6_last"/>
+#                        <taxon idref="t217_first"/>
+#                        <taxon idref="t55_first"/>
+#                        <taxon idref="t192_first"/>
+#                        <taxon idref="t151_first"/>
+#                        <taxon idref="t94_first"/>
+#                        <taxon idref="t264_first"/>
+#                        <taxon idref="t106_first"/>
+#                        <taxon idref="t195_first"/>
+#                        <taxon idref="t195_last"/>
+#                        <taxon idref="t9_first"/>
+#                        <taxon idref="t46_first"/>
+#                        <taxon idref="t168_first"/>
+#                        <taxon idref="t145_first"/>
+#                        <taxon idref="t165_first"/>
+#                        <taxon idref="t110_first"/>
+#                        <taxon idref="t207_first"/>
+#                        <taxon idref="t188_first"/>
+#                        <taxon idref="t146_first"/>
+#                        <taxon idref="t101_first"/>
+#                        <taxon idref="t114_first"/>
+#                        <taxon idref="t71_first"/>
+#                        <taxon idref="t95_first"/>
+#                        <taxon idref="t272_first"/>
+#                        <taxon idref="t14_first"/>
+#                        <taxon idref="t170_first"/>
+#                        <taxon idref="t19_first"/>
+#                        <taxon idref="t77_first"/>
+#                        <taxon idref="t287_first"/>
+#                        <taxon idref="t266_first"/>
+#                        <taxon idref="t11_first"/>
+#                        <taxon idref="t54_first"/>
+#                        <taxon idref="t130_first"/>
+#                        <taxon idref="t180_first"/>
+#                        <taxon idref="t284_first"/>
+#                        <taxon idref="t50_first"/>
+#                        <taxon idref="t184_first"/>
+#                        <taxon idref="t184_last"/>
+#                        <taxon idref="t108_first"/>
+#                        <taxon idref="t214_first"/>
+#                        <taxon idref="t209_first"/>
+#                        <taxon idref="t278_first"/>
+#                        <taxon idref="t173_first"/>
+#                        <taxon idref="t185_first"/>
+#                        <taxon idref="t185_last"/>
+#                        <taxon idref="t244_first"/>
+#                        <taxon idref="t139_first"/>
+#                        <taxon idref="t42_first"/>
+#                        <taxon idref="t44_first"/>
+#                        <taxon idref="t291_first"/>
+#                        <taxon idref="t178_first"/>
+#                        <taxon idref="t275_first"/>
+#                        <taxon idref="t58_first"/>
+#                        <taxon idref="t276_first"/>
+#                        <taxon idref="t70_first"/>
+#                        <taxon idref="t216_first"/>
+#                        <taxon idref="t154_first"/>
+#                        <taxon idref="t25_first"/>
+#                        <taxon idref="t129_first"/>
+#                        <taxon idref="t97_first"/>
+#                        <taxon idref="t237_first"/>
+#                        <taxon idref="t72_first"/>
+#                        <taxon idref="t83_first"/>
+#                        <taxon idref="t171_first"/>
+#                        <taxon idref="t171_last"/>
+#                        <taxon idref="t4_first"/>
+#                        <taxon idref="t4_last"/>
+#                        <taxon idref="t213_first"/>
+#                        <taxon idref="t213_last"/>
+#                        <taxon idref="t225_first"/>
+#                        <taxon idref="t225_last"/>
+#                        <taxon idref="t164_first"/>
+#                        <taxon idref="t164_last"/>
+#                        <taxon idref="t96_first"/>
+#                        <taxon idref="t296_first"/>
+#                        <taxon idref="t296_last"/>
+#                        <taxon idref="t112_first"/>
+#                        <taxon idref="t86_first"/>
+#                        <taxon idref="t86_last"/>
+#                        <taxon idref="t98_first"/>
+#                        <taxon idref="t98_last"/>
+#                        <taxon idref="t289_first"/>
+#                        <taxon idref="t289_last"/>
+#                        <taxon idref="t92_first"/>
+#                        <taxon idref="t92_last"/>
+#                        <taxon idref="t67_first"/>
+#                        <taxon idref="t67_last"/>
+#                        <taxon idref="t251_first"/>
+#                        <taxon idref="t270_first"/>
+#                        <taxon idref="t123_first"/>
+#                        <taxon idref="t121_first"/>
+#                        <taxon idref="t118_first"/>
+#                        <taxon idref="t118_last"/>
+#                        <taxon idref="t33_first"/>
+#                        <taxon idref="t85_first"/>
+#                        <taxon idref="t202_first"/>
+#                        <taxon idref="t290_first"/>
+#                        <taxon idref="t220_first"/>
+#                        <taxon idref="t105_first"/>
+#                        <taxon idref="t99_first"/>
+#                        <taxon idref="t169_first"/>
+#                        <taxon idref="t68_first"/>
+#                        <taxon idref="t183_first"/>
+#                        <taxon idref="t200_first"/>
+#                        <taxon idref="t240_first"/>
+#                        <taxon idref="t242_first"/>
+#                        <taxon idref="t135_first"/>
+#                        <taxon idref="t100_first"/>
+#                        <taxon idref="t100_last"/>
+#                        <taxon idref="t134_first"/>
+#                        <taxon idref="t228_first"/>
+#                        <taxon idref="t268_first"/>
+#                        <taxon idref="t117_first"/>
+#                        <taxon idref="t78_first"/>
+#                        <taxon idref="t136_first"/>
+#                        <taxon idref="t136_last"/>
+#                        <taxon idref="t131_first"/>
+#                        <taxon idref="t8_first"/>
+#                        <taxon idref="t262_first"/>
+#                        <taxon idref="t39_first"/>
+#                        <taxon idref="t66_first"/>
+#                        <taxon idref="t82_first"/>
+#                        <taxon idref="t246_first"/>
+#                        <taxon idref="t65_first"/>
+#                        <taxon idref="t236_first"/>
+#                        <taxon idref="t236_last"/>
+#                        <taxon idref="t212_first"/>
+#                        <taxon idref="t212_last"/>
+#                        <taxon idref="t238_first"/>
+#                        <taxon idref="t238_last"/>
+#                        <taxon idref="t187_first"/>
+#                        <taxon idref="t187_last"/>
+#                        <taxon idref="t142_first"/>
+#                        <taxon idref="t142_last"/>
+#                        <taxon idref="t18_first"/>
+#                        <taxon idref="t37_first"/>
+#                        <taxon idref="t37_last"/>
+#                        <taxon idref="t88_first"/>
+#                        <taxon idref="t15_first"/>
+#                        <taxon idref="t277_first"/>
+#                        <taxon idref="t277_last"/>
+#                        <taxon idref="t5_first"/>
+#                        <taxon idref="t89_first"/>
+#                        <taxon idref="t205_first"/>
+#                        <taxon idref="t205_last"/>
+#                        <taxon idref="t160_first"/>
+#                        <taxon idref="t160_last"/>
+#                        <taxon idref="t125_first"/>
+#                        <taxon idref="t267_first"/>
+#                        <taxon idref="t285_first"/>
+#                    </taxa>
+#                </trait>
+#                <taxonset idref="taxonSet"/>
+#            </tree>
+#        </distribution>
+#        <prior id="netDiversificationPrior" name="distribution" x="@netDiversification">
+#            <Uniform id="Uniform.div" lower="0.7" name="distr" upper="0.9"/>
+#        </prior>
+#        <prior id="turnoverPrior" name="distribution" x="@turnOver">
+#            <Uniform id="Uniform.turnover" lower="0.2" name="distr" upper="0.8"/>
+#        </prior>
+#        <prior id="samplingProportionPrior" name="distribution" x="@samplingProportion">
+#            <Uniform id="Uniform.samplingProportion" lower="0.2" name="distr" upper="0.8"/>
+#        </prior>
+#        <prior id="rhoPrior" name="distribution" x="@rho">
+#            <Uniform id="Uniform.rho" lower="0.7" name="distr"/>
+#        </prior>
+#        <prior id="clockRatePrior_dna" name="distribution">
+#            <parameter id="clockRate_dna" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">0.01</parameter>
+#            <Exponential id="Exponential.clockRate_dna" name="distr">
+#                <parameter estimate="false" id="expMean.clockRate_dna" name="mean" spec="beast.base.inference.parameter.RealParameter">0.01</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="clockRatePrior_morph" name="distribution">
+#            <parameter id="clockRate_morph" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">0.01</parameter>
+#            <Exponential id="Exponential.clockRate_morph" name="distr">
+#                <parameter estimate="false" id="expMean.clockRate_morph" name="mean" spec="beast.base.inference.parameter.RealParameter">0.01</parameter>
+#            </Exponential>
+#        </prior>
+#    </distribution>
+#    <distribution id="dnaTreeLikelihood" spec="beast.base.evolution.likelihood.TreeLikelihood" tree="@tree" useAmbiguities="true">
+#        <siteModel gammaCategoryCount="1" id="siteModel_dna" spec="beast.base.evolution.sitemodel.SiteModel">
+#            <substModel id="JC69" spec="beast.base.evolution.substitutionmodel.JukesCantor"/>
+#        </siteModel>
+#        <branchRateModel clock.rate="@clockRate_dna" id="StrictClock_dna" spec="beast.base.evolution.branchratemodel.StrictClockModel"/>
+#    </distribution>
+#    <distribution id="morphTreeLikelihood" spec="beast.base.evolution.likelihood.TreeLikelihood" tree="@tree" useAmbiguities="true">
+#        <siteModel gammaCategoryCount="1" id="morphSiteModel" spec="beast.base.evolution.sitemodel.SiteModel">
+#            <substModel datatype="@morphDataType" id="LewisMK" spec="morphmodels.evolution.substitutionmodel.LewisMK"/>
+#        </siteModel>
+#        <branchRateModel clock.rate="@clockRate_morph" id="StrictClock_morph" spec="beast.base.evolution.branchratemodel.StrictClockModel"/>
+#    </distribution>
+#</input>
+#
+Sample	TreeHeight	origin	netDiversification.1	netDiversification.2	netDiversification.3	netDiversification.4	turnOver.1	turnOver.2	turnOver.3	turnOver.4	samplingProportion.1	samplingProportion.2	samplingProportion.3	samplingProportion.4	rho	posterior	clockRate_dna	clockRate_morph
+0	3.9061890226512253	4.0	0.7944294670934686	0.7237233308322398	0.8629155620816684	0.7208723801046028	0.5687499924625044	0.5538662826926392	0.6402530977443226	0.2289684994941096	0.3790272184536697	0.4963094712649084	0.3643207718543613	0.7980097819491629	0.720492530893534	-77839.56903720455	1.2153068263368112E-4	0.013573911422877782
