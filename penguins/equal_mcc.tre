@@ -1,0 +1,166 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=77;
+		Taxlabels
+			Anthropornis_grandis_first
+			Anthropornis_grandis_last
+			Anthropornis_nordenskjoeldi_first
+			Anthropornis_nordenskjoeldi_last
+			Aptenodytes_forsteri_first
+			Aptenodytes_patagonicus_first
+			Archaeospheniscus_lopdelli_first
+			Archaeospheniscus_lowei_first
+			Burnside_Palaeeudyptes_first
+			Delphinornis_arctowskii_first
+			Delphinornis_gracilis_first
+			Delphinornis_larseni_first
+			Delphinornis_larseni_last
+			Delphinornis_wimani_first
+			Delphinornis_wimani_last
+			Duntroonornis_parvus_first
+			Eretiscus_tonnii_first
+			Eudyptes_chrysocome_first
+			Eudyptes_chrysolophus_first
+			Eudyptes_filholi_first
+			Eudyptes_moseleyi_first
+			Eudyptes_pachyrhynchus_first
+			Eudyptes_pachyrhynchus_last
+			Eudyptes_robustus_first
+			Eudyptes_schlegeli_first
+			Eudyptes_sclateri_first
+			Eudyptula_minor_first
+			Eudyptula_minor_last
+			Icadyptes_salasi_first
+			Inkayacu_paracasensis_first
+			Kairuku_grebneffi_first
+			Kairuku_waitaki_first
+			Madrynornis_mirandus_first
+			Marambiornis_exilis_first
+			Marambiornis_exilis_last
+			Marplesornis_novaezealandiae_first
+			Megadyptes_antipodes_first
+			Megadyptes_antipodes_last
+			Mesetaornis_polaris_first
+			Mesetaornis_polaris_last
+			Muriwaimanu_tuatahi_first
+			Muriwaimanu_tuatahi_last
+			Pachydyptes_ponderosus_first
+			Palaeeudyptes_antarcticus_first
+			Palaeeudyptes_antarcticus_last
+			Palaeeudyptes_gunnari_first
+			Palaeeudyptes_gunnari_last
+			Palaeeudyptes_klekowskii_first
+			Palaeeudyptes_klekowskii_last
+			Palaeospheniscus_bergi_first
+			Palaeospheniscus_bergi_last
+			Palaeospheniscus_biloculata_first
+			Palaeospheniscus_patagonicus_first
+			Paraptenodytes_antarcticus_first
+			Paraptenodytes_antarcticus_last
+			Perudyptes_devriesi_first
+			Platydyptes_marplesi_first
+			Platydyptes_novaezealandiae_first
+			Platydyptes_novaezealandiae_last
+			Pygoscelis_adeliae_first
+			Pygoscelis_antarctica_first
+			Pygoscelis_grandis_first
+			Pygoscelis_grandis_last
+			Pygoscelis_papua_first
+			Spheniscus_demersus_first
+			Spheniscus_demersus_last
+			Spheniscus_humboldti_first
+			Spheniscus_humboldti_last
+			Spheniscus_magellanicus_first
+			Spheniscus_megaramphus_first
+			Spheniscus_megaramphus_last
+			Spheniscus_mendiculus_first
+			Spheniscus_muizoni_first
+			Spheniscus_muizoni_last
+			Spheniscus_urbinai_first
+			Spheniscus_urbinai_last
+			Waimanu_manneringi_first
+			;
+End;
+Begin trees;
+	Translate
+		     1 Anthropornis_grandis_first,
+		     2 Anthropornis_grandis_last,
+		     3 Anthropornis_nordenskjoeldi_first,
+		     4 Anthropornis_nordenskjoeldi_last,
+		     5 Aptenodytes_forsteri_first,
+		     6 Aptenodytes_patagonicus_first,
+		     7 Archaeospheniscus_lopdelli_first,
+		     8 Archaeospheniscus_lowei_first,
+		     9 Burnside_Palaeeudyptes_first,
+		    10 Delphinornis_arctowskii_first,
+		    11 Delphinornis_gracilis_first,
+		    12 Delphinornis_larseni_first,
+		    13 Delphinornis_larseni_last,
+		    14 Delphinornis_wimani_first,
+		    15 Delphinornis_wimani_last,
+		    16 Duntroonornis_parvus_first,
+		    17 Eretiscus_tonnii_first,
+		    18 Eudyptes_chrysocome_first,
+		    19 Eudyptes_chrysolophus_first,
+		    20 Eudyptes_filholi_first,
+		    21 Eudyptes_moseleyi_first,
+		    22 Eudyptes_pachyrhynchus_first,
+		    23 Eudyptes_pachyrhynchus_last,
+		    24 Eudyptes_robustus_first,
+		    25 Eudyptes_schlegeli_first,
+		    26 Eudyptes_sclateri_first,
+		    27 Eudyptula_minor_first,
+		    28 Eudyptula_minor_last,
+		    29 Icadyptes_salasi_first,
+		    30 Inkayacu_paracasensis_first,
+		    31 Kairuku_grebneffi_first,
+		    32 Kairuku_waitaki_first,
+		    33 Madrynornis_mirandus_first,
+		    34 Marambiornis_exilis_first,
+		    35 Marambiornis_exilis_last,
+		    36 Marplesornis_novaezealandiae_first,
+		    37 Megadyptes_antipodes_first,
+		    38 Megadyptes_antipodes_last,
+		    39 Mesetaornis_polaris_first,
+		    40 Mesetaornis_polaris_last,
+		    41 Muriwaimanu_tuatahi_first,
+		    42 Muriwaimanu_tuatahi_last,
+		    43 Pachydyptes_ponderosus_first,
+		    44 Palaeeudyptes_antarcticus_first,
+		    45 Palaeeudyptes_antarcticus_last,
+		    46 Palaeeudyptes_gunnari_first,
+		    47 Palaeeudyptes_gunnari_last,
+		    48 Palaeeudyptes_klekowskii_first,
+		    49 Palaeeudyptes_klekowskii_last,
+		    50 Palaeospheniscus_bergi_first,
+		    51 Palaeospheniscus_bergi_last,
+		    52 Palaeospheniscus_biloculata_first,
+		    53 Palaeospheniscus_patagonicus_first,
+		    54 Paraptenodytes_antarcticus_first,
+		    55 Paraptenodytes_antarcticus_last,
+		    56 Perudyptes_devriesi_first,
+		    57 Platydyptes_marplesi_first,
+		    58 Platydyptes_novaezealandiae_first,
+		    59 Platydyptes_novaezealandiae_last,
+		    60 Pygoscelis_adeliae_first,
+		    61 Pygoscelis_antarctica_first,
+		    62 Pygoscelis_grandis_first,
+		    63 Pygoscelis_grandis_last,
+		    64 Pygoscelis_papua_first,
+		    65 Spheniscus_demersus_first,
+		    66 Spheniscus_demersus_last,
+		    67 Spheniscus_humboldti_first,
+		    68 Spheniscus_humboldti_last,
+		    69 Spheniscus_magellanicus_first,
+		    70 Spheniscus_megaramphus_first,
+		    71 Spheniscus_megaramphus_last,
+		    72 Spheniscus_mendiculus_first,
+		    73 Spheniscus_muizoni_first,
+		    74 Spheniscus_muizoni_last,
+		    75 Spheniscus_urbinai_first,
+		    76 Spheniscus_urbinai_last,
+		    77 Waimanu_manneringi_first
+;
+tree MCC_tree = ((((((((47[&orientation=ancestor,range=Palaeeudyptes_gunnari,rate=0.025992,taxon=Palaeeudyptes_gunnari]:5.513753999999992,(((49[&orientation=ancestor,range=Palaeeudyptes_klekowskii,rate=0.025992,taxon=Palaeeudyptes_klekowskii]:0.22884799999999927,((((45[&orientation=ancestor,range=Palaeeudyptes_antarcticus,rate=0.025992,taxon=Palaeeudyptes_antarcticus]:1.7794910000000002,(32[&orientation=ancestor,rate=0.025992,taxon=Kairuku_waitaki]:1.3702770000000015,31[&orientation=descendant,rate=0.025992,taxon=Kairuku_grebneffi]:0.21170899999999904)141[&height_95%_HPD={25.635700999999997,29.52835899999999},height_mean=27.53929363159233,height_median=27.431013500000006,height_range={25.230829000000007,36.595147000000004},orientation=descendant,posterior=0.26227486361262653,rate=0.025992]:0.3702249999999978)90[&height_95%_HPD={25.93247800000001,31.651787999999996},height_mean=28.552591530347765,height_median=28.309806000000002,height_range={25.330400999999995,37.098470000000006},orientation=ancestor,posterior=0.37889301229986333,range=Palaeeudyptes_antarcticus,rate=0.025992]:9.433633,44[&orientation=ancestor,rate=0.025992,taxon=Palaeeudyptes_antarcticus]:0.0)138[&orientation=ancestor,rate=0.025992]:0.32663800000000265,(43[&orientation=ancestor,rate=0.025992,taxon=Pachydyptes_ponderosus]:1.413052999999998,29[&orientation=descendant,rate=0.025992,taxon=Icadyptes_salasi]:0.23522799999999222)153[&height_95%_HPD={35.74639500000002,37.67839800000001},height_mean=36.603393278432996,height_median=36.49617350000001,height_range={35.70514299999999,42.621036000000004},orientation=descendant,posterior=0.0989155676048044,rate=0.025992]:0.21322100000000432)133[&height_95%_HPD={36.176774000000016,38.712752},height_mean=37.349777491337356,height_median=37.23873400000001,height_range={36.03615199999999,44.863257000000004},orientation=ancestor,posterior=0.06477150253886067,rate=0.025992]:0.9331260000000015,((((((17[&orientation=ancestor,rate=0.025992,taxon=Eretiscus_tonnii]:0.8086529999999996,53[&orientation=descendant,rate=0.025992,taxon=Palaeospheniscus_patagonicus]:2.0624930000000035)146[&height_95%_HPD={18.653562000000015,21.24832899999999},height_mean=19.849513530997733,height_median=19.772910999999993,height_range={18.32105200000001,25.88695299999999},orientation=ancestor,posterior=0.06572982522416418,rate=0.025992]:1.0884479999999996,((((((5[&orientation=ancestor,rate=0.025992,taxon=Aptenodytes_forsteri]:2.069785000000003,6[&orientation=descendant,rate=0.025992,taxon=Aptenodytes_patagonicus]:2.069785000000003)125[&height_95%_HPD={1.8272720000000007,3.1110820000000103},height_mean=2.461878249552565,height_median=2.444430500000003,height_range={1.3440350000000052,4.258716999999997},orientation=ancestor,posterior=0.4997333362962634,rate=0.025992]:11.766748,51[&orientation=ancestor,range=Palaeospheniscus_bergi,rate=0.025992,taxon=Palaeospheniscus_bergi]:0.0)126[&height_95%_HPD={11.611978000000015,15.667495000000002},height_mean=13.685111839445854,height_median=13.609429500000005,height_range={11.610027000000002,15.969529000000009},orientation=ancestor,posterior=0.07558804902167754,range=Palaeospheniscus_bergi,rate=0.025992]:0.5886750000000021,(60[&orientation=ancestor,rate=0.025992,taxon=Pygoscelis_adeliae]:10.081868999999998,(64[&orientation=ancestor,rate=0.025992,taxon=Pygoscelis_papua]:6.105539,61[&orientation=descendant,rate=0.025992,taxon=Pygoscelis_antarctica]:6.105539)109[&height_95%_HPD={4.482630000000007,6.709448000000002},height_mean=5.570654428654217,height_median=5.5469130000000035,height_range={3.5170999999999992,9.017808000000024},orientation=descendant,posterior=0.4984861279319119,rate=0.025992]:3.976329)119[&height_95%_HPD={7.997969000000005,11.355744999999999},height_mean=9.666832059058242,height_median=9.643729,height_range={6.43844,15.053146000000005},orientation=descendant,posterior=0.4940472883634626,rate=0.025992]:4.343339)98[&height_95%_HPD={13.643705000000004,17.871112000000004},height_mean=15.70356066163317,height_median=15.674324000000006,height_range={11.707744999999996,20.889371000000004},orientation=ancestor,posterior=0.07266030377440251,range=Palaeospheniscus_bergi,rate=0.025992]:0.655341,(((((((19[&orientation=ancestor,rate=0.025992,taxon=Eudyptes_chrysolophus]:0.5354499999999973,25[&orientation=descendant,rate=0.025992,taxon=Eudyptes_schlegeli]:0.5354499999999973)117[&height_95%_HPD={0.35276300000000305,0.876741999999993},height_mean=0.6060009969103599,height_median=0.5949939999999998,height_range={0.15446600000000643,1.4168619999999947},orientation=ancestor,posterior=0.4989750113887623,rate=0.025992]:2.3581000000000003,(26[&orientation=ancestor,rate=0.025992,taxon=Eudyptes_sclateri]:2.165382000000001,(24[&orientation=ancestor,rate=0.025992,taxon=Eudyptes_robustus]:0.9449210000000008,(23[&orientation=descendant,range=Eudyptes_pachyrhynchus,rate=0.025992,taxon=Eudyptes_pachyrhynchus]:0.01908499999999691,22[&orientation=descendant,rate=0.025992,taxon=Eudyptes_pachyrhynchus]:0.0)100[&orientation=descendant,rate=0.025992]:0.9258359999999968)104[&height_95%_HPD={0.7384610000000009,1.427143000000001},height_mean=1.0677145726483104,height_median=1.0567784999999965,height_range={0.47491600000000744,2.1279719999999998},orientation=descendant,posterior=0.49939445117276476,rate=0.025992]:1.2204619999999977)110[&height_95%_HPD={2.0308780000000084,3.1977490000000017},height_mean=2.603344914821866,height_median=2.5875710000000076,height_range={1.5129639999999966,4.3519039999999904},orientation=descendant,posterior=0.3847123920845324,rate=0.025992]:0.7281679999999966)102[&height_95%_HPD={2.447359999999996,3.7025310000000076},height_mean=3.0494366207600523,height_median=3.0336630000000007,height_range={1.928376,4.990877999999995},orientation=ancestor,posterior=0.22585860157109366,rate=0.025992]:0.48158200000000306,((20[&orientation=ancestor,rate=0.025992,taxon=Eudyptes_filholi]:0.4362169999999992,18[&orientation=descendant,rate=0.025992,taxon=Eudyptes_chrysocome]:0.4362169999999992)108[&height_95%_HPD={0.18235400000000368,0.8241800000000055},height_mean=0.4820515055094286,height_median=0.46213850000000534,height_range={0.05874900000001304,1.734220999999998},orientation=ancestor,posterior=0.4991388984566838,rate=0.025992]:0.300612000000001,21[&orientation=descendant,rate=0.025992,taxon=Eudyptes_moseleyi]:0.7368290000000002)112[&height_95%_HPD={0.6572490000000073,1.6658669999999987},height_mean=1.1390773736550672,height_median=1.1142889999999994,height_range={0.3025790000000086,2.954365000000003},orientation=descendant,posterior=0.5003222186420151,rate=0.025992]:2.6383030000000005)101[&height_95%_HPD={2.7228250000000216,4.364399000000006},height_mean=3.515292659564708,height_median=3.4830340000000106,height_range={1.985229000000004,6.018912999999998},orientation=ancestor,posterior=0.24158342685081277,rate=0.025992]:2.5559889999999967,(38[&orientation=descendant,range=Megadyptes_antipodes,rate=0.025992,taxon=Megadyptes_antipodes]:0.06812500000000199,37[&orientation=descendant,rate=0.025992,taxon=Megadyptes_antipodes]:0.0)103[&orientation=descendant,rate=0.025992]:5.8629960000000025)114[&height_95%_HPD={5.330832000000015,7.6912790000000015},height_mean=6.487042506255485,height_median=6.461762000000004,height_range={4.231641000000003,9.979875},orientation=ancestor,posterior=0.44582837968467015,rate=0.025992]:3.9384680000000003,33[&orientation=ancestor,rate=0.025992,taxon=Madrynornis_mirandus]:0.0)140[&height_95%_HPD={9.726549000000006,10.296014000000007},height_mean=10.000810178766383,height_median=10.000419000000004,height_range={9.700005999999995,10.299999},orientation=ancestor,posterior=0.33196297818913123,rate=0.025992]:1.8955040000000025,((28[&orientation=ancestor,range=Eudyptula_minor,rate=0.025992,taxon=Eudyptula_minor]:0.052627999999998565,27[&orientation=ancestor,rate=0.025992,taxon=Eudyptula_minor]:0.0)106[&orientation=ancestor,rate=0.025992]:10.822271999999998,(((76[&orientation=ancestor,range=Spheniscus_urbinai,rate=0.025992,taxon=Spheniscus_urbinai]:3.6439650000000015,(71[&orientation=descendant,range=Spheniscus_megaramphus,rate=0.025992,taxon=Spheniscus_megaramphus]:1.390304999999998,70[&orientation=descendant,rate=0.025992,taxon=Spheniscus_megaramphus]:0.0)95[&orientation=descendant,rate=0.025992]:0.7844109999999986)127[&height_95%_HPD={6.950669999999995,10.34921099999999},height_mean=8.723531520474905,height_median=8.799409000000004,height_range={5.407788000000004,11.503324000000006},orientation=ancestor,posterior=0.15581215764269285,range=Spheniscus_urbinai,rate=0.025992]:0.7274889999999985,75[&orientation=ancestor,rate=0.025992,taxon=Spheniscus_urbinai]:0.0)94[&orientation=ancestor,rate=0.025992]:0.28431400000000195,(36[&orientation=ancestor,rate=0.025992,taxon=Marplesornis_novaezealandiae]:0.9058109999999999,((74[&orientation=ancestor,range=Spheniscus_muizoni,rate=0.025992,taxon=Spheniscus_muizoni]:1.560969,(((68[&orientation=ancestor,range=Spheniscus_humboldti,rate=0.025992,taxon=Spheniscus_humboldti]:1.9242709999999974,72[&orientation=descendant,rate=0.025992,taxon=Spheniscus_mendiculus]:1.9242709999999974)92[&height_95%_HPD={1.3884410000000003,2.3955030000000193},height_mean=1.8832661484250164,height_median=1.870504000000004,height_range={0.8939519999999987,3.304655000000004},orientation=ancestor,posterior=0.9699142231752981,range=Spheniscus_humboldti,rate=0.025992]:0.3262670000000014,((66[&orientation=ancestor,range=Spheniscus_demersus,rate=0.025992,taxon=Spheniscus_demersus]:0.7103979999999979,65[&orientation=ancestor,rate=0.025992,taxon=Spheniscus_demersus]:0.0)113[&orientation=ancestor,rate=0.025992]:1.1151219999999995,69[&orientation=descendant,rate=0.025992,taxon=Spheniscus_magellanicus]:1.8255199999999974)115[&height_95%_HPD={1.0504979999999975,1.9521020000000036},height_mean=1.4881334937501398,height_median=1.4749344999999963,height_range={0.6929209999999983,2.793695999999997},orientation=descendant,posterior=0.5004499950000556,rate=0.025992]:0.42501800000000145)121[&height_95%_HPD={1.8344660000000061,2.8855160000000026},height_mean=2.3517930185537392,height_median=2.3380810000000025,height_range={1.3771670000000071,3.9954500000000053},orientation=descendant,posterior=0.969842001755536,range=Spheniscus_humboldti,rate=0.025992]:3.827122000000003,67[&orientation=descendant,rate=0.025992,taxon=Spheniscus_humboldti]:0.0)96[&orientation=descendant,rate=0.025992]:1.683805999999997)123[&height_95%_HPD={5.8588650000000015,9.725676000000014},height_mean=7.899029931813959,height_median=7.925502999999999,height_range={5.309128000000008,11.560887000000008},orientation=descendant,posterior=0.2793385629048566,range=Spheniscus_muizoni,rate=0.025992]:1.9453129999999987,73[&orientation=descendant,rate=0.025992,taxon=Spheniscus_muizoni]:0.0)93[&orientation=descendant,rate=0.025992]:0.4020020000000031)105[&height_95%_HPD={9.074415000000002,11.358077000000009},height_mean=10.166407306639625,height_median=10.086721000000011,height_range={9.006967000000003,13.58895900000001},orientation=descendant,posterior=0.016441483983511293,rate=0.025992]:0.16827500000000128)99[&height_95%_HPD={9.438732000000009,11.915208000000014},height_mean=10.614472246079004,height_median=10.552492000000004,height_range={9.105297000000007,14.05315000000001},orientation=descendant,posterior=0.06446595037832913,rate=0.025992]:0.597842)122[&height_95%_HPD={10.093225000000004,13.116847999999997},height_mean=11.587567557308544,height_median=11.540844000000007,height_range={9.324511000000001,17.272774000000013},orientation=descendant,posterior=0.3492988966789258,rate=0.025992]:0.8901929999999965)111[&height_95%_HPD={11.055016000000009,14.535440000000001},height_mean=12.762585799336618,height_median=12.721560000000004,height_range={10.096146000000005,19.65586000000001},orientation=ancestor,posterior=0.20013944289507896,rate=0.025992]:1.652273000000001,(63[&orientation=descendant,range=Pygoscelis_grandis,rate=0.025992,taxon=Pygoscelis_grandis]:2.516879000000003,62[&orientation=descendant,rate=0.025992,taxon=Pygoscelis_grandis]:0.0)120[&orientation=descendant,rate=0.025992]:6.686785)107[&height_95%_HPD={11.739537000000006,16.633335999999993},height_mean=14.242959117637058,height_median=14.19707,height_range={10.216915000000007,21.077666000000008},orientation=descendant,posterior=0.03282185753491628,rate=0.025992]:1.663181999999999)130[&height_95%_HPD={15.007135999999996,19.157560000000004},height_mean=16.953257553782212,height_median=16.91278900000001,height_range={12.694916,22.423896000000006},orientation=ancestor,posterior=0.19980055777158032,range=Palaeospheniscus_bergi,rate=0.025992]:4.436574999999998,52[&orientation=descendant,rate=0.025992,taxon=Palaeospheniscus_biloculata]:0.49004899999999907)118[&height_95%_HPD={18.30442099999999,20.680267000000015},height_mean=19.43474308825299,height_median=19.363386000000013,height_range={18.206821000000005,23.687395000000002},orientation=descendant,posterior=0.06892978966900368,range=Palaeospheniscus_bergi,rate=0.025992]:0.7367160000000013,50[&orientation=descendant,rate=0.025992,taxon=Palaeospheniscus_bergi]:0.0)91[&orientation=descendant,rate=0.025992]:1.1677299999999988)97[&height_95%_HPD={19.310671000000006,23.168687},height_mean=21.014277777853593,height_median=20.839122499999995,height_range={18.786938,26.36312800000001},orientation=ancestor,posterior=0.028521905312163198,rate=0.025992]:5.20834,59[&orientation=ancestor,range=Platydyptes_novaezealandiae,rate=0.025992,taxon=Platydyptes_novaezealandiae]:0.0)83[&height_95%_HPD={25.23375700000001,27.218531000000006},height_mean=26.240728949172148,height_median=26.238517500000004,height_range={25.20002300000001,27.299965},orientation=ancestor,posterior=0.16373151409428785,range=Platydyptes_novaezealandiae,rate=0.025992]:6.534013000000002,57[&orientation=descendant,rate=0.025992,taxon=Platydyptes_marplesi]:6.48695)134[&height_95%_HPD={25.769504000000005,32.295657},height_mean=28.490449620091784,height_median=28.076935,height_range={25.274379000000003,35.83939800000001},orientation=ancestor,posterior=0.1568343685070166,range=Platydyptes_novaezealandiae,rate=0.025992]:1.7299879999999987,58[&orientation=ancestor,rate=0.025992,taxon=Platydyptes_novaezealandiae]:0.0)88[&orientation=ancestor,rate=0.025992]:1.7358779999999996,((((55[&orientation=ancestor,range=Paraptenodytes_antarcticus,rate=0.025992,taxon=Paraptenodytes_antarcticus]:2.9008620000000036,54[&orientation=ancestor,rate=0.025992,taxon=Paraptenodytes_antarcticus]:0.0)128[&orientation=ancestor,rate=0.025992]:5.90972,7[&orientation=ancestor,rate=0.025992,taxon=Archaeospheniscus_lopdelli]:0.0)132[&height_95%_HPD={25.200047000000012,27.09105000000001},height_mean=26.059123774982762,height_median=25.98196950000001,height_range={25.200047000000012,27.299926000000013},orientation=ancestor,posterior=0.1559371562538194,rate=0.025992]:1.0184640000000016,16[&orientation=descendant,rate=0.025992,taxon=Duntroonornis_parvus]:0.4770869999999974)131[&height_95%_HPD={25.522223999999987,28.585080999999995},height_mean=27.01473377345302,height_median=26.931183999999995,height_range={25.301120999999995,37.49192500000001},orientation=ancestor,posterior=0.02105254386062377,rate=0.025992]:8.704542000000004,8[&orientation=descendant,rate=0.025992,taxon=Archaeospheniscus_lowei]:8.067972000000005)149[&height_95%_HPD={25.861856000000003,30.683598000000014},height_mean=28.10115208274111,height_median=27.7962015,height_range={25.59540900000001,38.01275000000001},orientation=descendant,posterior=0.04689947889467895,rate=0.025992]:1.5479349999999954)143[&height_95%_HPD={34.557208999999986,38.268957000000015},height_mean=36.29259832718432,height_median=36.118292,height_range={34.315205,45.761696},orientation=descendant,posterior=0.019424784169064787,rate=0.025992]:1.0150560000000013)129[&height_95%_HPD={36.43570399999998,39.772019},height_mean=37.96796484771855,height_median=37.79939500000001,height_range={36.079043999999996,46.636115000000004},orientation=descendant,posterior=0.024169175898045576,rate=0.025992]:1.1613700000000051)139[&height_95%_HPD={36.857684,40.74540999999999},height_mean=38.69232004637968,height_median=38.613724000000005,height_range={36.23138899999999,41.25301800000001},orientation=ancestor,posterior=0.026891367873690293,range=Palaeeudyptes_klekowskii,rate=0.025992]:0.3767399999999981,(30[&orientation=ancestor,rate=0.025992,taxon=Inkayacu_paracasensis]:1.353905999999995,9[&orientation=descendant,rate=0.025992,taxon=Burnside_Palaeeudyptes]:0.9540640000000025)147[&height_95%_HPD={36.205690999999995,38.761568},height_mean=37.383804369339444,height_median=37.26253700000002,height_range={36.00417399999999,44.953202000000005},orientation=descendant,posterior=0.23720014222064198,rate=0.025992]:1.170738)89[&height_95%_HPD={37.70560300000001,40.96983},height_mean=39.33759918417599,height_median=39.34274500000001,height_range={36.565318000000005,41.254217},orientation=descendant,posterior=0.04862445972822524,range=Palaeeudyptes_klekowskii,rate=0.025992]:2.0734530000000007,48[&orientation=descendant,rate=0.025992,taxon=Palaeeudyptes_klekowskii]:0.0)82[&orientation=descendant,rate=0.025992]:0.9941929999999957)80[&height_95%_HPD={41.25644100000001,42.839613},height_mean=41.824776884409594,height_median=41.684544,height_range={41.25642400000001,43.968287},orientation=ancestor,posterior=0.12003477739136231,range=Palaeeudyptes_gunnari,rate=0.025992]:0.7103420000000042,46[&orientation=ancestor,rate=0.025992,taxon=Palaeeudyptes_gunnari]:0.0)85[&orientation=ancestor,rate=0.025992]:0.7172210000000021,((2[&orientation=ancestor,range=Anthropornis_grandis,rate=0.025992,taxon=Anthropornis_grandis]:2.056833999999995,1[&orientation=ancestor,rate=0.025992,taxon=Anthropornis_grandis]:0.0)79[&orientation=ancestor,rate=0.025992]:0.41250300000000095,(4[&orientation=descendant,range=Anthropornis_nordenskjoeldi,rate=0.025992,taxon=Anthropornis_nordenskjoeldi]:2.822119999999998,3[&orientation=descendant,rate=0.025992,taxon=Anthropornis_nordenskjoeldi]:0.0)78[&orientation=descendant,rate=0.025992]:0.39585300000000245)136[&height_95%_HPD={41.25885200000002,43.467629},height_mean=41.965376317069435,height_median=41.71429600000001,height_range={41.25885200000002,54.46391},orientation=descendant,posterior=0.4722197531138543,rate=0.025992]:2.023458000000005)116[&height_95%_HPD={42.10881300000001,47.738924},height_mean=44.657585541940946,height_median=44.389680000000006,height_range={41.57000699999999,68.23776300000002},orientation=ancestor,posterior=0.18759513783180187,rate=0.025992]:1.176755,56[&orientation=descendant,rate=0.025992,taxon=Perudyptes_devriesi]:0.05125600000000219)148[&height_95%_HPD={43.49959599999999,51.273458999999995},height_mean=46.97747820354456,height_median=46.684388000000006,height_range={42.24017100000001,70.451244},orientation=ancestor,posterior=0.06880756880479105,rate=0.025992]:2.2137889999999913,((((13[&orientation=ancestor,range=Delphinornis_larseni,rate=0.025992,taxon=Delphinornis_larseni]:2.348526999999997,11[&orientation=descendant,rate=0.025992,taxon=Delphinornis_gracilis]:0.6461739999999949)135[&height_95%_HPD={36.15806100000001,40.594350999999996},height_mean=38.67107130423063,height_median=38.92844050000001,height_range={34.04782000000001,40.99683300000001},orientation=ancestor,posterior=0.3997288919012011,range=Delphinornis_larseni,rate=0.025992]:1.1242420000000024,12[&orientation=ancestor,rate=0.025992,taxon=Delphinornis_larseni]:0.0)87[&orientation=ancestor,rate=0.025992]:0.7444929999999914,((15[&orientation=ancestor,range=Delphinornis_wimani,rate=0.025992,taxon=Delphinornis_wimani]:0.6775589999999951,10[&orientation=descendant,rate=0.025992,taxon=Delphinornis_arctowskii]:0.8850009999999955)124[&height_95%_HPD={36.490693000000014,41.281124},height_mean=39.004301296712924,height_median=39.213091000000006,height_range={34.14615800000001,41.281423000000004},orientation=descendant,posterior=0.5043916178709126,range=Delphinornis_wimani,rate=0.025992]:1.371920000000003,14[&orientation=descendant,rate=0.025992,taxon=Delphinornis_wimani]:0.0)145[&orientation=descendant,rate=0.025992]:0.4536779999999965)137[&height_95%_HPD={41.281496000000004,45.89805199999999},height_mean=42.8733873536741,height_median=42.40569050000001,height_range={41.281496000000004,65.25064100000002},orientation=ancestor,posterior=0.21781424650837214,rate=0.025992]:2.866275999999999,((35[&orientation=ancestor,range=Marambiornis_exilis,rate=0.025992,taxon=Marambiornis_exilis]:2.813552999999999,34[&orientation=ancestor,rate=0.025992,taxon=Marambiornis_exilis]:0.0)86[&orientation=ancestor,rate=0.025992]:0.8024759999999986,(40[&orientation=descendant,range=Mesetaornis_polaris,rate=0.025992,taxon=Mesetaornis_polaris]:4.040939000000002,39[&orientation=descendant,rate=0.025992,taxon=Mesetaornis_polaris]:0.0)81[&orientation=descendant,rate=0.025992]:1.0753850000000043)151[&height_95%_HPD={41.43310000000001,44.160657000000015},height_mean=42.27079577969408,height_median=41.95757050000001,height_range={41.43310000000001,57.77453},orientation=descendant,posterior=0.3348962789302341,rate=0.025992]:2.365867999999992)150[&height_95%_HPD={41.80613699999999,49.489238},height_mean=45.0805935695232,height_median=44.633731,height_range={41.48412000000002,92.39120499999999},orientation=descendant,posterior=0.09559060454883835,rate=0.025992]:2.467264)142[&height_95%_HPD={44.928586000000024,57.217400000000005},height_mean=50.50821425650374,height_median=49.982896,height_range={43.12386400000001,89.73293699999999},orientation=ancestor,posterior=0.07250197220030889,rate=0.025992]:11.595532000000006,42[&orientation=ancestor,range=Muriwaimanu_tuatahi,rate=0.025992,taxon=Muriwaimanu_tuatahi]:0.0)84[&height_95%_HPD={55.963316,58.69747500000001},height_mean=57.306782224641935,height_median=57.353046,height_range={55.800017999999994,58.699913000000016},orientation=ancestor,posterior=0.3414545393940067,range=Muriwaimanu_tuatahi,rate=0.025992]:0.6536419999999978,41[&orientation=ancestor,rate=0.025992,taxon=Muriwaimanu_tuatahi]:0.0)152[&orientation=ancestor,rate=0.025992]:2.6032089999999997,77[&orientation=descendant,rate=0.025992,taxon=Waimanu_manneringi]:0.9582539999999966)144[&height_95%_HPD={60.533249,65.224126},height_mean=62.28132918355815,height_median=61.828163,height_range={60.501755,96.543564},orientation=ancestor,posterior=0.19465339274008067,rate=0.025992]:0.0;
+End;

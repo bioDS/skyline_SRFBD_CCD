@@ -1,0 +1,167 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=77;
+		Taxlabels
+			Aptenodytes_forsteri_first
+			Aptenodytes_patagonicus_first
+			Pygoscelis_antarctica_first
+			Pygoscelis_papua_first
+			Pygoscelis_adeliae_first
+			Megadyptes_antipodes_first
+			Megadyptes_antipodes_last
+			Eudyptes_chrysocome_first
+			Eudyptes_chrysolophus_first
+			Eudyptes_filholi_first
+			Eudyptes_moseleyi_first
+			Eudyptes_pachyrhynchus_first
+			Eudyptes_pachyrhynchus_last
+			Eudyptes_robustus_first
+			Eudyptes_schlegeli_first
+			Eudyptes_sclateri_first
+			Eudyptula_minor_first
+			Eudyptula_minor_last
+			Madrynornis_mirandus_first
+			Spheniscus_demersus_first
+			Spheniscus_demersus_last
+			Spheniscus_magellanicus_first
+			Spheniscus_humboldti_first
+			Spheniscus_humboldti_last
+			Spheniscus_mendiculus_first
+			Spheniscus_urbinai_first
+			Spheniscus_urbinai_last
+			Spheniscus_megaramphus_first
+			Spheniscus_megaramphus_last
+			Spheniscus_muizoni_first
+			Spheniscus_muizoni_last
+			Marplesornis_novaezealandiae_first
+			Palaeospheniscus_biloculata_first
+			Palaeospheniscus_bergi_first
+			Palaeospheniscus_bergi_last
+			Palaeospheniscus_patagonicus_first
+			Eretiscus_tonnii_first
+			Platydyptes_novaezealandiae_first
+			Platydyptes_novaezealandiae_last
+			Platydyptes_marplesi_first
+			Paraptenodytes_antarcticus_first
+			Paraptenodytes_antarcticus_last
+			Archaeospheniscus_lopdelli_first
+			Archaeospheniscus_lowei_first
+			Pachydyptes_ponderosus_first
+			Perudyptes_devriesi_first
+			Icadyptes_salasi_first
+			Inkayacu_paracasensis_first
+			Burnside_Palaeeudyptes_first
+			Kairuku_waitaki_first
+			Kairuku_grebneffi_first
+			Palaeeudyptes_klekowskii_first
+			Palaeeudyptes_klekowskii_last
+			Palaeeudyptes_gunnari_first
+			Palaeeudyptes_gunnari_last
+			Anthropornis_nordenskjoeldi_first
+			Anthropornis_nordenskjoeldi_last
+			Anthropornis_grandis_first
+			Anthropornis_grandis_last
+			Delphinornis_wimani_first
+			Delphinornis_wimani_last
+			Delphinornis_gracilis_first
+			Delphinornis_arctowskii_first
+			Delphinornis_larseni_first
+			Delphinornis_larseni_last
+			Mesetaornis_polaris_first
+			Mesetaornis_polaris_last
+			Marambiornis_exilis_first
+			Marambiornis_exilis_last
+			Muriwaimanu_tuatahi_first
+			Muriwaimanu_tuatahi_last
+			Waimanu_manneringi_first
+			Duntroonornis_parvus_first
+			Pygoscelis_grandis_first
+			Pygoscelis_grandis_last
+			Palaeeudyptes_antarcticus_first
+			Palaeeudyptes_antarcticus_last
+			;
+End;
+Begin trees;
+	Translate
+		     1 Aptenodytes_forsteri_first,
+		     2 Aptenodytes_patagonicus_first,
+		     3 Pygoscelis_antarctica_first,
+		     4 Pygoscelis_papua_first,
+		     5 Pygoscelis_adeliae_first,
+		     6 Megadyptes_antipodes_first,
+		     7 Megadyptes_antipodes_last,
+		     8 Eudyptes_chrysocome_first,
+		     9 Eudyptes_chrysolophus_first,
+		    10 Eudyptes_filholi_first,
+		    11 Eudyptes_moseleyi_first,
+		    12 Eudyptes_pachyrhynchus_first,
+		    13 Eudyptes_pachyrhynchus_last,
+		    14 Eudyptes_robustus_first,
+		    15 Eudyptes_schlegeli_first,
+		    16 Eudyptes_sclateri_first,
+		    17 Eudyptula_minor_first,
+		    18 Eudyptula_minor_last,
+		    19 Madrynornis_mirandus_first,
+		    20 Spheniscus_demersus_first,
+		    21 Spheniscus_demersus_last,
+		    22 Spheniscus_magellanicus_first,
+		    23 Spheniscus_humboldti_first,
+		    24 Spheniscus_humboldti_last,
+		    25 Spheniscus_mendiculus_first,
+		    26 Spheniscus_urbinai_first,
+		    27 Spheniscus_urbinai_last,
+		    28 Spheniscus_megaramphus_first,
+		    29 Spheniscus_megaramphus_last,
+		    30 Spheniscus_muizoni_first,
+		    31 Spheniscus_muizoni_last,
+		    32 Marplesornis_novaezealandiae_first,
+		    33 Palaeospheniscus_biloculata_first,
+		    34 Palaeospheniscus_bergi_first,
+		    35 Palaeospheniscus_bergi_last,
+		    36 Palaeospheniscus_patagonicus_first,
+		    37 Eretiscus_tonnii_first,
+		    38 Platydyptes_novaezealandiae_first,
+		    39 Platydyptes_novaezealandiae_last,
+		    40 Platydyptes_marplesi_first,
+		    41 Paraptenodytes_antarcticus_first,
+		    42 Paraptenodytes_antarcticus_last,
+		    43 Archaeospheniscus_lopdelli_first,
+		    44 Archaeospheniscus_lowei_first,
+		    45 Pachydyptes_ponderosus_first,
+		    46 Perudyptes_devriesi_first,
+		    47 Icadyptes_salasi_first,
+		    48 Inkayacu_paracasensis_first,
+		    49 Burnside_Palaeeudyptes_first,
+		    50 Kairuku_waitaki_first,
+		    51 Kairuku_grebneffi_first,
+		    52 Palaeeudyptes_klekowskii_first,
+		    53 Palaeeudyptes_klekowskii_last,
+		    54 Palaeeudyptes_gunnari_first,
+		    55 Palaeeudyptes_gunnari_last,
+		    56 Anthropornis_nordenskjoeldi_first,
+		    57 Anthropornis_nordenskjoeldi_last,
+		    58 Anthropornis_grandis_first,
+		    59 Anthropornis_grandis_last,
+		    60 Delphinornis_wimani_first,
+		    61 Delphinornis_wimani_last,
+		    62 Delphinornis_gracilis_first,
+		    63 Delphinornis_arctowskii_first,
+		    64 Delphinornis_larseni_first,
+		    65 Delphinornis_larseni_last,
+		    66 Mesetaornis_polaris_first,
+		    67 Mesetaornis_polaris_last,
+		    68 Marambiornis_exilis_first,
+		    69 Marambiornis_exilis_last,
+		    70 Muriwaimanu_tuatahi_first,
+		    71 Muriwaimanu_tuatahi_last,
+		    72 Waimanu_manneringi_first,
+		    73 Duntroonornis_parvus_first,
+		    74 Pygoscelis_grandis_first,
+		    75 Pygoscelis_grandis_last,
+		    76 Palaeeudyptes_antarcticus_first,
+		    77 Palaeeudyptes_antarcticus_last
+;
+
+tree sranges_MAP = (Waimanu_manneringi_first[&orientation=descendant]:0,((Muriwaimanu_tuatahi_last[&orientation=ancestor,ancestral_range=Muriwaimanu_tuatahi_first]:0,(((Delphinornis_wimani_last[&orientation=ancestor,ancestral_range=Delphinornis_wimani_first]:2.32646,Delphinornis_arctowskii_first[&orientation=descendant]:1.48513)internal_extra_4[&orientation=ancestor,ancestral_range=Delphinornis_wimani_first]:2.38665,Delphinornis_wimani_first[&orientation=descendant]:0)internal_4[&orientation=ancestor]:2.01093,((Palaeeudyptes_gunnari_first[&orientation=ancestor]:0,((((Palaeeudyptes_gunnari_last[&orientation=ancestor,ancestral_range=Palaeeudyptes_gunnari_first]:2.95443,((Palaeeudyptes_antarcticus_first[&orientation=ancestor]:0,((((Palaeeudyptes_antarcticus_last[&orientation=ancestor,ancestral_range=Palaeeudyptes_antarcticus_first]:3.3171,((Paraptenodytes_antarcticus_last[&orientation=ancestor,ancestral_range=Paraptenodytes_antarcticus_first]:0,(Pygoscelis_grandis_last[&orientation=ancestor,ancestral_range=Pygoscelis_grandis_first]:2.3438,Pygoscelis_grandis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:10.9419)internal_extra_15[&orientation=ancestor,ancestral_range=Paraptenodytes_antarcticus_first]:1.59031,Paraptenodytes_antarcticus_first[&orientation=descendant]:0)internal_15[&orientation=descendant]:3.3171)internal_13[&orientation=ancestor,ancestral_range=Palaeeudyptes_antarcticus_first]:3.59128,Archaeospheniscus_lopdelli_first[&orientation=descendant]:1.1273)internal_12[&orientation=ancestor,ancestral_range=Palaeeudyptes_antarcticus_first]:0.171286,Duntroonornis_parvus_first[&orientation=descendant]:1.21165)internal_11[&orientation=descendant,ancestral_range=Palaeeudyptes_antarcticus_first]:0.570681,Archaeospheniscus_lowei_first[&orientation=descendant]:1.5011)internal_extra_11[&orientation=ancestor,ancestral_range=Palaeeudyptes_antarcticus_first]:9.02452)internal_11[&orientation=ancestor]:0.381899,(Icadyptes_salasi_first[&orientation=descendant]:0,(Pachydyptes_ponderosus_first[&orientation=descendant]:0,(Kairuku_waitaki_first[&orientation=descendant]:0,(((Palaeospheniscus_bergi_first[&orientation=ancestor]:0,((Palaeospheniscus_bergi_last[&orientation=ancestor,ancestral_range=Palaeospheniscus_bergi_first]:2.90641,Palaeospheniscus_patagonicus_first[&orientation=descendant]:0.649864)internal_21[&orientation=descendant,ancestral_range=Palaeospheniscus_bergi_first]:0.686716,(Palaeospheniscus_biloculata_first[&orientation=descendant]:0,(((Pygoscelis_adeliae_first[&orientation=descendant]:9.66056,(Pygoscelis_antarctica_first[&orientation=descendant]:5.57183,Pygoscelis_papua_first[&orientation=descendant]:5.57184)internal_26[&orientation=descendant]:4.09124)internal_25[&orientation=ancestor]:5.06275,(Aptenodytes_forsteri_first[&orientation=descendant]:2.46231,Aptenodytes_patagonicus_first[&orientation=descendant]:2.46231)internal_27[&orientation=descendant]:10.7702)internal_24[&orientation=ancestor]:1.45984,(((Eudyptula_minor_last[&orientation=ancestor,ancestral_range=Eudyptula_minor_first]:0.0689888,Eudyptula_minor_first[&orientation=descendant]:0)internal_leafrange[&orientation=ancestor]:11.3658,((Spheniscus_urbinai_first[&orientation=ancestor]:0,((Spheniscus_urbinai_last[&orientation=ancestor,ancestral_range=Spheniscus_urbinai_first]:3.00062,Marplesornis_novaezealandiae_last[&orientation=descendant]:3.00062)internal_32[&orientation=descendant,ancestral_range=Spheniscus_urbinai_first]:1.71886,(Spheniscus_megaramphus_last[&orientation=ancestor,ancestral_range=Spheniscus_megaramphus_first]:1.69258,Spheniscus_megaramphus_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:1.17522)internal_extra_32[&orientation=ancestor,ancestral_range=Spheniscus_urbinai_first]:0.812504)internal_32[&orientation=ancestor]:0.635686,((Spheniscus_muizoni_last[&orientation=ancestor,ancestral_range=Spheniscus_muizoni_first]:1.94224,(Spheniscus_humboldti_first[&orientation=ancestor]:0,((Spheniscus_humboldti_last[&orientation=ancestor,ancestral_range=Spheniscus_humboldti_first]:1.89826,Spheniscus_mendiculus_first[&orientation=descendant]:1.88382)internal_35[&orientation=descendant,ancestral_range=Spheniscus_humboldti_first]:0.468556,((Spheniscus_demersus_last[&orientation=ancestor,ancestral_range=Spheniscus_demersus_first]:0.455154,Spheniscus_demersus_first[&orientation=descendant]:0)internal_leafrange[&orientation=ancestor]:1.03273,Spheniscus_magellanicus_first[&orientation=descendant]:1.48788)internal_36[&orientation=descendant]:0.857828)internal_extra_35[&orientation=ancestor,ancestral_range=Spheniscus_humboldti_first]:3.67739)internal_35[&orientation=ancestor]:1.92758)internal_extra_34[&orientation=ancestor,ancestral_range=Spheniscus_muizoni_first]:1.61382,Spheniscus_muizoni_first[&orientation=descendant]:0)internal_34[&orientation=ancestor]:0.784253)internal_30[&orientation=descendant]:0.978025)internal_29[&orientation=ancestor]:1.27624,(Madrynornis_mirandus_first[&orientation=descendant]:0,((((Eudyptes_sclateri_first[&orientation=descendant]:2.71777,((Eudyptes_pachyrhynchus_last[&orientation=ancestor,ancestral_range=Eudyptes_pachyrhynchus_first]:0.0693213,Eudyptes_pachyrhynchus_first[&orientation=descendant]:0)internal_leafrange[&orientation=ancestor]:0.998675,Eudyptes_robustus_first[&orientation=descendant]:1.068)internal_42[&orientation=descendant]:1.57491)internal_41[&orientation=ancestor]:0.494224,(Eudyptes_schlegeli_first[&orientation=descendant]:0.605973,Eudyptes_chrysolophus_first[&orientation=descendant]:0.605973)internal_43[&orientation=descendant]:2.3886)internal_40[&orientation=ancestor]:0.469074,((Eudyptes_chrysocome_first[&orientation=descendant]:0.482781,Eudyptes_filholi_first[&orientation=descendant]:0.482892)internal_45[&orientation=ancestor]:0.656529,Eudyptes_moseleyi_first[&orientation=descendant]:1.13863)internal_44[&orientation=descendant]:2.04152)internal_39[&orientation=ancestor]:3.12236,(Megadyptes_antipodes_last[&orientation=ancestor,ancestral_range=Megadyptes_antipodes_first]:0.0690602,Megadyptes_antipodes_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:6.42197)internal_38[&orientation=descendant]:3.54682)internal_37[&orientation=descendant]:2.14485)internal_28[&orientation=descendant]:2.91487)internal_23[&orientation=descendant]:2.69653)internal_22[&orientation=descendant]:0.367199)internal_extra_21[&orientation=ancestor,ancestral_range=Palaeospheniscus_bergi_first]:0.105997)internal_21[&orientation=ancestor]:0.708193,Eretiscus_tonnii_first[&orientation=descendant]:1.46067)internal_19[&orientation=ancestor]:4.42026,Kairuku_grebneffi_first[&orientation=descendant]:1.20515)internal_18[&orientation=descendant]:0.391967)internal_17[&orientation=descendant]:10.0044)internal_16[&orientation=descendant]:0.556014)internal_15[&orientation=descendant]:0.290324)internal_9[&orientation=descendant]:1.49753)internal_8[&orientation=ancestor,ancestral_range=Palaeeudyptes_gunnari_first]:2.08388,(Inkayacu_paracasensis_first[&orientation=descendant]:0.976047,Burnside_Palaeeudyptes_first[&orientation=descendant]:0.866818)internal_46[&orientation=descendant]:1.72997)internal_7[&orientation=ancestor,ancestral_range=Palaeeudyptes_gunnari_first]:2.72262,((Palaeeudyptes_klekowskii_last[&orientation=ancestor,ancestral_range=Palaeeudyptes_klekowskii_first]:2.60085,Palaeeudyptes_klekowskii_first[&orientation=descendant]:0)internal_leafrange[&orientation=ancestor]:1.581,((Anthropornis_nordenskjoeldi_last[&orientation=ancestor,ancestral_range=Anthropornis_nordenskjoeldi_first]:3.98771,Anthropornis_nordenskjoeldi_first[&orientation=descendant]:0)internal_leafrange[&orientation=ancestor]:0.738252,(Anthropornis_grandis_last[&orientation=ancestor,ancestral_range=Anthropornis_grandis_first]:3.57561,Anthropornis_grandis_first[&orientation=descendant]:0)internal_leafrange[&orientation=descendant]:0.753489)internal_48[&orientation=descendant]:3.07116)internal_47[&orientation=descendant]:0.399779)internal_6[&orientation=descendant,ancestral_range=Palaeeudyptes_gunnari_first]:0.536113,((Marambiornis_exilis_last[&orientation=ancestor,ancestral_range=Marambiornis_exilis_first]:3.66929,Marambiornis_exilis_first[&orientation=descendant]:0)internal_leafrange[&orientation=ancestor]:0.941117,(Mesetaornis_polaris_first[&orientation=ancestor]:0,((Mesetaornis_polaris_last[&orientation=ancestor,ancestral_range=Mesetaornis_polaris_first]:3.44175,Delphinornis_gracilis_first[&orientation=descendant]:1.59009)internal_51[&orientation=descendant,ancestral_range=Mesetaornis_polaris_first]:2.43531,((Delphinornis_larseni_last[&orientation=ancestor,ancestral_range=Delphinornis_larseni_first]:0,((Platydyptes_novaezealandiae_last[&orientation=ancestor,ancestral_range=Platydyptes_novaezealandiae_first]:1.72047,Platydyptes_marplesi_first[&orientation=descendant]:2.03461)internal_extra_54[&orientation=ancestor,ancestral_range=Platydyptes_novaezealandiae_first]:4.09693,Platydyptes_novaezealandiae_first[&orientation=descendant]:0)internal_54[&orientation=ancestor]:2.30023)internal_extra_53[&orientation=ancestor,ancestral_range=Delphinornis_larseni_first]:1.9646,Delphinornis_larseni_first[&orientation=descendant]:0)internal_52[&orientation=descendant]:0.651126)internal_extra_51[&orientation=ancestor,ancestral_range=Mesetaornis_polaris_first]:0.901473)internal_51[&orientation=ancestor]:0.465974)internal_49[&orientation=descendant]:0.282788)internal_extra_6[&orientation=ancestor,ancestral_range=Palaeeudyptes_gunnari_first]:0.501385)internal_6[&orientation=ancestor]:1.54413,Perudyptes_devriesi_first[&orientation=descendant]:0)internal_4[&orientation=descendant]:2.6064)internal_2[&orientation=descendant]:8.48853)internal_extra_2[&orientation=ancestor,ancestral_range=Muriwaimanu_tuatahi_first]:1.81221,Muriwaimanu_tuatahi_first[&orientation=descendant]:0)internal_1[&orientation=descendant]:1.60151)root[&orientation=ancestor]:0;;
+End;

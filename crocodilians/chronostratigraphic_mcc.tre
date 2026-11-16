@@ -1,0 +1,364 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=176;
+		Taxlabels
+			Acynodon_iberoccitanus_first
+			Acynodon_iberoccitanus_last
+			Alligator_mcgrewi_first
+			Alligator_mefferdi_first
+			Alligator_mississippiensis_first
+			Alligator_mississippiensis_last
+			Alligator_sinensis_first
+			Alligator_sinensis_last
+			Allodaposuchus_megadontos_first
+			Allodaposuchus_palustris_first
+			Argochampsa_krebsi_first
+			Argochampsa_krebsi_last
+			Asiatosuchus_depressifrons_first
+			Asiatosuchus_depressifrons_last
+			Asiatosuchus_germanicus_first
+			Asiatosuchus_germanicus_last
+			Australosuchus_clarkae_first
+			Australosuchus_clarkae_last
+			Baru_darrowi_first
+			Baru_darrowi_last
+			Baru_huberi_first
+			Baru_ultimus_first
+			Baru_wickeni_first
+			Baru_wickeni_last
+			Bernissartia_fagesii_first
+			Bernissartia_fagesii_last
+			Borealosuchus_acutidentatus_first
+			Borealosuchus_formidabilis_first
+			Borealosuchus_formidabilis_last
+			Borealosuchus_sternbergii_first
+			Borealosuchus_sternbergii_last
+			Borealosuchus_wilsoni_first
+			Boverisuchus_vorax_first
+			Boverisuchus_vorax_last
+			Brachychampsa_montana_first
+			Brachychampsa_montana_last
+			Brachyuranochampsa_eversolei_first
+			Brochuchus_pigotti_first
+			Brochuchus_pigotti_last
+			Caiman_crocodilus_first
+			Caiman_crocodilus_last
+			Caiman_latirostris_first
+			Caiman_latirostris_last
+			Caiman_wannlangstoni_first
+			Caiman_wannlangstoni_last
+			Caiman_yacare_first
+			Caiman_yacare_last
+			Crocodylus_acer_first
+			Crocodylus_acutus_first
+			Crocodylus_acutus_last
+			Crocodylus_affinis_first
+			Crocodylus_affinis_last
+			Crocodylus_anthropophagus_first
+			Crocodylus_anthropophagus_last
+			Crocodylus_checchiai_first
+			Crocodylus_checchiai_last
+			Crocodylus_falconensis_first
+			Crocodylus_intermedius_first
+			Crocodylus_johnstoni_first
+			Crocodylus_johnstoni_last
+			Crocodylus_megarhinus_first
+			Crocodylus_mindorensis_first
+			Crocodylus_moreletii_first
+			Crocodylus_moreletii_last
+			Crocodylus_niloticus_first
+			Crocodylus_niloticus_last
+			Crocodylus_novaeguineae_first
+			Crocodylus_palaeindicus_first
+			Crocodylus_palaeindicus_last
+			Crocodylus_palustris_first
+			Crocodylus_palustris_last
+			Crocodylus_porosus_first
+			Crocodylus_porosus_last
+			Crocodylus_rhombifer_first
+			Crocodylus_rhombifer_last
+			Crocodylus_siamensis_first
+			Crocodylus_siamensis_last
+			Crocodylus_suchus_first
+			Crocodylus_thorbjarnarsoni_first
+			Crocodylus_thorbjarnarsoni_last
+			Crocodylus_warrithandru_first
+			Diplocynodon_darwini_first
+			Diplocynodon_hantoniensis_first
+			Diplocynodon_ratelii_first
+			Diplocynodon_ratelii_last
+			Dollosuchoides_densmorei_first
+			Eocaiman_cavernensis_first
+			Eogavialis_africanus_first
+			Eosuchus_lerichei_first
+			Eosuchus_minor_first
+			Eosuchus_minor_last
+			Eothoracosaurus_mississippiensis_first
+			Eothoracosaurus_mississippiensis_last
+			Euthecodon_arambourgii_first
+			Euthecodon_brumpti_first
+			Euthecodon_brumpti_last
+			Gavialis_bengawanicus_first
+			Gavialis_bengawanicus_last
+			Gavialis_browni_first
+			Gavialis_gangeticus_first
+			Gavialis_gangeticus_last
+			Gavialosuchus_americanus_first
+			Gavialosuchus_americanus_last
+			Gavialosuchus_eggenbergensis_first
+			Gnatusuchus_pebasensis_first
+			Gnatusuchus_pebasensis_last
+			Goniopholis_ssp_first
+			Gryposuchus_colombianus_first
+			Gryposuchus_colombianus_last
+			Gryposuchus_pachakamue_first
+			Gryposuchus_pachakamue_last
+			Harpacochampsa_camfieldensis_first
+			Hylaeochampsa_vectiana_first
+			Ikanogavialis_gameroi_first
+			Ikanogavialis_gameroi_last
+			Kalthifrons_aurivellensis_first
+			Kambara_implexidens_first
+			Kambara_murgonensis_first
+			Kambara_taraina_first
+			Kentisuchus_spenceri_first
+			Kentisuchus_spenceri_last
+			Leidyosuchus_canadensis_first
+			Leidyosuchus_canadensis_last
+			Maroccosuchus_zennaroi_first
+			Maroccosuchus_zennaroi_last
+			Mecistops_cataphractus_first
+			Mekobaru_megiriani_first
+			Mekosuchus_inexpectatus_first
+			Mekosuchus_inexpectatus_last
+			Mekosuchus_sanderi_first
+			Mekosuchus_whitehunterensis_first
+			Melanosuchus_fischeri_first
+			Melanosuchus_niger_first
+			Navajosuchus_mooki_first
+			Navajosuchus_mooki_last
+			Osteolaemus_osborni_first
+			Osteolaemus_tetraspis_first
+			Paleosuchus_palpebrosus_first
+			Paleosuchus_trigonatus_first
+			Paludirex_gracilis_first
+			Paratomistoma_courtii_first
+			Penghusuchus_pani_first
+			Piscogavialis_jugaliperforatus_first
+			Piscogavialis_jugaliperforatus_last
+			Planocrania_datangensis_first
+			Planocrania_hengdongensis_first
+			Procaimanoidea_kayi_first
+			Procaimanoidea_kayi_last
+			Prodiplocynodon_langi_first
+			Purussaurus_neivensis_first
+			Purussaurus_neivensis_last
+			Quinkana_fortirostrum_first
+			Quinkana_meboldi_first
+			Quinkana_timara_first
+			Quinkana_timara_last
+			Rimasuchus_lloydi_first
+			Shamosuchus_djadochtaensis_first
+			Shamosuchus_djadochtaensis_last
+			Stangerochampsa_mccabei_first
+			Thoracosaurus_macrorhynchus_first
+			Thoracosaurus_macrorhynchus_last
+			Thoracosaurus_neocesariensis_first
+			Thoracosaurus_neocesariensis_last
+			Tomistoma_cairense_first
+			Tomistoma_lusitanica_first
+			Tomistoma_lusitanica_last
+			Tomistoma_schlegelii_first
+			Toyotamaphimeia_machikanensis_first
+			Trilophosuchus_rackhami_first
+			Tsoabichi_greenriverensis_first
+			Tsoabichi_greenriverensis_last
+			Voay_robustus_first
+			Voay_robustus_last
+			Volia_athollandersoni_first
+			Volia_athollandersoni_last
+			Wannaganosuchus_brachymanus_first
+			;
+End;
+Begin trees;
+	Translate
+		     1 Acynodon_iberoccitanus_first,
+		     2 Acynodon_iberoccitanus_last,
+		     3 Alligator_mcgrewi_first,
+		     4 Alligator_mefferdi_first,
+		     5 Alligator_mississippiensis_first,
+		     6 Alligator_mississippiensis_last,
+		     7 Alligator_sinensis_first,
+		     8 Alligator_sinensis_last,
+		     9 Allodaposuchus_megadontos_first,
+		    10 Allodaposuchus_palustris_first,
+		    11 Argochampsa_krebsi_first,
+		    12 Argochampsa_krebsi_last,
+		    13 Asiatosuchus_depressifrons_first,
+		    14 Asiatosuchus_depressifrons_last,
+		    15 Asiatosuchus_germanicus_first,
+		    16 Asiatosuchus_germanicus_last,
+		    17 Australosuchus_clarkae_first,
+		    18 Australosuchus_clarkae_last,
+		    19 Baru_darrowi_first,
+		    20 Baru_darrowi_last,
+		    21 Baru_huberi_first,
+		    22 Baru_ultimus_first,
+		    23 Baru_wickeni_first,
+		    24 Baru_wickeni_last,
+		    25 Bernissartia_fagesii_first,
+		    26 Bernissartia_fagesii_last,
+		    27 Borealosuchus_acutidentatus_first,
+		    28 Borealosuchus_formidabilis_first,
+		    29 Borealosuchus_formidabilis_last,
+		    30 Borealosuchus_sternbergii_first,
+		    31 Borealosuchus_sternbergii_last,
+		    32 Borealosuchus_wilsoni_first,
+		    33 Boverisuchus_vorax_first,
+		    34 Boverisuchus_vorax_last,
+		    35 Brachychampsa_montana_first,
+		    36 Brachychampsa_montana_last,
+		    37 Brachyuranochampsa_eversolei_first,
+		    38 Brochuchus_pigotti_first,
+		    39 Brochuchus_pigotti_last,
+		    40 Caiman_crocodilus_first,
+		    41 Caiman_crocodilus_last,
+		    42 Caiman_latirostris_first,
+		    43 Caiman_latirostris_last,
+		    44 Caiman_wannlangstoni_first,
+		    45 Caiman_wannlangstoni_last,
+		    46 Caiman_yacare_first,
+		    47 Caiman_yacare_last,
+		    48 Crocodylus_acer_first,
+		    49 Crocodylus_acutus_first,
+		    50 Crocodylus_acutus_last,
+		    51 Crocodylus_affinis_first,
+		    52 Crocodylus_affinis_last,
+		    53 Crocodylus_anthropophagus_first,
+		    54 Crocodylus_anthropophagus_last,
+		    55 Crocodylus_checchiai_first,
+		    56 Crocodylus_checchiai_last,
+		    57 Crocodylus_falconensis_first,
+		    58 Crocodylus_intermedius_first,
+		    59 Crocodylus_johnstoni_first,
+		    60 Crocodylus_johnstoni_last,
+		    61 Crocodylus_megarhinus_first,
+		    62 Crocodylus_mindorensis_first,
+		    63 Crocodylus_moreletii_first,
+		    64 Crocodylus_moreletii_last,
+		    65 Crocodylus_niloticus_first,
+		    66 Crocodylus_niloticus_last,
+		    67 Crocodylus_novaeguineae_first,
+		    68 Crocodylus_palaeindicus_first,
+		    69 Crocodylus_palaeindicus_last,
+		    70 Crocodylus_palustris_first,
+		    71 Crocodylus_palustris_last,
+		    72 Crocodylus_porosus_first,
+		    73 Crocodylus_porosus_last,
+		    74 Crocodylus_rhombifer_first,
+		    75 Crocodylus_rhombifer_last,
+		    76 Crocodylus_siamensis_first,
+		    77 Crocodylus_siamensis_last,
+		    78 Crocodylus_suchus_first,
+		    79 Crocodylus_thorbjarnarsoni_first,
+		    80 Crocodylus_thorbjarnarsoni_last,
+		    81 Crocodylus_warrithandru_first,
+		    82 Diplocynodon_darwini_first,
+		    83 Diplocynodon_hantoniensis_first,
+		    84 Diplocynodon_ratelii_first,
+		    85 Diplocynodon_ratelii_last,
+		    86 Dollosuchoides_densmorei_first,
+		    87 Eocaiman_cavernensis_first,
+		    88 Eogavialis_africanus_first,
+		    89 Eosuchus_lerichei_first,
+		    90 Eosuchus_minor_first,
+		    91 Eosuchus_minor_last,
+		    92 Eothoracosaurus_mississippiensis_first,
+		    93 Eothoracosaurus_mississippiensis_last,
+		    94 Euthecodon_arambourgii_first,
+		    95 Euthecodon_brumpti_first,
+		    96 Euthecodon_brumpti_last,
+		    97 Gavialis_bengawanicus_first,
+		    98 Gavialis_bengawanicus_last,
+		    99 Gavialis_browni_first,
+		   100 Gavialis_gangeticus_first,
+		   101 Gavialis_gangeticus_last,
+		   102 Gavialosuchus_americanus_first,
+		   103 Gavialosuchus_americanus_last,
+		   104 Gavialosuchus_eggenbergensis_first,
+		   105 Gnatusuchus_pebasensis_first,
+		   106 Gnatusuchus_pebasensis_last,
+		   107 Goniopholis_ssp_first,
+		   108 Gryposuchus_colombianus_first,
+		   109 Gryposuchus_colombianus_last,
+		   110 Gryposuchus_pachakamue_first,
+		   111 Gryposuchus_pachakamue_last,
+		   112 Harpacochampsa_camfieldensis_first,
+		   113 Hylaeochampsa_vectiana_first,
+		   114 Ikanogavialis_gameroi_first,
+		   115 Ikanogavialis_gameroi_last,
+		   116 Kalthifrons_aurivellensis_first,
+		   117 Kambara_implexidens_first,
+		   118 Kambara_murgonensis_first,
+		   119 Kambara_taraina_first,
+		   120 Kentisuchus_spenceri_first,
+		   121 Kentisuchus_spenceri_last,
+		   122 Leidyosuchus_canadensis_first,
+		   123 Leidyosuchus_canadensis_last,
+		   124 Maroccosuchus_zennaroi_first,
+		   125 Maroccosuchus_zennaroi_last,
+		   126 Mecistops_cataphractus_first,
+		   127 Mekobaru_megiriani_first,
+		   128 Mekosuchus_inexpectatus_first,
+		   129 Mekosuchus_inexpectatus_last,
+		   130 Mekosuchus_sanderi_first,
+		   131 Mekosuchus_whitehunterensis_first,
+		   132 Melanosuchus_fischeri_first,
+		   133 Melanosuchus_niger_first,
+		   134 Navajosuchus_mooki_first,
+		   135 Navajosuchus_mooki_last,
+		   136 Osteolaemus_osborni_first,
+		   137 Osteolaemus_tetraspis_first,
+		   138 Paleosuchus_palpebrosus_first,
+		   139 Paleosuchus_trigonatus_first,
+		   140 Paludirex_gracilis_first,
+		   141 Paratomistoma_courtii_first,
+		   142 Penghusuchus_pani_first,
+		   143 Piscogavialis_jugaliperforatus_first,
+		   144 Piscogavialis_jugaliperforatus_last,
+		   145 Planocrania_datangensis_first,
+		   146 Planocrania_hengdongensis_first,
+		   147 Procaimanoidea_kayi_first,
+		   148 Procaimanoidea_kayi_last,
+		   149 Prodiplocynodon_langi_first,
+		   150 Purussaurus_neivensis_first,
+		   151 Purussaurus_neivensis_last,
+		   152 Quinkana_fortirostrum_first,
+		   153 Quinkana_meboldi_first,
+		   154 Quinkana_timara_first,
+		   155 Quinkana_timara_last,
+		   156 Rimasuchus_lloydi_first,
+		   157 Shamosuchus_djadochtaensis_first,
+		   158 Shamosuchus_djadochtaensis_last,
+		   159 Stangerochampsa_mccabei_first,
+		   160 Thoracosaurus_macrorhynchus_first,
+		   161 Thoracosaurus_macrorhynchus_last,
+		   162 Thoracosaurus_neocesariensis_first,
+		   163 Thoracosaurus_neocesariensis_last,
+		   164 Tomistoma_cairense_first,
+		   165 Tomistoma_lusitanica_first,
+		   166 Tomistoma_lusitanica_last,
+		   167 Tomistoma_schlegelii_first,
+		   168 Toyotamaphimeia_machikanensis_first,
+		   169 Trilophosuchus_rackhami_first,
+		   170 Tsoabichi_greenriverensis_first,
+		   171 Tsoabichi_greenriverensis_last,
+		   172 Voay_robustus_first,
+		   173 Voay_robustus_last,
+		   174 Volia_athollandersoni_first,
+		   175 Volia_athollandersoni_last,
+		   176 Wannaganosuchus_brachymanus_first
+;
+tree MCC_tree = (((((158[&orientation=ancestor,range=Shamosuchus_djadochtaensis,rate=8.842369397063626E-4,taxon=Shamosuchus_djadochtaensis]:2.065970581328969,157[&orientation=ancestor,rate=2.6340603754848016E-4,taxon=Shamosuchus_djadochtaensis]:0.0)179[&orientation=ancestor,rate=6.987786932231303E-4]:51.56994933474816,26[&orientation=ancestor,range=Bernissartia_fagesii,rate=4.8457969031542674E-4,taxon=Bernissartia_fagesii]:0.0)344[&height_95%_HPD={125.0000573868153,128.418660987972},height_mean=126.47296097111213,height_median=126.30106440884428,height_range={125.0000573868153,129.37681946974865},orientation=ancestor,posterior=0.20217807962334117,range=Bernissartia_fagesii,rate=0.0038359299462673788]:3.263720977625553,25[&orientation=ancestor,rate=0.0061788690229368495,taxon=Bernissartia_fagesii]:0.0)349[&orientation=ancestor,rate=5.917146496212892E-4]:23.391514185969584,((113[&orientation=ancestor,rate=0.0048674713408490035,taxon=Hylaeochampsa_vectiana]:9.877591925782923,(2[&orientation=descendant,range=Acynodon_iberoccitanus,rate=0.0031218530662822435,taxon=Acynodon_iberoccitanus]:0.4033872743038103,1[&orientation=descendant,rate=9.515576500475965E-4,taxon=Acynodon_iberoccitanus]:0.0)342[&orientation=descendant,rate=2.028848720571675E-4]:51.06611670013231)350[&height_95%_HPD={121.59064894988532,147.3920613787102},height_mean=132.92094040820209,height_median=131.51040484256185,height_range={119.63874090240779,204.15085503640466},orientation=ancestor,posterior=0.4973542217870461,rate=0.0027876222988386995]:10.95372362432235,((((((29[&orientation=ancestor,range=Borealosuchus_formidabilis,rate=0.001714175512029927,taxon=Borealosuchus_formidabilis]:1.5197566667307,28[&orientation=ancestor,rate=0.0016822470587254715,taxon=Borealosuchus_formidabilis]:0.0)181[&orientation=ancestor,rate=3.0813418052654554E-4]:9.758544046447469,(32[&orientation=descendant,rate=0.0037645823797298936,taxon=Borealosuchus_wilsoni]:6.690993538628348,27[&orientation=descendant,rate=0.002180812465518892,taxon=Borealosuchus_acutidentatus]:0.0)314[&height_95%_HPD={61.60005366224097,65.52378216597705},height_mean=63.224470249913686,height_median=62.96895558584488,height_range={61.60005366224097,65.99998699033858},orientation=descendant,posterior=0.6760952896814649,rate=9.742117658613809E-4]:7.807549415892709)315[&height_95%_HPD={62.70673288074778,76.91845047593158},height_mean=68.92072649452727,height_median=68.2261715303633,height_range={61.755997077476394,99.4802076100996},orientation=ancestor,posterior=0.48282848273994294,rate=0.0020580661764886383]:12.241530232082965,(31[&orientation=descendant,range=Borealosuchus_sternbergii,rate=0.001714175512029927,taxon=Borealosuchus_sternbergii]:5.540992597591611,30[&orientation=descendant,rate=0.001473524447292205,taxon=Borealosuchus_sternbergii]:0.0)335[&orientation=descendant,rate=6.073661480825454E-4]:10.965453891810952)208[&height_95%_HPD={70.26365231555853,91.11188538357369},height_mean=79.76533252840618,height_median=79.01142704155772,height_range={66.63894222622241,115.19932881090459},orientation=ancestor,posterior=0.5011406012374742,rate=0.001956020067955936]:12.119150836823778,((93[&orientation=ancestor,range=Eothoracosaurus_mississippiensis,rate=0.0015898057961294281,taxon=Eothoracosaurus_mississippiensis]:0.6848366611580161,92[&orientation=ancestor,rate=0.003171662592380199,taxon=Eothoracosaurus_mississippiensis]:0.0)333[&orientation=ancestor,rate=0.0026891867704984082]:9.718580120207093,((161[&orientation=ancestor,range=Thoracosaurus_macrorhynchus,rate=0.0015210779708003993,taxon=Thoracosaurus_macrorhynchus]:6.012357981576784,160[&orientation=ancestor,rate=0.0020845767698493838,taxon=Thoracosaurus_macrorhynchus]:0.0)180[&orientation=ancestor,rate=3.338268460685178E-4]:9.633022627123509,((163[&orientation=ancestor,range=Thoracosaurus_neocesariensis,rate=0.0019684424435249567,taxon=Thoracosaurus_neocesariensis]:12.55840215091581,162[&orientation=ancestor,rate=0.006815220175783191,taxon=Thoracosaurus_neocesariensis]:0.0)345[&orientation=ancestor,rate=9.515576500475965E-4]:3.9549262784735646,((((91[&orientation=ancestor,range=Eosuchus_minor,rate=0.002632738518487339,taxon=Eosuchus_minor]:0.29461314063618715,89[&orientation=descendant,rate=0.0022093554860793735,taxon=Eosuchus_lerichei]:0.5438079389438286)288[&height_95%_HPD={56.581732852641466,61.03973619454712},height_mean=58.831604941866836,height_median=58.84328347430328,height_range={56.01963941858614,61.5884020530887},orientation=ancestor,posterior=0.3082227453594717,range=Eosuchus_minor,rate=0.023519528512725013]:3.3139692148899655,90[&orientation=ancestor,rate=4.202057229520992E-4,taxon=Eosuchus_minor]:0.0)318[&orientation=ancestor,rate=0.0014829378690952987]:10.125310685197732,88[&orientation=descendant,rate=0.0015699007090104287,taxon=Eogavialis_africanus]:34.48579561158935)334[&height_95%_HPD={60.14507735895204,75.19200952014715},height_mean=66.89143752354369,height_median=65.9169579159833,height_range={57.59914830287303,92.04376920728608},orientation=ancestor,posterior=0.4176319243349097,rate=0.0032229142233024446]:3.628446098274054,(12[&orientation=descendant,range=Argochampsa_krebsi,rate=0.001501909251903537,taxon=Argochampsa_krebsi]:4.445570946226354,11[&orientation=descendant,rate=0.0019192925460618628,taxon=Argochampsa_krebsi]:0.0)182[&orientation=descendant,rate=0.002747566449899433]:15.751104073209405)319[&height_95%_HPD={64.10288311772088,79.79653965312427},height_mean=72.197048578038,height_median=72.17373924750282,height_range={60.46317191849562,94.73247204569516},orientation=descendant,posterior=0.18520968313160144,rate=0.0014829378690952987]:5.36035840201032)337[&height_95%_HPD={72.95697518152996,83.15738582078794},height_mean=77.54663181337386,height_median=77.07917543338046,height_range={72.29712122169992,93.19362961667117},orientation=descendant,posterior=0.0965136142997021,rate=0.0012943387516000785]:0.25535393977156673)327[&height_95%_HPD={74.05884974365264,85.89406741667221},height_mean=79.40123294305306,height_median=78.93598941242098,height_range={72.6362651456886,96.79544977630663},orientation=descendant,posterior=0.09301889543967834,rate=0.005771140019040508]:0.7509658550287099)222[&height_95%_HPD={76.26526726660035,92.663055892112},height_mean=83.94934287136992,height_median=83.4140831844793,height_range={73.42180288545448,117.40844723613233},orientation=descendant,posterior=0.2864367409012312,rate=0.0022679436521662716]:13.216727894648528)347[&height_95%_HPD={82.99933388351039,107.8405416869008},height_mean=95.23541589581932,height_median=94.6565352819988,height_range={75.39520166444254,145.53403799802362},orientation=ancestor,posterior=0.4578394200120831,rate=0.0010897477794372954]:22.696466879086984,(((145[&orientation=ancestor,rate=0.004331321966787475,taxon=Planocrania_datangensis]:13.26420055330476,(34[&orientation=descendant,range=Boverisuchus_vorax,rate=8.842369397063626E-4,taxon=Boverisuchus_vorax]:4.199151862984024,33[&orientation=descendant,rate=0.004151673246076965,taxon=Boverisuchus_vorax]:0.0)183[&orientation=descendant,rate=0.0025078945751876532]:15.048155934096712)184[&height_95%_HPD={57.07051649965868,76.6356298679991},height_mean=65.07012371450858,height_median=63.69195343605146,height_range={56.0291952643355,112.78288789679917},orientation=ancestor,posterior=0.3931949334388867,rate=0.0013640650754090215]:3.408425618297116,146[&orientation=descendant,rate=0.001956020067955936,taxon=Planocrania_hengdongensis]:15.396391305593198)329[&height_95%_HPD={62.127415976328734,97.8529798655157},height_mean=78.80044211400748,height_median=77.44686627247202,height_range={58.79325571461203,125.81417626894957},orientation=ancestor,posterior=0.44450115622591196,rate=0.002282916521133842]:38.70193043424183,((149[&orientation=ancestor,rate=8.693770745602707E-4,taxon=Prodiplocynodon_langi]:14.239492014388333,((16[&orientation=ancestor,range=Asiatosuchus_germanicus,rate=0.0014455651588743605,taxon=Asiatosuchus_germanicus]:1.266778957257003,15[&orientation=ancestor,rate=0.0016717328254933464,taxon=Asiatosuchus_germanicus]:0.0)309[&orientation=ancestor,rate=0.0048674713408490035]:31.90750825866354,(((48[&orientation=ancestor,rate=0.008377169427003948,taxon=Crocodylus_acer]:11.323718900331869,37[&orientation=descendant,rate=0.0015502135008583628,taxon=Brachyuranochampsa_eversolei]:17.99959719652935)317[&height_95%_HPD={48.773043400485236,65.27998983470314},height_mean=56.336416996899615,height_median=55.70991029774807,height_range={47.85363040059991,82.35537862918768},orientation=ancestor,posterior=0.28572321409970625,rate=0.0030496837499404085]:7.459294031034048,(((((141[&orientation=ancestor,rate=0.005679739053527748,taxon=Paratomistoma_courtii]:15.406353094024638,(125[&orientation=descendant,range=Maroccosuchus_zennaroi,rate=9.893870167106654E-4,taxon=Maroccosuchus_zennaroi]:2.0402494170979395,124[&orientation=descendant,rate=0.003987276942856161,taxon=Maroccosuchus_zennaroi]:0.0)186[&orientation=descendant,rate=0.0012857872548723726]:4.970395116787827)306[&height_95%_HPD={49.196840750134356,57.35446396797184},height_mean=53.256356493079615,height_median=53.109653747044575,height_range={47.93936716998354,65.40030993795409},orientation=ancestor,posterior=0.1998500031249349,rate=6.073661480825454E-4]:2.9003741101892047,((((((142[&orientation=ancestor,rate=0.00391009174897162,taxon=Penghusuchus_pani]:14.104847576903438,168[&orientation=descendant,rate=6.762312988414688E-4,taxon=Toyotamaphimeia_machikanensis]:24.77146497678197)265[&height_95%_HPD={9.20598545172183,25.410811676887164},height_mean=16.81632858424281,height_median=16.35064820069843,height_range={6.32180805316213,40.444552484117054},orientation=ancestor,posterior=0.49885419053769714,rate=0.0010199307842717513]:5.755968585786377,(104[&orientation=ancestor,rate=5.758947880811482E-4,taxon=Gavialosuchus_eggenbergensis]:9.110739261683875,(103[&orientation=descendant,range=Gavialosuchus_americanus,rate=0.0026891867704984082,taxon=Gavialosuchus_americanus]:1.616818868457301,102[&orientation=descendant,rate=0.0018365724029489826,taxon=Gavialosuchus_americanus]:0.0)256[&orientation=descendant,rate=5.758947880811482E-4]:17.568384359104982)231[&height_95%_HPD={18.071234601558047,30.49364348477097},height_mean=24.06388470305109,height_median=23.72351477856847,height_range={16.514448443884362,47.04584190458854},orientation=descendant,posterior=0.33834711776837983,rate=4.202057229520992E-4]:2.8204535209815162)282[&height_95%_HPD={21.00814182381032,37.23466638946684},height_mean=28.428056777080414,height_median=27.902967667094657,height_range={17.729632017880732,49.615210128890396},orientation=ancestor,posterior=0.3074988021082894,rate=0.0011857212650736191]:3.417347984304314,((((115[&orientation=ancestor,range=Ikanogavialis_gameroi,rate=0.002747566449899433,taxon=Ikanogavialis_gameroi]:7.160049079598849,114[&orientation=ancestor,rate=0.0023916451018571924,taxon=Ikanogavialis_gameroi]:0.0)275[&orientation=ancestor,rate=0.002747566449899433]:10.577274502528695,((((101[&orientation=ancestor,range=Gavialis_gangeticus,rate=0.002870647250182762,taxon=Gavialis_gangeticus]:2.54869499044014,100[&orientation=ancestor,rate=0.0015114685938931343,taxon=Gavialis_gangeticus]:0.0)205[&orientation=ancestor,rate=0.0016302947996096474]:5.405466816902958,(98[&orientation=descendant,range=Gavialis_bengawanicus,rate=0.0020712690944805438,taxon=Gavialis_bengawanicus]:0.0033315163355212007,97[&orientation=descendant,rate=0.0016200856755647268,taxon=Gavialis_bengawanicus]:0.0)216[&orientation=descendant,rate=0.005426204146692179]:7.188834725777241)287[&height_95%_HPD={2.6040892924829393,10.783781196630116},height_mean=6.278886506563883,height_median=5.840564517080708,height_range={1.9848785982273682,24.53311259951684},orientation=ancestor,posterior=0.49939063769504805,rate=3.900152137057506E-4]:11.483208748625373,99[&orientation=descendant,rate=8.471334429578951E-4,taxon=Gavialis_browni]:15.809416122941855)285[&height_95%_HPD={5.340982892936381,17.295927752075727},height_mean=10.866313587562283,height_median=10.41898476851182,height_range={3.875902983408025,31.632095966593255},orientation=ancestor,posterior=0.49782296202162457,rate=0.0010507600345280729]:2.3492311354757476,(109[&orientation=descendant,range=Gryposuchus_colombianus,rate=0.002313269562495063,taxon=Gryposuchus_colombianus]:0.4569841787040616,108[&orientation=descendant,rate=0.0030262722140712356,taxon=Gryposuchus_colombianus]:0.0)269[&orientation=descendant,rate=3.21289053986365E-4]:8.838038466422915)246[&height_95%_HPD={13.311112287285852,20.459888136195957},height_mean=16.577428421713794,height_median=16.28780044359732,height_range={12.213718559122498,29.051521266672466},orientation=descendant,posterior=0.22923480760817483,rate=0.001202090976477109]:1.768033670374109)276[&height_95%_HPD={15.214353195638125,24.40911546325526},height_mean=19.38884456482508,height_median=19.060538174573168,height_range={13.183731550608996,32.236525482800744},orientation=ancestor,posterior=0.202834315951751,rate=4.668617023065267E-4]:2.1735356646272805,((111[&orientation=ancestor,range=Gryposuchus_pachakamue,rate=0.0027876222988386995,taxon=Gryposuchus_pachakamue]:1.8644084024371637,110[&orientation=ancestor,rate=0.0038726465013605334,taxon=Gryposuchus_pachakamue]:0.0)283[&orientation=ancestor,rate=0.0023441820764721535]:4.045350284125021,(144[&orientation=descendant,range=Piscogavialis_jugaliperforatus,rate=9.215319794914331E-4,taxon=Piscogavialis_jugaliperforatus]:4.613689636842452,143[&orientation=descendant,rate=0.0017798541671416534,taxon=Piscogavialis_jugaliperforatus]:0.0)260[&orientation=descendant,rate=0.0014089172781591832]:7.122829429718479)336[&height_95%_HPD={12.992182178806473,21.592722311653645},height_mean=16.67609055582851,height_median=16.200305026327698,height_range={11.912961242584942,32.24091447227178},orientation=descendant,posterior=0.4758025874460949,rate=0.005272194246513657]:7.92684388060303)270[&height_95%_HPD={17.312748468573574,28.035800692522628},height_mean=22.26984248210558,height_median=21.951014782797472,height_range={14.369990995477764,37.887052798198866},orientation=ancestor,posterior=0.23671902668694403,rate=0.0014641582994411857]:6.338178844703748,112[&orientation=descendant,rate=0.0010353076667503197,taxon=Harpacochampsa_camfieldensis]:16.11562175601182)194[&height_95%_HPD={21.916432769008537,36.217335946095886},height_mean=28.60448056707368,height_median=28.231843634998754,height_range={17.390345175286313,45.754093881397154},orientation=descendant,posterior=0.45358430032707653,rate=2.2606376067811634E-4]:2.248431675723282)325[&height_95%_HPD={25.90030531746241,41.918593374093206},height_mean=33.523565835741636,height_median=33.28998325895006,height_range={19.846377879842407,50.57761921582542},orientation=ancestor,posterior=0.3016551738505448,rate=0.002253103388631263]:2.0785561306031184,(167[&orientation=ancestor,rate=0.002006269068423372,taxon=Tomistoma_schlegelii]:28.9191522390483,(166[&orientation=descendant,range=Tomistoma_lusitanica,rate=0.0020319679413100156,taxon=Tomistoma_lusitanica]:4.258307084846706,165[&orientation=descendant,rate=7.509271316101637E-4,taxon=Tomistoma_lusitanica]:0.0)278[&orientation=descendant,rate=0.01324473426723879]:13.470562310794477)213[&height_95%_HPD={14.032940235021925,29.89265072873033},height_mean=20.39198156770481,height_median=19.024638401848648,height_range={13.846960152760545,46.85170644680943},orientation=descendant,posterior=0.20408949813545552,rate=4.29856832087452E-4]:7.474185438427455)230[&height_95%_HPD={28.404281178696706,44.71895518661063},height_mean=36.48188457404147,height_median=36.41229168793711,height_range={22.016144034895518,51.09096948546011},orientation=ancestor,posterior=0.2980510822691194,rate=0.0013908523976273394]:7.263127018103191,164[&orientation=descendant,rate=8.175323514975397E-4,taxon=Tomistoma_cairense]:0.8349702748476631)296[&height_95%_HPD={42.245488242540915,49.9066373126368},height_mean=45.82743409960045,height_median=45.62348748498996,height_range={41.33349517587236,57.81629631959527},orientation=ancestor,posterior=0.41398095873002644,rate=0.0019684424435249567]:8.72228383546836,86[&orientation=descendant,rate=0.0030496837499404085,taxon=Dollosuchoides_densmorei]:6.399237109737015)286[&height_95%_HPD={45.37363799371022,54.26672725625775},height_mean=49.83091617439965,height_median=49.72687845369364,height_range={42.38057924563202,61.50950146978215},orientation=descendant,posterior=0.42976187996083415,rate=0.005347827848418189]:6.583664708879638)299[&height_95%_HPD={51.74835831329139,60.27507786675598},height_mean=55.991872850957314,height_median=55.86664611297023,height_range={49.20934417363668,67.48248774591099},orientation=ancestor,posterior=0.27543176183829504,rate=0.0025078945751876532]:1.5670187853336586,(121[&orientation=descendant,range=Kentisuchus_spenceri,rate=0.0012435390213828034,taxon=Kentisuchus_spenceri]:4.392117537413313,120[&orientation=descendant,rate=0.0014548387568094553,taxon=Kentisuchus_spenceri]:0.0)185[&orientation=descendant,rate=0.002044966339211461]:5.534359769594701)191[&height_95%_HPD={54.16584836406881,63.43438573416998},height_mean=58.56805705279105,height_median=58.398074008197554,height_range={50.28868210249709,71.69978147312668},orientation=ancestor,posterior=0.4216057998791692,rate=0.0016822470587254715]:2.072460026036225,(((((((57[&orientation=ancestor,rate=0.0026513474735338004,taxon=Crocodylus_falconensis]:1.5933823010079493,56[&orientation=ancestor,range=Crocodylus_checchiai,rate=0.0034440227667019607,taxon=Crocodylus_checchiai]:0.0)252[&height_95%_HPD={4.254832554096112,4.999998523359295},height_mean=4.6367744450452815,height_median=4.653517274356858,height_range={4.200057471606129,4.999998523359295},orientation=ancestor,posterior=0.1994281369138143,range=Crocodylus_checchiai,rate=0.0027876222988386995]:2.2931595120826103,55[&orientation=ancestor,rate=0.0017249500276462796,taxon=Crocodylus_checchiai]:0.0)200[&orientation=ancestor,rate=0.003799916635381181]:4.635518726194988,(((66[&orientation=ancestor,range=Crocodylus_niloticus,rate=0.0015600302537400739,taxon=Crocodylus_niloticus]:2.171706355170187,65[&orientation=ancestor,rate=0.004807025299887169,taxon=Crocodylus_niloticus]:0.0)215[&orientation=ancestor,rate=0.0018597983225226117]:5.372172660740006,(((64[&orientation=ancestor,range=Crocodylus_moreletii,rate=0.0022679436521662716,taxon=Crocodylus_moreletii]:1.502549272593967,63[&orientation=ancestor,rate=0.0018136588096942102,taxon=Crocodylus_moreletii]:0.0)234[&orientation=ancestor,rate=0.0028495130564982728]:1.8553865335682929,(75[&orientation=descendant,range=Crocodylus_rhombifer,rate=2.794086023675157E-4,taxon=Crocodylus_rhombifer]:0.17173121536282565,74[&orientation=descendant,rate=0.0048674713408490035,taxon=Crocodylus_rhombifer]:0.0)232[&orientation=descendant,rate=0.0034736701237638827]:3.1862045907994343)212[&height_95%_HPD={2.5766019881451996,6.5861785174961085},height_mean=4.1989902638603525,height_median=4.037026418977206,height_range={1.309289504772579,11.370835781411444},orientation=ancestor,posterior=0.497177142142872,rate=5.995600530224369E-4]:2.6236570137961053,(58[&orientation=ancestor,rate=4.668617023065267E-4,taxon=Crocodylus_intermedius]:4.676663144156635,(50[&orientation=descendant,range=Crocodylus_acutus,rate=0.0011775792605780142,taxon=Crocodylus_acutus]:1.8943391623053856,49[&orientation=descendant,rate=0.0011694651476634227,taxon=Crocodylus_acutus]:0.0)235[&orientation=descendant,rate=9.440330900353848E-4]:2.782323981851249)238[&height_95%_HPD={1.6604587008094427,4.83443342534693},height_mean=3.253338505931201,height_median=3.1439376820710834,height_range={0.9067351272144322,9.01545582503877},orientation=descendant,posterior=0.49270327701506217,rate=0.006673681523976662]:1.3049296758017306)209[&height_95%_HPD={3.6332915585802823,7.9375588290698715},height_mean=5.607741821414241,height_median=5.472046382004322,height_range={2.524646484351706,15.152059356885161},orientation=descendant,posterior=0.42892856398825024,rate=0.0017910484211199913]:1.5622861959518275)229[&height_95%_HPD={4.689810145205456,9.676443412601145},height_mean=7.097306583118773,height_median=6.976260119971798,height_range={3.334763857540821,15.984672581882649},orientation=ancestor,posterior=0.40091873085977375,rate=0.004635689974852409]:0.7821993326312224,78[&orientation=descendant,rate=0.0018136588096942102,taxon=Crocodylus_suchus]:8.326078348541444)249[&height_95%_HPD={5.78047493896085,11.863314567668766},height_mean=8.737700683356344,height_median=8.617802899975601,height_range={4.432582363170496,18.316776086695825},orientation=descendant,posterior=0.3938095039686673,rate=0.002006269068423372]:3.4249894322016132)254[&height_95%_HPD={8.436029949076783,16.083789040271455},height_mean=12.129527556881781,height_median=11.946847717631357,height_range={7.035811418961856,24.25404666482501},orientation=ancestor,posterior=0.2065009062311202,rate=8.397284853426282E-4]:1.3461869440086787,(((73[&orientation=ancestor,range=Crocodylus_porosus,rate=0.0061788690229368495,taxon=Crocodylus_porosus]:4.740731010022671,72[&orientation=ancestor,rate=0.003073412313992063,taxon=Crocodylus_porosus]:0.0)250[&orientation=ancestor,rate=6.073661480825454E-4]:4.71839146603611,((71[&orientation=ancestor,range=Crocodylus_palustris,rate=7.286396637686124E-4,taxon=Crocodylus_palustris]:0.07404920635715939,70[&orientation=ancestor,rate=9.065859301722225E-4,taxon=Crocodylus_palustris]:0.0)206[&orientation=ancestor,rate=0.002542635165096777]:6.70991664289042,(77[&orientation=descendant,range=Crocodylus_siamensis,rate=0.0014363368530920814,taxon=Crocodylus_siamensis]:0.5651984966539771,76[&orientation=descendant,rate=0.0010353076667503197,taxon=Crocodylus_siamensis]:0.0)217[&orientation=descendant,rate=0.0030496837499404085]:6.218767352593574)228[&height_95%_HPD={4.129204436608745,11.411436408871083},height_mean=7.604747892928558,height_median=7.476211232997883,height_range={2.2979920828192917,17.550912085762235},orientation=descendant,posterior=0.5012187246099039,rate=0.001530738097571385]:2.6751566268112015)248[&height_95%_HPD={6.8449730491101946,13.933891925793674},height_mean=10.305522676426143,height_median=10.164819309085658,height_range={5.047557117476799,21.79736629747927},orientation=ancestor,posterior=0.49820316243411594,rate=0.0030262722140712356]:1.7705475481586461,((62[&orientation=ancestor,rate=0.0013289023720537024,taxon=Crocodylus_mindorensis]:7.054447154453527,67[&orientation=descendant,rate=0.001473524447292205,taxon=Crocodylus_novaeguineae]:7.054447154453527)233[&height_95%_HPD={1.6604320238651837,7.1931937713515595},height_mean=4.282692171859066,height_median=4.07084390171606,height_range={0.7277055409660704,13.304114326562996},orientation=ancestor,posterior=0.5005312389325223,rate=0.0062931838381061886]:1.9497664372589725,(60[&orientation=descendant,range=Crocodylus_johnstoni,rate=0.001746702374769455,taxon=Crocodylus_johnstoni]:1.708241252263491,59[&orientation=descendant,rate=0.0011533185843835283,taxon=Crocodylus_johnstoni]:0.0)240[&orientation=descendant,rate=0.002913706859652916]:7.295972339449008)237[&height_95%_HPD={4.7622752710609575,11.939319814889103},height_mean=8.336643942812534,height_median=8.224514818871711,height_range={2.7980099936667386,18.458681454923948},orientation=descendant,posterior=0.49971354763442427,rate=0.0016302947996096474]:2.2254564325049273)247[&height_95%_HPD={8.123393707633085,15.419924972654059},height_mean=11.722402257072613,height_median=11.566139858043059,height_range={5.790217421630331,23.46705469726858},orientation=descendant,posterior=0.4810316451740589,rate=8.693770745602707E-4]:1.8675847005343371)274[&height_95%_HPD={10.486348559331987,18.818774152117697},height_mean=14.470798486316385,height_median=14.24045770441262,height_range={8.596555867864652,27.980939184063743},orientation=ancestor,posterior=0.27536405491552257,rate=2.6340603754848016E-4]:4.143129874139589,(((69[&orientation=ancestor,range=Crocodylus_palaeindicus,rate=0.0062931838381061886,taxon=Crocodylus_palaeindicus]:3.700080161467014,68[&orientation=ancestor,rate=0.0026701621070340997,taxon=Crocodylus_palaeindicus]:0.0)198[&orientation=ancestor,rate=4.29856832087452E-4]:1.5975286593184421,81[&orientation=descendant,rate=0.006815220175783191,taxon=Crocodylus_warrithandru]:3.8093468342047174)242[&height_95%_HPD={5.895025371794134,14.675587948884782},height_mean=9.98842739973697,height_median=9.661396417086593,height_range={5.3490816926714615,28.822525090161662},orientation=ancestor,posterior=0.36389346055290517,rate=0.0018715313481550118]:7.591408037174318,((80[&orientation=ancestor,range=Crocodylus_thorbjarnarsoni,rate=7.211922182131219E-4,taxon=Crocodylus_thorbjarnarsoni]:2.399580437416745,79[&orientation=ancestor,rate=0.0011938916680380323,taxon=Crocodylus_thorbjarnarsoni]:0.0)253[&orientation=ancestor,rate=7.879526644757478E-4]:8.000816708785038,(54[&orientation=descendant,range=Crocodylus_anthropophagus,rate=0.0036624292997698327,taxon=Crocodylus_anthropophagus]:0.031031886504933937,53[&orientation=descendant,rate=0.001012269369987854,taxon=Crocodylus_anthropophagus]:0.0)204[&orientation=descendant,rate=9.66646435919559E-4]:10.313354489432129)245[&height_95%_HPD={4.662813612272146,14.226634642136162},height_mean=8.94400247604861,height_median=8.471633734135963,height_range={4.184062466840203,26.99923648061585},orientation=descendant,posterior=0.5000156246744859,rate=0.0010199307842717513]:2.8693728084232077)251[&height_95%_HPD={9.671312679531297,23.590164176344132},height_mean=15.962311396109538,height_median=15.461826752963134,height_range={6.5954659846871095,37.59892601643841},orientation=descendant,posterior=0.3950594779275432,rate=2.942331346145944E-4]:2.1869168056489343)236[&height_95%_HPD={13.323967390772623,28.66114354626791},height_mean=20.40831661579944,height_median=19.811310910252132,height_range={10.504025479896455,41.647570682224426},orientation=ancestor,posterior=0.3945230307701923,rate=0.0022679436521662716]:17.263021376362758,((126[&orientation=ancestor,rate=0.0013729536514373811,taxon=Mecistops_cataphractus]:27.934231135558136,(94[&orientation=ancestor,rate=5.188150742757615E-4,taxon=Euthecodon_arambourgii]:3.468094360283203,(96[&orientation=descendant,range=Euthecodon_brumpti,rate=0.0018365724029489826,taxon=Euthecodon_brumpti]:5.525395249844763,95[&orientation=descendant,rate=0.0015998419906703726,taxon=Euthecodon_brumpti]:0.0)201[&orientation=descendant,rate=0.0015998419906703726]:16.551197855825677)243[&height_95%_HPD={17.341410263362405,25.237181441954007},height_mean=21.151179037101304,height_median=20.912358653304636,height_range={16.15801763092361,33.80810785871476},orientation=descendant,posterior=0.4999895835503427,rate=7.509271316101637E-4]:4.738615893549266)292[&height_95%_HPD={20.969270700177702,31.606283584543206},height_mean=26.095517310282798,height_median=25.871020053656366,height_range={18.035988168194777,41.84160952060323},orientation=ancestor,posterior=0.49272931813920545,rate=0.0011938916680380323]:4.05241703743053,(((137[&orientation=ancestor,rate=0.004929735460375697,taxon=Osteolaemus_tetraspis]:7.119450068355491,136[&orientation=descendant,rate=0.0025251756258655106,taxon=Osteolaemus_osborni]:7.119450068355491)211[&height_95%_HPD={2.9854462229937724,13.371638361187337},height_mean=7.916061453085523,height_median=7.589248606528059,height_range={1.2528861133588975,22.440963017138557},orientation=ancestor,posterior=0.501098935438845,rate=0.0012351874926214204]:3.501138345656443,(173[&orientation=descendant,range=Voay_robustus,rate=0.0018597983225226117,taxon=Voay_robustus]:0.01723821768271705,172[&orientation=descendant,rate=0.0017687324398018831,taxon=Voay_robustus]:0.0)218[&orientation=descendant,rate=0.0014180135463447686]:10.601996466667089)207[&height_95%_HPD={7.74279931120077,23.76754481133841},height_mean=15.305882109418688,height_median=15.078204524855607,height_range={3.2583529889872693,33.336354758482685},orientation=ancestor,posterior=0.49906772775567176,rate=7.805550360865783E-4]:17.820398957515692,(156[&orientation=ancestor,rate=0.012179383949466493,taxon=Rimasuchus_lloydi]:9.522027825082034,(39[&orientation=descendant,range=Brochuchus_pigotti,rate=0.005507508528113326,taxon=Brochuchus_pigotti]:0.8034959691098607,38[&orientation=descendant,rate=8.545427299702947E-4,taxon=Brochuchus_pigotti]:0.0)196[&orientation=descendant,rate=0.0017249500276462796]:9.08765038822176)302[&height_95%_HPD={20.20529958931897,28.996654618752075},height_mean=24.40483416595058,height_median=24.17795528972512,height_range={17.8505428925896,39.626906646156385},orientation=descendant,posterior=0.2801608299827087,rate=0.005426204146692179]:2.239155398769526)295[&height_95%_HPD={22.446743430894514,32.523202757308184},height_mean=27.176511373436067,height_median=26.939170824132788,height_range={19.015206279142745,42.082233969883745},orientation=descendant,posterior=0.2810149788546072,rate=0.001956020067955936]:3.5456608014610396)210[&height_95%_HPD={25.48708697281168,36.813857348408476},height_mean=31.005547555913367,height_median=30.788065215449123,height_range={22.57510331081818,46.516205433401055},orientation=descendant,posterior=0.491250182287869,rate=0.004807025299887169]:2.516757802265417)225[&height_95%_HPD={28.115077507510108,41.05888721513921},height_mean=34.446229376532756,height_median=34.233758023839044,height_range={24.74283889111399,52.53765685701387},orientation=ancestor,posterior=0.4955417595466761,rate=0.003799916635381181]:14.221923583061852,61[&orientation=descendant,rate=0.002542635165096777,taxon=Crocodylus_megarhinus]:14.879441385556888)294[&height_95%_HPD={33.23215400763161,53.46517124159294},height_mean=42.50425516104945,height_median=41.779264673826674,height_range={28.79329449139192,65.28607724469737},orientation=descendant,posterior=0.5003645757380054,rate=0.0017687324398018831]:13.876562492980923)324[&height_95%_HPD={56.71550670854424,67.2872664656646},height_mean=61.881766697042124,height_median=61.663034630665464,height_range={52.78539544861428,77.41749376552154},orientation=ancestor,posterior=0.4220953730130622,rate=0.0020580661764886383]:3.260226309585832,((((((((24[&orientation=ancestor,range=Baru_wickeni,rate=3.900152137057506E-4,taxon=Baru_wickeni]:0.2809561402482643,23[&orientation=ancestor,rate=0.003948292484012523,taxon=Baru_wickeni]:0.0)193[&orientation=ancestor,rate=4.29856832087452E-4]:6.295353080873284,(22[&orientation=ancestor,rate=0.014757898936844564,taxon=Baru_ultimus]:17.85448701005322,(20[&orientation=descendant,range=Baru_darrowi,rate=0.003565622090826938,taxon=Baru_darrowi]:0.1518646115133322,19[&orientation=descendant,rate=7.953483642053143E-4,taxon=Baru_darrowi]:0.0)280[&orientation=descendant,rate=0.002596120862159484]:8.960193103443913)268[&height_95%_HPD={16.805535470388236,30.834683488926686},height_mean=23.82016288479044,height_median=23.801914779468312,height_range={12.33998585257811,42.258922117990664},orientation=descendant,posterior=0.472948480239995,rate=5.598823527051172E-4]:7.827543630241664)220[&height_95%_HPD={25.65056045869366,36.90115101906417},height_mean=30.919193239318485,height_median=30.510246596005942,height_range={23.60333201913822,49.87825937307511},orientation=ancestor,posterior=0.4690996020916231,rate=7.286396637686124E-4]:9.704264076014354,(((175[&orientation=ancestor,range=Volia_athollandersoni,rate=0.007479647107526709,taxon=Volia_athollandersoni]:0.0014153220107004927,174[&orientation=ancestor,rate=0.0024570881613387723,taxon=Volia_athollandersoni]:0.0)226[&orientation=ancestor,rate=0.002180812465518892]:32.704251865326654,((169[&orientation=ancestor,rate=0.0017910484211199913,taxon=Trilophosuchus_rackhami]:12.734699666164119,(((152[&orientation=descendant,rate=0.002097990915632562,taxon=Quinkana_fortirostrum]:14.106459196647762,155[&orientation=descendant,range=Quinkana_timara,rate=0.0013464065645437259,taxon=Quinkana_timara]:0.0)227[&height_95%_HPD={11.630052310777387,15.032023881951687},height_mean=13.126916284029598,height_median=12.970876433849085,height_range={11.630052310777387,15.96096485051686},orientation=descendant,posterior=0.450011458094623,range=Quinkana_timara,rate=0.0016200856755647268]:0.5366513022510446,154[&orientation=descendant,rate=8.768034868608848E-4,taxon=Quinkana_timara]:0.0)279[&orientation=descendant,rate=0.0026891867704984082]:9.439904680817847,153[&orientation=descendant,rate=4.932772407417336E-4,taxon=Quinkana_meboldi]:0.0)290[&height_95%_HPD={23.03000197119988,26.97790211390236},height_mean=24.59106141730078,height_median=24.316597779117956,height_range={23.03000197119988,27.81994731155092},orientation=descendant,posterior=0.6882773275556759,rate=0.003503808917476136]:1.898138005822318)273[&height_95%_HPD={24.750029761403766,33.274081780484366},height_mean=28.88587382790662,height_median=28.683907551501207,height_range={23.3264402249861,43.024617157949976},orientation=ancestor,posterior=0.4945001145809462,rate=0.0016508917893653583]:5.215851277891346,((130[&orientation=ancestor,rate=8.916780777473599E-4,taxon=Mekosuchus_sanderi]:9.368403797038383,131[&orientation=ancestor,rate=0.004427707565094896,taxon=Mekosuchus_whitehunterensis]:0.0)281[&height_95%_HPD={23.030001851289484,26.898688355958086},height_mean=24.532717781928167,height_median=24.26212991151087,height_range={23.030001851289484,27.81894047947705},orientation=ancestor,posterior=0.38882002458282117,rate=0.0011694651476634227]:2.239677773409767,(129[&orientation=descendant,range=Mekosuchus_inexpectatus,rate=0.010176129352515842,taxon=Mekosuchus_inexpectatus]:0.0018323679458092101,128[&orientation=descendant,rate=8.249286806366471E-4,taxon=Mekosuchus_inexpectatus]:0.0)224[&orientation=descendant,rate=3.7945965025356157E-4]:25.654308132988092)259[&height_95%_HPD={24.73822743889113,32.93430090093145},height_mean=28.686856487217774,height_median=28.49592447081659,height_range={23.254114511931107,39.911956220693014},orientation=descendant,posterior=0.30559780004583237,rate=0.010176129352515842]:5.698458865520735)298[&height_95%_HPD={28.865821229741726,38.83524079364375},height_mean=33.58463999357206,height_median=33.387275713712484,height_range={25.546988216673668,46.627210272955594},orientation=descendant,posterior=0.35699777087977336,rate=0.001473524447292205]:1.3594560936322466)326[&height_95%_HPD={30.321014659825977,41.16777014736158},height_mean=35.621329969138124,height_median=35.43584098507753,height_range={27.42163214358878,49.89473900350407},orientation=ancestor,posterior=0.23542738692943896,rate=7.731545950766268E-4]:2.2454138785545723,(21[&orientation=ancestor,rate=0.0010897477794372954,taxon=Baru_huberi]:6.15990802348,127[&orientation=descendant,rate=0.0017910484211199913,taxon=Mekobaru_megiriani]:18.060912843542084)195[&height_95%_HPD={25.363110604126973,38.346584537156986},height_mean=31.623716262433117,height_median=31.300499572266176,height_range={23.48711177151239,47.45458286449042},orientation=descendant,posterior=0.36453407220682904,rate=0.005347827848418189]:1.4680563265602302)219[&height_95%_HPD={33.071357501411455,44.9063574977357},height_mean=38.72981151270862,height_median=38.51230200018056,height_range={29.70678287583786,56.690459070361186},orientation=descendant,posterior=0.3290556446740693,rate=0.0024404873214618587]:5.9717804209889636)244[&height_95%_HPD={36.05879128282811,48.7608509152638},height_mean=42.231151999603796,height_median=41.99711580332078,height_range={31.787056385065327,55.998890154896856},orientation=ancestor,posterior=0.10019062102872857,rate=0.001746702374769455]:2.181596335437831,(140[&orientation=ancestor,rate=0.002596120862159484,taxon=Paludirex_gracilis]:15.562204994868182,116[&orientation=descendant,rate=0.0013202067144721134,taxon=Kalthifrons_aurivellensis]:16.188536420505898)223[&height_95%_HPD={5.332265716243171,29.73700567718521},height_mean=15.294528846173215,height_median=13.460326025763052,height_range={4.400862690727877,50.2203844403499},orientation=descendant,posterior=0.48670861023728673,rate=6.987786932231303E-4]:22.482659823829835)297[&height_95%_HPD={37.38464637531638,50.98370996227848},height_mean=43.95357476115491,height_median=43.682547156111994,height_range={33.28450704975603,60.722837497816315},orientation=ancestor,posterior=0.0995395929251474,rate=0.0040270749065961986]:6.562995066503078,119[&orientation=descendant,rate=0.0011694651476634227,taxon=Kambara_taraina]:1.9889030699103216)188[&height_95%_HPD={44.210721724888245,56.40453813596966},height_mean=49.980524689325705,height_median=49.851521333928126,height_range={37.00029654399589,63.36422383554594},orientation=ancestor,posterior=0.29650423949501054,rate=0.0013552162413426804]:6.48565086531471,117[&orientation=descendant,rate=0.0023441820764721535,taxon=Kambara_implexidens]:1.4767842677773046)271[&height_95%_HPD={55.002322388089226,59.89967251618481},height_mean=57.19112696082574,height_median=56.949632660601026,height_range={54.63330718463692,65.9831889577106},orientation=ancestor,posterior=0.26680173329722295,rate=0.0018136588096942102]:1.145112610963963,118[&orientation=descendant,rate=8.916780777473599E-4,taxon=Kambara_murgonensis]:1.9367556753627326)316[&height_95%_HPD={56.23979768356992,62.65684354698075},height_mean=59.13899678547588,height_median=58.88420676322697,height_range={55.19991644125787,71.93141298797062},orientation=ancestor,posterior=0.3223839086685694,rate=0.0036624292997698327]:4.431121835032542,(18[&orientation=descendant,range=Australosuchus_clarkae,rate=0.001381882559976144,taxon=Australosuchus_clarkae]:1.1016249372955826,17[&orientation=descendant,rate=0.0019072253553676377,taxon=Australosuchus_clarkae]:0.0)192[&orientation=descendant,rate=6.91279581752052E-4]:36.084196161048396)189[&height_95%_HPD={58.05516641953881,67.6532726245588},height_mean=62.58413584989784,height_median=62.29415450817859,height_range={56.43638699337657,78.90070952309263},orientation=descendant,posterior=0.3879033770129789,rate=0.0013464065645437259]:4.122623317379194)258[&height_95%_HPD={60.00387676199459,71.88524017592896},height_mean=65.58947470226231,height_median=65.17619359380873,height_range={57.47710360734767,84.14469091770299},orientation=descendant,posterior=0.3359305014478865,rate=0.0012435390213828034]:1.6236017132501104)304[&height_95%_HPD={62.03979362610605,76.96788584619475},height_mean=69.03727351274576,height_median=68.69616607194213,height_range={58.58214835023894,90.82789572144212},orientation=ancestor,posterior=0.41729859794587615,rate=0.0016302947996096474]:2.1785580074520965,((52[&orientation=ancestor,range=Crocodylus_affinis,rate=0.0014271531946703196,taxon=Crocodylus_affinis]:2.6799031630874595,51[&orientation=ancestor,rate=5.354406031657437E-4,taxon=Crocodylus_affinis]:0.0)312[&orientation=ancestor,rate=0.0028920431421439537]:18.72159638827665,(14[&orientation=descendant,range=Asiatosuchus_depressifrons,rate=6.382466264966125E-4,taxon=Asiatosuchus_depressifrons]:2.67984011368128,13[&orientation=descendant,rate=0.0019684424435249567,taxon=Asiatosuchus_depressifrons]:0.0)323[&orientation=descendant,rate=0.005426204146692179]:12.032002959795022)303[&height_95%_HPD={57.78632294335546,75.038573389298},height_mean=65.1623843075578,height_median=64.11169499478798,height_range={56.38826796961811,91.32264997172831},orientation=descendant,posterior=0.28655653007229015,rate=0.0011613784232020695]:0.06197030556019456)328[&height_95%_HPD={64.7927163211403,82.76887142503332},height_mean=73.59807986452664,height_median=73.24580289454619,height_range={60.74780468278786,101.31410547987423},orientation=descendant,posterior=0.2548384408658153,rate=0.0013729536514373811]:8.87186388488287)311[&height_95%_HPD={68.2723445896412,89.45900959123371},height_mean=78.8499161149854,height_median=78.55426737017808,height_range={63.47706761231177,107.69844593034124},orientation=descendant,posterior=0.3043322014124706,rate=0.005060132345127243]:7.41152696163752)310[&height_95%_HPD={72.60061444419597,95.9877142227507},height_mean=84.33117912768502,height_median=84.00642501904487,height_range={66.75784866860123,118.75730642822825},orientation=ancestor,posterior=0.3032801399970834,rate=0.0016200856755647268]:21.556480713086927,((123[&orientation=ancestor,range=Leidyosuchus_canadensis,rate=0.0014180135463447686,taxon=Leidyosuchus_canadensis]:2.836075372551065,122[&orientation=ancestor,rate=0.0019314464981606979,taxon=Leidyosuchus_canadensis]:0.0)177[&orientation=ancestor,rate=0.0034440227667019607]:15.618446470360382,(((((((148[&orientation=ancestor,range=Procaimanoidea_kayi,rate=1.7352196695457126E-4,taxon=Procaimanoidea_kayi]:6.1518918274575185,147[&orientation=ancestor,rate=0.0017798541671416534,taxon=Procaimanoidea_kayi]:0.0)190[&orientation=ancestor,rate=7.731545950766268E-4]:11.054332420552456,176[&orientation=descendant,rate=9.66646435919559E-4,taxon=Wannaganosuchus_brachymanus]:5.268693599569289)320[&height_95%_HPD={57.243640439812395,68.58161054764868},height_mean=62.52972261705561,height_median=62.119347204858585,height_range={56.12073722598825,84.175713325027},orientation=ancestor,posterior=0.47095893835545094,rate=0.005426204146692179]:4.115974493191587,(3[&orientation=ancestor,rate=0.00406771781360766,taxon=Alligator_mcgrewi]:19.67204767243757,((4[&orientation=ancestor,rate=0.004331321966787475,taxon=Alligator_mefferdi]:5.9827203916829035,(6[&orientation=descendant,range=Alligator_mississippiensis,rate=0.004748303408710638,taxon=Alligator_mississippiensis]:11.50433084408914,5[&orientation=descendant,rate=0.0012857872548723726,taxon=Alligator_mississippiensis]:0.0)266[&orientation=descendant,rate=0.0031218530662822435]:5.443562551992841)284[&height_95%_HPD={10.034780463455803,23.721145394227108},height_mean=16.196198236253416,height_median=15.731261739871314,height_range={7.9158516805702845,41.1902065472718},orientation=ancestor,posterior=0.5015833003479094,rate=0.002767477445031089]:1.399620539440832,(8[&orientation=descendant,range=Alligator_sinensis,rate=0.008969184093180354,taxon=Alligator_sinensis]:3.111090448099077,7[&orientation=descendant,rate=0.0015998419906703726,taxon=Alligator_sinensis]:0.0)214[&orientation=descendant,rate=0.0022383934291508754]:15.236423487423735)267[&height_95%_HPD={14.755212682220872,35.22354720565916},height_mean=24.342704457475186,height_median=23.714090488136023,height_range={10.01039425770503,68.91215913162077},orientation=descendant,posterior=0.5005312389325223,rate=4.003069121565007E-4]:20.402163263210895)293[&height_95%_HPD={20.147875179010583,48.075735463811455},height_mean=31.73124241641159,height_median=30.074620571932584,height_range={17.682416239012355,78.16948189648886},orientation=descendant,posterior=0.5010156038415866,rate=6.83764261876519E-4]:27.03076510627497)332[&height_95%_HPD={59.94298470886258,75.65668744659357},height_mean=67.08194163808068,height_median=66.27640923911896,height_range={57.12349018403455,88.09968252597088},orientation=ancestor,posterior=0.3370450615612175,rate=6.987786932231303E-4]:6.46040853693286,((171[&orientation=ancestor,range=Tsoabichi_greenriverensis,rate=0.001501909251903537,taxon=Tsoabichi_greenriverensis]:3.650416137632675,170[&orientation=ancestor,rate=0.0016099350135842035,taxon=Tsoabichi_greenriverensis]:0.0)187[&orientation=ancestor,rate=0.0016302947996096474]:13.284090897459265,(((106[&orientation=ancestor,range=Gnatusuchus_pebasensis,rate=0.0015699007090104287,taxon=Gnatusuchus_pebasensis]:0.9394874143204106,105[&orientation=ancestor,rate=0.0014180135463447686,taxon=Gnatusuchus_pebasensis]:0.0)272[&orientation=ancestor,rate=9.440330900353848E-4]:24.461131390214078,87[&orientation=ancestor,rate=0.0018833460319014727,taxon=Eocaiman_cavernensis]:0.0)262[&height_95%_HPD={37.71633735843193,41.01987481992667},height_mean=39.41163756373156,height_median=39.39759253849955,height_range={37.71008511954102,41.199991700943286},orientation=ancestor,posterior=0.17507968583987835,rate=0.0051284942370531]:11.682469986635127,(((151[&orientation=ancestor,range=Purussaurus_neivensis,rate=9.515576500475965E-4,taxon=Purussaurus_neivensis]:0.4768263057906097,150[&orientation=ancestor,rate=0.0032229142233024446,taxon=Purussaurus_neivensis]:0.0)289[&orientation=ancestor,rate=0.002407768784211411]:19.052363797594737,((45[&orientation=ancestor,range=Caiman_wannlangstoni,rate=0.0026701621070340997,taxon=Caiman_wannlangstoni]:1.7715044356158671,44[&orientation=ancestor,rate=4.393334859926578E-4,taxon=Caiman_wannlangstoni]:0.0)197[&orientation=ancestor,rate=0.002006269068423372]:10.876413134759389,((((41[&orientation=ancestor,range=Caiman_crocodilus,rate=0.0013729536514373811,taxon=Caiman_crocodilus]:3.2708840252908544,40[&orientation=ancestor,rate=0.0051284942370531,taxon=Caiman_crocodilus]:0.0)239[&orientation=ancestor,rate=5.758947880811482E-4]:7.218002137039093,(47[&orientation=descendant,range=Caiman_yacare,rate=5.436495326971399E-4,taxon=Caiman_yacare]:8.0304318962188,46[&orientation=descendant,rate=0.0018250771434320352,taxon=Caiman_yacare]:0.0)261[&orientation=descendant,rate=6.382466264966125E-4]:2.458454266111147)257[&height_95%_HPD={7.971599396304015,12.62251775133484},height_mean=10.053386837161193,height_median=9.828835653826431,height_range={7.510030272351628,18.30326267948726},orientation=ancestor,posterior=0.5000520822482865,rate=0.004239432859342156]:5.128867030099826,(43[&orientation=descendant,range=Caiman_latirostris,rate=0.0026513474735338004,taxon=Caiman_latirostris]:7.794611094208619,42[&orientation=descendant,rate=8.545427299702947E-4,taxon=Caiman_latirostris]:0.0)203[&orientation=descendant,rate=4.103625288435826E-4]:7.823142098221155)241[&height_95%_HPD={11.105984634985475,19.26348361554139},height_mean=14.859381641557903,height_median=14.614859528041308,height_range={9.325808468354609,28.01403558968957},orientation=ancestor,posterior=0.4778442115789254,rate=0.0018136588096942102]:4.672871347867186,(133[&orientation=ancestor,rate=0.002542635165096777,taxon=Melanosuchus_niger]:11.361029239321681,132[&orientation=descendant,rate=0.0030496837499404085,taxon=Melanosuchus_fischeri]:2.0233409402356415)221[&height_95%_HPD={6.1797188690996165,16.633806039093884},height_mean=11.36648330557765,height_median=11.17606494384755,height_range={5.384082019007224,28.121602083604586},orientation=descendant,posterior=0.4521468302743693,rate=0.0014455651588743605]:8.92959530097528)301[&height_95%_HPD={13.751996636912736,23.65089721543643},height_mean=18.354739314127013,height_median=18.088571154075453,height_range={11.121372285410416,33.67310217918512},orientation=descendant,posterior=0.39899689589800214,rate=0.0010507600345280729]:2.2726130618411844)199[&height_95%_HPD={15.944500791741007,29.880879116397608},height_mean=22.730879573012004,height_median=22.447909681401853,height_range={13.612075162683738,43.78020414177229},orientation=descendant,posterior=0.3823357846711527,rate=0.007125448974372103]:9.634004104896363)264[&height_95%_HPD={20.844243002104122,39.190377110536275},height_mean=29.533280103062268,height_median=29.006861335868834,height_range={16.572546803260366,54.46500368487469},orientation=ancestor,posterior=0.20811024770317285,rate=0.0014548387568094553]:1.2474272086103468,(138[&orientation=ancestor,rate=0.0016612813655633267,taxon=Paleosuchus_palpebrosus]:13.887670274077124,139[&orientation=descendant,rate=0.0011938916680380323,taxon=Paleosuchus_trigonatus]:13.887670274077124)313[&height_95%_HPD={3.002846551903332,14.34938456630806},height_mean=8.367375872316861,height_median=7.916408851548638,height_range={1.997326714131873,29.571777803131596},orientation=descendant,posterior=0.4997187558592529,rate=0.002282916521133842]:19.556998641567702)291[&height_95%_HPD={25.110574582915064,45.978132065524534},height_mean=35.46573556556047,height_median=35.119096478487904,height_range={20.258544113769915,59.641234865580856},orientation=descendant,posterior=0.20953209308139414,rate=2.028848720571675E-4]:16.076843498496345)255[&height_95%_HPD={40.944620557470074,58.273198825293946},height_mean=49.582148697259385,height_median=49.305119356180555,height_range={38.231328443415975,71.45599104535046},orientation=descendant,posterior=0.21100602070790192,rate=0.005965903883525816]:15.972882205343154)263[&height_95%_HPD={51.491692652617616,65.27686847151585},height_mean=58.115003533558536,height_median=57.82403788684172,height_range={48.59445120306911,84.38761081682115},orientation=descendant,posterior=0.33668048582321203,rate=0.002980369379639276]:6.746456222457184)308[&height_95%_HPD={62.21222922213815,79.26296409296937},height_mean=70.11679738685885,height_median=69.80832800927288,height_range={58.62218168532604,90.7864583432397},orientation=ancestor,posterior=0.3237224224495323,rate=0.0048674713408490035]:2.6562021482444607,(135[&orientation=descendant,range=Navajosuchus_mooki,rate=6.762312988414688E-4,taxon=Navajosuchus_mooki]:0.22103467289733203,134[&orientation=descendant,rate=8.471334429578951E-4,taxon=Navajosuchus_mooki]:0.0)330[&orientation=descendant,rate=0.005965903883525816]:12.94086152082697)331[&height_95%_HPD={67.94202699660079,83.33261335635754},height_mean=75.63235261921433,height_median=75.56530269309197,height_range={63.95775893446975,96.18245045313759},orientation=ancestor,posterior=0.23244307410262285,rate=0.011367068369050727]:8.958056950910745,(159[&orientation=ancestor,rate=0.0013640650754090215,taxon=Stangerochampsa_mccabei]:9.637219758097345,(36[&orientation=descendant,range=Brachychampsa_montana,rate=5.103882383022099E-4,taxon=Brachychampsa_montana]:0.7564610822921622,35[&orientation=descendant,rate=6.458918637520937E-4,taxon=Brachychampsa_montana]:0.0)178[&orientation=descendant,rate=0.002473854170517473]:3.4744032489041388)322[&height_95%_HPD={73.56834322152197,82.30912118392635},height_mean=77.64373621534885,height_median=77.29292725654098,height_range={72.60281913912783,94.30331812212114},orientation=descendant,posterior=0.4947396929230641,rate=0.005679739053527748]:7.791104395669677)305[&height_95%_HPD={76.34642391844606,88.03255414714317},height_mean=81.85838706667982,height_median=81.5349631121421,height_range={73.74624174581004,99.61467908157508},orientation=ancestor,posterior=0.26177058811274767,rate=0.0011857212650736191]:4.770619278795891,((83[&orientation=ancestor,rate=4.103625288435826E-4,taxon=Diplocynodon_hantoniensis]:16.746536522050405,(85[&orientation=descendant,range=Diplocynodon_ratelii,rate=7.137337235466786E-4,taxon=Diplocynodon_ratelii]:16.402411514696084,84[&orientation=descendant,rate=5.188150742757615E-4,taxon=Diplocynodon_ratelii]:0.0)300[&orientation=descendant,rate=0.0016508917893653583]:1.6746545636403738)277[&height_95%_HPD={28.725255172628266,39.83568249181931},height_mean=33.93017857954732,height_median=33.56388081391721,height_range={27.87363651141797,57.68681739052664},orientation=descendant,posterior=0.48731276431741005,rate=7.879526644757478E-4]:14.861829727737728,82[&orientation=descendant,rate=9.893870167106654E-4,taxon=Diplocynodon_darwini]:0.0)202[&height_95%_HPD={41.655214385328776,47.79993075272728},height_mean=44.79480797996468,height_median=44.917896941180956,height_range={41.2000274075624,47.799985001817575},orientation=descendant,posterior=0.6004458240453324,rate=9.140538780724676E-4]:41.68401321217624)338[&height_95%_HPD={80.35252966751209,96.14059705544814},height_mean=87.8574160997495,height_median=87.45624290262955,height_range={76.50151707510132,112.9467866518221},orientation=descendant,posterior=0.49522926605695716,rate=0.001381882559976144]:8.822275105516908)307[&height_95%_HPD={84.54472888101162,102.49272911465883},height_mean=93.15090757907574,height_median=92.72162946597774,height_range={79.12400519354084,125.19095774947988},orientation=descendant,posterior=0.4999322930772276,rate=0.00232865462485201]:10.0561453157827)343[&height_95%_HPD={88.95781059484383,109.95803541995545},height_mean=99.23588229246423,height_median=98.86903966210137,height_range={82.55307217043897,139.03532339325923},orientation=descendant,posterior=0.45796441740797067,rate=0.003565622090826938]:4.037233912172553)346[&height_95%_HPD={92.23090749999618,116.88439008442485},height_mean=104.25292110521188,height_median=103.58489146766165,height_range={85.13708635354568,149.14069307824124},orientation=descendant,posterior=0.44317305889460634,rate=0.0032756870349353057]:5.723097482130086)341[&height_95%_HPD={96.45946574965458,125.28651366263405},height_mean=109.7925393773641,height_median=108.9479629034079,height_range={86.75074353544811,157.29032118994792},orientation=ancestor,posterior=0.4413605966542364,rate=5.188150742757615E-4]:13.217039093291945,(9[&orientation=ancestor,rate=6.073661480825454E-4,taxon=Allodaposuchus_megadontos]:10.304936568170305,10[&orientation=descendant,rate=4.668617023065267E-4,taxon=Allodaposuchus_palustris]:15.515071023505712)339[&height_95%_HPD={73.54343217800441,106.62266298505344},height_mean=89.34453668384087,height_median=88.26445068219721,height_range={68.64394583486516,153.32079731470668},orientation=descendant,posterior=0.4997500052082248,rate=0.0018952436132198666]:46.59150264853896)340[&height_95%_HPD={100.8669823657857,139.22539298287526},height_mean=119.54127652846093,height_median=118.63478852054905,height_range={89.7504227561499,202.4970614575602},orientation=descendant,posterior=0.49448969813128896,rate=0.0035344542970464888]:9.563073369442236)348[&height_95%_HPD={127.57307601385065,157.78368158271553},height_mean=141.58022266819646,height_median=140.54987590476694,height_range={122.1453643656789,197.42771292411638},orientation=descendant,posterior=0.3858721693298056,rate=8.471334429578951E-4]:11.76872237979265)351[&height_95%_HPD={133.3631520216627,160.31977369793867},height_mean=145.92808088290252,height_median=145.1573853049865,height_range={128.86886501760023,214.5643779833982},orientation=ancestor,posterior=0.2360940397075061,rate=6.91279581752052E-4]:3.337883711548102,107[&orientation=descendant,rate=7.583415995036561E-4,taxon=Goniopholis_ssp]:13.099858186376139)321[&height_95%_HPD={142.23383888217862,170.31258116669443},height_mean=154.69506720219627,height_median=153.28460889483102,height_range={139.98968994018216,215.75263829528868},orientation=ancestor,posterior=0.2696141747046937,rate=1.0]:0.0;
+End;
